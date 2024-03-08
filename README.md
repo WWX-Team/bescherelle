@@ -9,6 +9,8 @@ Bescherelle semi-automatique générant des conjugaisons pour des verbes, même 
 
 Dans la description :
 ```
+- [new]: nouveau fichier
+- [rem]: retiré  fichier
 - [add]: ajout   (données, scripts, fonctions)
 - [màj]: update  (données, scripts, fonctions)
 - [ret]: retrait (données, scripts, fonctions)
