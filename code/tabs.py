@@ -159,7 +159,7 @@ tab_irréguliers =   [
                                                                 },
                                                 'subjonctif':   {
                                                                     'présent':          ["", "", "", "", "", ""],
-                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                    'imparfait':        ["", "", "", "", "", ""]
                                                                 },
                                                 'impératif':    {   'présent':          ["", "", "", "", "", ""] },
                                                 'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
@@ -186,7 +186,7 @@ tab_irréguliers =   [
                                                                 },
                                                 'subjonctif':   {
                                                                     'présent':          ["", "", "", "", "", ""],
-                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                    'imparfait':        ["", "", "", "", "", ""]
                                                                 },
                                                 'impératif':    {   'présent':          ["", "", "", "", "", ""] },
                                                 'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
@@ -213,7 +213,7 @@ tab_irréguliers =   [
                                                                 },
                                                 'subjonctif':   {
                                                                     'présent':          ["", "", "", "", "", ""],
-                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                    'imparfait':        ["", "", "", "", "", ""]
                                                                 },
                                                 'impératif':    {   'présent':          ["", "", "", "", "", ""] },
                                                 'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
@@ -240,7 +240,7 @@ tab_irréguliers =   [
                                                                 },
                                                 'subjonctif':   {
                                                                     'présent':          ["", "", "", "", "", ""],
-                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                    'imparfait':        ["", "", "", "", "", ""]
                                                                 },
                                                 'impératif':    {   'présent':          ["", "", "", "", "", ""] },
                                                 'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
@@ -264,7 +264,7 @@ tab_irréguliers =   [
                                                                 },
                                                 'subjonctif':   {
                                                                     'présent':          ["", "", "", "", "", ""],
-                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                    'imparfait':        ["", "", "", "", "", ""]
                                                                 },
                                                 'impératif':    {   'présent':          ["", "", "", "", "", ""] },
                                                 'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
@@ -288,7 +288,7 @@ tab_irréguliers =   [
                                                                 },
                                                 'subjonctif':   {
                                                                     'présent':          ["", "", "", "", "", ""],
-                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                    'imparfait':        ["", "", "", "", "", ""]
                                                                 },
                                                 'impératif':    {   'présent':          ["", "", "", "", "", ""] },
                                                 'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
@@ -312,7 +312,7 @@ tab_irréguliers =   [
                                                                 },
                                                 'subjonctif':   {
                                                                     'présent':          ["", "", "", "", "", ""],
-                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                    'imparfait':        ["", "", "", "", "", ""]
                                                                 },
                                                 'impératif':    {   'présent':          ["", "", "", "", "", ""] },
                                                 'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
@@ -336,7 +336,7 @@ tab_irréguliers =   [
                                                                 },
                                                 'subjonctif':   {
                                                                     'présent':          ["", "", "", "", "", ""],
-                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                    'imparfait':        ["", "", "", "", "", ""]
                                                                 },
                                                 'impératif':    {   'présent':          ["", "", "", "", "", ""] },
                                                 'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
@@ -360,7 +360,7 @@ tab_irréguliers =   [
                                                                 },
                                                 'subjonctif':   {
                                                                     'présent':          ["", "", "", "", "", ""],
-                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                    'imparfait':        ["", "", "", "", "", ""]
                                                                 },
                                                 'impératif':    {   'présent':          ["", "", "", "", "", ""] },
                                                 'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
@@ -384,7 +384,7 @@ tab_irréguliers =   [
                                                                 },
                                                 'subjonctif':   {
                                                                     'présent':          ["", "", "", "", "", ""],
-                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                    'imparfait':        ["", "", "", "", "", ""]
                                                                 },
                                                 'impératif':    {   'présent':          ["", "", "", "", "", ""] },
                                                 'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
@@ -408,7 +408,7 @@ tab_irréguliers =   [
                                                                 },
                                                 'subjonctif':   {
                                                                     'présent':          ["", "", "", "", "", ""],
-                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                    'imparfait':        ["", "", "", "", "", ""]
                                                                 },
                                                 'impératif':    {   'présent':          ["", "", "", "", "", ""] },
                                                 'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
@@ -432,7 +432,7 @@ tab_irréguliers =   [
                                                                 },
                                                 'subjonctif':   {
                                                                     'présent':          ["", "", "", "", "", ""],
-                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                    'imparfait':        ["", "", "", "", "", ""]
                                                                 },
                                                 'impératif':    {   'présent':          ["", "", "", "", "", ""] },
                                                 'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
@@ -456,7 +456,7 @@ tab_irréguliers =   [
                                                                 },
                                                 'subjonctif':   {
                                                                     'présent':          ["", "", "", "", "", ""],
-                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                    'imparfait':        ["", "", "", "", "", ""]
                                                                 },
                                                 'impératif':    {   'présent':          ["", "", "", "", "", ""] },
                                                 'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
@@ -480,7 +480,7 @@ tab_irréguliers =   [
                                                                 },
                                                 'subjonctif':   {
                                                                     'présent':          ["", "", "", "", "", ""],
-                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                    'imparfait':        ["", "", "", "", "", ""]
                                                                 },
                                                 'impératif':    {   'présent':          ["", "", "", "", "", ""] },
                                                 'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
@@ -504,7 +504,7 @@ tab_irréguliers =   [
                                                                 },
                                                 'subjonctif':   {
                                                                     'présent':          ["", "", "", "", "", ""],
-                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                    'imparfait':        ["", "", "", "", "", ""]
                                                                 },
                                                 'impératif':    {   'présent':          ["", "", "", "", "", ""] },
                                                 'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
@@ -528,7 +528,7 @@ tab_irréguliers =   [
                                                                 },
                                                 'subjonctif':   {
                                                                     'présent':          ["", "", "", "", "", ""],
-                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                    'imparfait':        ["", "", "", "", "", ""]
                                                                 },
                                                 'impératif':    {   'présent':          ["", "", "", "", "", ""] },
                                                 'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
@@ -552,7 +552,7 @@ tab_irréguliers =   [
                                                                 },
                                                 'subjonctif':   {
                                                                     'présent':          ["", "", "", "", "", ""],
-                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                    'imparfait':        ["", "", "", "", "", ""]
                                                                 },
                                                 'impératif':    {   'présent':          ["", "", "", "", "", ""] },
                                                 'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
@@ -576,7 +576,7 @@ tab_irréguliers =   [
                                                                 },
                                                 'subjonctif':   {
                                                                     'présent':          ["", "", "", "", "", ""],
-                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                    'imparfait':        ["", "", "", "", "", ""]
                                                                 },
                                                 'impératif':    {   'présent':          ["", "", "", "", "", ""] },
                                                 'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
@@ -600,7 +600,7 @@ tab_irréguliers =   [
                                                                 },
                                                 'subjonctif':   {
                                                                     'présent':          ["", "", "", "", "", ""],
-                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                    'imparfait':        ["", "", "", "", "", ""]
                                                                 },
                                                 'impératif':    {   'présent':          ["", "", "", "", "", ""] },
                                                 'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
@@ -624,7 +624,7 @@ tab_irréguliers =   [
                                                                 },
                                                 'subjonctif':   {
                                                                     'présent':          ["", "", "", "", "", ""],
-                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                    'imparfait':        ["", "", "", "", "", ""]
                                                                 },
                                                 'impératif':    {   'présent':          ["", "", "", "", "", ""] },
                                                 'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
@@ -648,7 +648,7 @@ tab_irréguliers =   [
                                                                 },
                                                 'subjonctif':   {
                                                                     'présent':          ["", "", "", "", "", ""],
-                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                    'imparfait':        ["", "", "", "", "", ""]
                                                                 },
                                                 'impératif':    {   'présent':          ["", "", "", "", "", ""] },
                                                 'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
@@ -672,7 +672,7 @@ tab_irréguliers =   [
                                                                 },
                                                 'subjonctif':   {
                                                                     'présent':          ["", "", "", "", "", ""],
-                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                    'imparfait':        ["", "", "", "", "", ""]
                                                                 },
                                                 'impératif':    {   'présent':          ["", "", "", "", "", ""] },
                                                 'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
@@ -696,7 +696,7 @@ tab_irréguliers =   [
                                                                 },
                                                 'subjonctif':   {
                                                                     'présent':          ["", "", "", "", "", ""],
-                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                    'imparfait':        ["", "", "", "", "", ""]
                                                                 },
                                                 'impératif':    {   'présent':          ["", "", "", "", "", ""] },
                                                 'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
@@ -720,7 +720,7 @@ tab_irréguliers =   [
                                                                 },
                                                 'subjonctif':   {
                                                                     'présent':          ["", "", "", "", "", ""],
-                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                    'imparfait':        ["", "", "", "", "", ""]
                                                                 },
                                                 'impératif':    {   'présent':          ["", "", "", "", "", ""] },
                                                 'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
@@ -744,7 +744,7 @@ tab_irréguliers =   [
                                                                 },
                                                 'subjonctif':   {
                                                                     'présent':          ["", "", "", "", "", ""],
-                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                    'imparfait':        ["", "", "", "", "", ""]
                                                                 },
                                                 'impératif':    {   'présent':          ["", "", "", "", "", ""] },
                                                 'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
@@ -768,7 +768,7 @@ tab_irréguliers =   [
                                                                 },
                                                 'subjonctif':   {
                                                                     'présent':          ["", "", "", "", "", ""],
-                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                    'imparfait':        ["", "", "", "", "", ""]
                                                                 },
                                                 'impératif':    {   'présent':          ["", "", "", "", "", ""] },
                                                 'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
@@ -792,7 +792,7 @@ tab_irréguliers =   [
                                                                 },
                                                 'subjonctif':   {
                                                                     'présent':          ["", "", "", "", "", ""],
-                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                    'imparfait':        ["", "", "", "", "", ""]
                                                                 },
                                                 'impératif':    {   'présent':          ["", "", "", "", "", ""] },
                                                 'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
@@ -816,7 +816,7 @@ tab_irréguliers =   [
                                                                 },
                                                 'subjonctif':   {
                                                                     'présent':          ["", "", "", "", "", ""],
-                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                    'imparfait':        ["", "", "", "", "", ""]
                                                                 },
                                                 'impératif':    {   'présent':          ["", "", "", "", "", ""] },
                                                 'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
@@ -840,7 +840,7 @@ tab_irréguliers =   [
                                                                 },
                                                 'subjonctif':   {
                                                                     'présent':          ["", "", "", "", "", ""],
-                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                    'imparfait':        ["", "", "", "", "", ""]
                                                                 },
                                                 'impératif':    {   'présent':          ["", "", "", "", "", ""] },
                                                 'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
@@ -864,7 +864,7 @@ tab_irréguliers =   [
                                                                 },
                                                 'subjonctif':   {
                                                                     'présent':          ["", "", "", "", "", ""],
-                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                    'imparfait':        ["", "", "", "", "", ""]
                                                                 },
                                                 'impératif':    {   'présent':          ["", "", "", "", "", ""] },
                                                 'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
@@ -888,7 +888,7 @@ tab_irréguliers =   [
                                                                 },
                                                 'subjonctif':   {
                                                                     'présent':          ["", "", "", "", "", ""],
-                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                    'imparfait':        ["", "", "", "", "", ""]
                                                                 },
                                                 'impératif':    {   'présent':          ["", "", "", "", "", ""] },
                                                 'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
@@ -912,7 +912,7 @@ tab_irréguliers =   [
                                                                 },
                                                 'subjonctif':   {
                                                                     'présent':          ["", "", "", "", "", ""],
-                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                    'imparfait':        ["", "", "", "", "", ""]
                                                                 },
                                                 'impératif':    {   'présent':          ["", "", "", "", "", ""] },
                                                 'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
@@ -936,7 +936,7 @@ tab_irréguliers =   [
                                                                 },
                                                 'subjonctif':   {
                                                                     'présent':          ["", "", "", "", "", ""],
-                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                    'imparfait':        ["", "", "", "", "", ""]
                                                                 },
                                                 'impératif':    {   'présent':          ["", "", "", "", "", ""] },
                                                 'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
@@ -962,7 +962,7 @@ tab_irréguliers =   [
                                                                 },
                                                 'subjonctif':   {
                                                                     'présent':          "faille",
-                                                                    'passé':            "fallût"
+                                                                    'imparfait':            "fallût"
                                                                 },
                                                 'impératif':    {   'présent':          "faut" },
                                                 'conditionnel': {   'présent':          "faudrait" },
@@ -986,7 +986,7 @@ tab_irréguliers =   [
                                                                 },
                                                 'subjonctif':   {
                                                                     'présent':          [None,None,"pleuve",None,None,"pleuvent"],
-                                                                    'passé':            [None,None,"plût",None,None,"plussent"]
+                                                                    'imparfait':            [None,None,"plût",None,None,"plussent"]
                                                                 },
                                                 'impératif':    {   'présent':          None },
                                                 'conditionnel': {   'présent':          [None,None,"pleuvrait",None,None,"pleuvraient"] },
@@ -995,6 +995,102 @@ tab_irréguliers =   [
                                                                     'passé':            "plu"
                                                                 },
                                                 'infinitif':    {   'présent':          "pleuvoir"}
+                                            }
+                        },
+                        {
+                                'verbe':    "neiger",
+                                'groupe':   3,
+                                'type':     "impersonnel",
+                                'feuille':  {
+                                                'indicatif':    {
+                                                                    'présent':          "neige",
+                                                                    'futur_simple':     "neigera",
+                                                                    'imparfait':        "neigeait",
+                                                                    'passé_simple':     "neigea"
+                                                                },
+                                                'subjonctif':   {
+                                                                    'présent':          "neige",
+                                                                    'imparfait':            [None,None,"plût",None,None,"plussent"]
+                                                                },
+                                                'impératif':    {   'présent':          None },
+                                                'conditionnel': {   'présent':          [None,None,"pleuvrait",None,None,"pleuvraient"] },
+                                                'participe':    {
+                                                                    'présent':          "pleuvant",
+                                                                    'passé':            "plu"
+                                                                },
+                                                'infinitif':    {   'présent':          "pleuvoir"}
+                                            }
+                        },
+                        {
+                                'verbe':    "falloir",
+                                'groupe':   3,
+                                'type':     "impersonnel",
+                                'feuille':  {
+                                                'indicatif':    {
+                                                                    'présent':          "faut",
+                                                                    'futur_simple':     "faudra",
+                                                                    'imparfait':        "fallait",
+                                                                    'passé_simple':     "fallut"
+                                                                },
+                                                'subjonctif':   {
+                                                                    'présent':          "faille",
+                                                                    'imparfait':            "fallût"
+                                                                },
+                                                'impératif':    {   'présent':          "faut" },
+                                                'conditionnel': {   'présent':          "faudrait" },
+                                                'participe':    {
+                                                                    'présent':          None,
+                                                                    'passé':            "fallu"
+                                                                },
+                                                'infinitif':    {   'présent':          "falloir"}
+                                            }
+                        },
+                        {
+                                'verbe':    "falloir",
+                                'groupe':   3,
+                                'type':     "impersonnel",
+                                'feuille':  {
+                                                'indicatif':    {
+                                                                    'présent':          "faut",
+                                                                    'futur_simple':     "faudra",
+                                                                    'imparfait':        "fallait",
+                                                                    'passé_simple':     "fallut"
+                                                                },
+                                                'subjonctif':   {
+                                                                    'présent':          "faille",
+                                                                    'imparfait':            "fallût"
+                                                                },
+                                                'impératif':    {   'présent':          "faut" },
+                                                'conditionnel': {   'présent':          "faudrait" },
+                                                'participe':    {
+                                                                    'présent':          None,
+                                                                    'passé':            "fallu"
+                                                                },
+                                                'infinitif':    {   'présent':          "falloir"}
+                                            }
+                        },
+                        {
+                                'verbe':    "falloir",
+                                'groupe':   3,
+                                'type':     "impersonnel",
+                                'feuille':  {
+                                                'indicatif':    {
+                                                                    'présent':          "faut",
+                                                                    'futur_simple':     "faudra",
+                                                                    'imparfait':        "fallait",
+                                                                    'passé_simple':     "fallut"
+                                                                },
+                                                'subjonctif':   {
+                                                                    'présent':          "faille",
+                                                                    'imparfait':            "fallût"
+                                                                },
+                                                'impératif':    {   'présent':          "faut" },
+                                                'conditionnel': {   'présent':          "faudrait" },
+                                                'participe':    {
+                                                                    'présent':          None,
+                                                                    'passé':            "fallu"
+                                                                },
+                                                'infinitif':    {   'présent':          "falloir"}
                                             }
                         },
                     ]
