@@ -8,16 +8,25 @@ def init_temps():
     """
     tab_temps = []
     for i in tabs.tab_temps:
+        temps_composé = ""
+        if i[2] == 'composé': temps_composé = i[3]
         if type(i[1]) == str :
             mode = i[1]
-            tab_temps.append((mode + '_' + i[0], (i[2] == 'composé'), temps_composé))
+            tab_temps.append((mode + '_' + i[0], (i[2] == 'composé'), mode + '_' + temps_composé))
         else: 
             for mode in i[1]:
-                temps_composé = ""
-                if i[2] == 'composé': temps_composé = i[3]
-                tab_temps.append((mode + '_' + i[0], (i[2] == 'composé'), temps_composé))
+                tab_temps.append((mode + '_' + i[0], (i[2] == 'composé'), mode + '_' + temps_composé))
     ## Code supplémentaire ?
     return tab_temps
+
+def init_irréguliers():
+    """
+    [Launch]: Initialise les données nécessaires au projet.
+    """
+    tab_irréguliers = []
+    for i in tabs.tab_irréguliers:
+        tab_irréguliers.append(i['verbe'])
+    return tab_irréguliers
 
 ## VERBES #####
 
@@ -90,7 +99,7 @@ def verbe_analyse_est_composé(verbe:str) -> tuple:
     if len(verbe) == 0: return (False, None)
     for i in tabs.tab_irréguliers:
         v = i['verbe']
-        if len(v) < len(verbe):
+        if len(v) < len(verbe) and len(v) != 0:
             if v == verbe[len(verbe) - len(v) +1 : len(verbe)]:
                 return (True, v)
     return (False, None)
@@ -102,6 +111,21 @@ def verbe_analyse_term_brute(verbe:str, data="") -> str:
     if verbe[-1] != '-':
         return verbe_analyse_term_brute(verbe[0 : len(verbe) -1], verbe[-1] + data)
     return data
+
+def verbe_analyse_temps_composé(temps:str) -> tuple:
+    """
+    [Verbe / Analyse / Temps composé]: Récupère le mode et le temps ([:tuple] de [:str]) d'un temps composé [:str].
+    """
+    if not '_' in temps: return (None, None)
+    cg_temps = ""
+    cg_mode  = ""
+    idx = 0
+    while temps[idx] != '_':
+        cg_mode += temps[idx]
+        idx += 1
+    for i in range (idx+1, len(temps)):
+        cg_temps += temps[i]
+    return (cg_mode, cg_temps)
 
 ## MOTS #####
 
@@ -173,8 +197,11 @@ def conjuguer_tr(terminaison:str, radical:str, personne:str, temps:str) -> str:
     \xA0\xA0\xA0• Temps de conjugaison ;\n
     Retourne le verbe conjugué pour cette personne, temps [:str].
     """
-    # TESTS DE VALIDITÉ
-    tab_temps = init_temps()
+    # INITIALISATION
+    tab_temps         = init_temps()
+    tab_irréguliers   = init_irréguliers()
+    cg_mode, cg_temps = verbe_analyse_temps_composé(temps)
+    # TESTS VALIDITÉ
     for i in tab_temps:
         if i[0] == temps:
             temps_est_valide = True
@@ -182,9 +209,12 @@ def conjuguer_tr(terminaison:str, radical:str, personne:str, temps:str) -> str:
             temps_composé_référence = i[2]
     if not temps_est_valide: return None
     verbe_infinitif = radical + verbe_analyse_term_brute(terminaison)
-    # TESTS PRÉLIMINAIRES
+    # TESTS IRRÉGULIER
     verbe_est_rir   = 'rir' == (verbe_infinitif[len(verbe_infinitif) - 3 : len(verbe_infinitif)]) and terminaison == '3-ir'
-    verbe_est_irrégulier, verbe_modèle_irrégulier = verbe_analyse_est_irrégulier(verbe)
+    verbe_est_irrégulier, verbe_irrégulier_modèle = verbe_analyse_est_irrégulier(verbe_infinitif)
+    if verbe_est_irrégulier and verbe_irrégulier_modèle != verbe_infinitif: verbe_irrégulier_préfixe = verbe_infinitif[0 : len(verbe_infinitif) - len(verbe_irrégulier_modèle) +1]
+    else                                                                  : verbe_irrégulier_préfixe = ""
+    # TESTS FINALE
     verbe_est_e = verbe_infinitif[-1] == 'e'
     verbe_est_c = radical[-1]         == 'c'
     verbe_est_g = radical[-1]         == 'g'
@@ -192,7 +222,15 @@ def conjuguer_tr(terminaison:str, radical:str, personne:str, temps:str) -> str:
     if temps_est_composé:
         return conjuguer_tr('-oir', 'av', personne, temps_composé_référence) + '/' + conjuguer_tr('-re', 'êt', personne, temps_composé_référence) + conjuguer_tr(terminaison, radical, personne, 'participe_passé')
     else:
-        # à faire   
+        if verbe_est_irrégulier:
+            if verbe_irrégulier_modèle in tab_irréguliers:
+                  # return tabs.tab_irréguliers.index(verbe_irrégulier_modèle)['feuille'][cg_mode][cg_temps][((personne -1) % 6)]
+                  return None
+            else: return None
+        if terminaison in tabs.dic_terminaisons_cg.keys():
+            return radical + tabs.dic_terminaisons_cg[terminaison]['temps'][temps][((personne -1) % 6)]
+        else:
+            return None
         
     return None
                 
