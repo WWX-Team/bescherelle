@@ -77,7 +77,7 @@ def verbe_analyse_séparer(verbe:str) -> tuple:
         
 def mot_analyse_décomposer(chaîne:str) -> list:
     """
-    [Mot / Analyse /  Décomposition liste]: Décompose une chaîne de caractère en une liste de mot.
+    [Mot / Analyse /  Décomposition liste]: Sépare le verbe et la préposition dans un verbe pronominal puis l'ajoute à un tableau [:list].
     """
     mots = []
     mot = ""
