@@ -9,8 +9,8 @@ Bescherelle semi-automatique générant des conjugaisons pour des verbes, même 
 
 Dans la description :
 ```
-- [add]: ajout
-- [màj]: update
-- [ret]: retrait
-- [oth]: autre
+- [add]: ajout   (données, scripts, fonctions)
+- [màj]: update  (données, scripts, fonctions)
+- [ret]: retrait (données, scripts, fonctions)
+- [bug]: correction de bug
 ```
