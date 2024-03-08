@@ -4,9 +4,7 @@ Liste des **tâches à faire** pour le projet.
 
 ### Verbes
 
-- dans `tabs.py`, faire une entrée (sans les conjugaisons) pour chaque verbe irrédulier avec les attributs correspondant ;
 - dans `scripts.py`, commencer à coder le script de conjugaison ;
-- dans un fichier `readme.md`, écrire en MarkDown (la syntaxe de Discord) une description du projet ;
 - dans `tabs.py`, créer les modèles de terminaison
 
 ### Debogage
