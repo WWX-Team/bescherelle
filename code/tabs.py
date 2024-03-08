@@ -38,10 +38,10 @@ tab_temps    =  [
                     ('passé_simple',    ('indicatif'),                  'simple'),
                     ('passé',           ('participe'),                  'simple'),
                     # COMPOSÉS
-                    ('passé_composé',       ('indicatif'),                                  'composé',   'indicatif_présent'),
-                    ('plus_que_parfait',    ('indicatif', 'subjonctif'),                    'composé',   'indicatif_imparfait'),
-                    ('passé_antérieur',     ('indicatif'),                                  'composé',   'indicatif_passé_simple'),
-                    ('futur_antérieur',     ('indicatif'),                                  'composé',   'indicatif_futur_simple'),
+                    ('passé_composé',       ('indicatif'),                                  'composé',   'présent'),
+                    ('plus_que_parfait',    ('indicatif', 'subjonctif'),                    'composé',   'imparfait'),
+                    ('passé_antérieur',     ('indicatif'),                                  'composé',   'passé_simple'),
+                    ('futur_antérieur',     ('indicatif'),                                  'composé',   'futur_simple'),
                     ('passé',               ('conditionnel', 'subjonctif', 'impératif'),    'composé',   'présent'),
                 ]
 
