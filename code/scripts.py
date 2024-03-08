@@ -75,6 +75,29 @@ def verbe_analyse_séparer(verbe:str) -> tuple:
         terminaison     -= 1
     return term, radical
 
+def verbe_analyse_est_irrégulier(verbe:str) -> bool:
+    """
+    [Verbe / Analyse / Est irrégulier]: Vérifie si un verbe donné [:str] est irrégulier. Retourne un [:bool].
+    """
+    if len(verbe) == 0: return False
+    for i in tabs.tab_irréguliers:
+        if i['verbe'] == verbe:
+            return True
+    return verbe_analyse_est_composé(verbe)[0]
+    
+
+def verbe_analyse_est_composé(verbe:str) -> tuple:
+    """
+    [Verbe / Analyse / Est composé]: Vérifie si un verbe donné est un composé (d'un verbe irrégulier). Retourne un [:tuple] contenant un [:bool], et le verbe irrégulier modèle [:str].
+    """      
+    if len(verbe) == 0: return (False, None)
+    for i in tabs.tab_irréguliers:
+        v = i['verbe']
+        if len(v) < len(verbe):
+            if v == verbe[len(verbe) - len(v) +1 : len(verbe)]:
+                return (True, v)
+    return (False, None)
+
 ## MOTS #####
 
         # ANALYSES
