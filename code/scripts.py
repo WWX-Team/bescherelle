@@ -37,9 +37,7 @@ def verbe_analyse(verbe:str) -> tuple:
     if term ==     "-er":  group = 1
     elif term ==   "2-ir": group = 2
     else:                  group = 3
-    should = None
-    if verbe[len(verbe) -3:len(verbe)] == "rir" and group == 3: should = "!-rir"
-    return (group, term, rad, should)
+    return (group, term, rad)
 
 def verbe_analyse_ir(verbe:str) -> str:
     """
@@ -98,6 +96,14 @@ def verbe_analyse_est_composé(verbe:str) -> tuple:
                 return (True, v)
     return (False, None)
 
+def verbe_analyse_term_brute(verbe:str, data="") -> str:
+    """
+    [Verbe / Analyse / Terminaison brute]: Récupère la terminaison [:str] sans le tiret et données précédantes. Retourne [:str].
+    """
+    if verbe[-1] != '-':
+        return verbe_analyse_term_brute(verbe[0 : len(verbe) -1], verbe[-1] + data)
+    return data
+
 ## MOTS #####
 
         # ANALYSES
@@ -147,9 +153,10 @@ def conjuguer(verbe:str, temps:str) -> list:
     Conjugue un verbe donné [:str] à un temps donné [:str] ( avec \"famille_temps\").\n
     Retourne un [:list] des conjuagaisons, OU une [:str] si cas unique, ou [:None] si erreur.
     """
-    tab_temps = init_temps()
-    group, inf, rad, rir = verbe_analyse(verbe)
-    if not temps in tab_temps: return None
+    group, inf, rad = verbe_analyse(verbe) 
+    # group : groupe du verbe [:int]
+    # inf   : terminaison infinitive non brute [:str]
+    # rad   : radical infinitif [:str]
     if group == None or inf == None or rad == None: return None
     conjugué = []
     
@@ -158,9 +165,28 @@ def conjuguer(verbe:str, temps:str) -> list:
                 
                 # Transformations
                 
-def conjuguer_tr(verbe:str, radical:str, terminaison:str, rir:str) -> str:
+def conjuguer_tr(terminaison:str, radical:str, personne:str, temps:str) -> str:
     """
+    [Conjugaison / Transformations]: Entrées : \n
+    \xA0\xA0\xA0• Terminaison du verbe (infinitif présent) ;\n
+    \xA0\xA0\xA0• Radical du verbe (infinitif présent) ;\n
+    \xA0\xA0\xA0• Personne de conjugaison ;\n
+    \xA0\xA0\xA0• Temps de conjugaison ;\n
+    Retourne le verbe conjugué pour cette personne, temps [:str].
     """
+    # TESTS DE VALIDITÉ
+    tab_temps = init_temps()
+    if not temps in tab_temps: return None
+    
+    verbe_infinitif = radical + verbe_analyse_term_brute(terminaison)
+    # TESTS PRÉLIMINAIRES
+    verbe_est_rir   = 'rir' == (verbe_infinitif[len(verbe_infinitif) - 3 : len(verbe_infinitif)]) and terminaison == '3-ir'
+    verbe_est_e = verbe_infinitif[-1] == 'e'
+    verbe_est_c = radical[-1]         == 'c'
+    verbe_est_g = radical[-1]         == 'g'
+    
+    
+    
     return ""
                 
 def conjuguer_tr_rir(verbe:str) -> str:
