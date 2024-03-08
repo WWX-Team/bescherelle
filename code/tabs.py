@@ -198,33 +198,6 @@ tab_irréguliers =   [
                                             }
                         },
                         
-                        ## VERBES DU 2E GROUPE
-                        
-                        {
-                                'verbe':    "",
-                                'groupe':   2,
-                                'type':     "verbe",
-                                'feuille':  {
-                                                'indicatif':    {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'futur_simple':     ["", "", "", "", "", ""],
-                                                                    'imparfait':        ["", "", "", "", "", ""],
-                                                                    'passé_simple':     ["", "", "", "", "", ""]
-                                                                },
-                                                'subjonctif':   {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'imparfait':        ["", "", "", "", "", ""]
-                                                                },
-                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
-                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
-                                                'participe':    {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'passé':            ["", "", "", "", "", ""]
-                                                                },
-                                                'infinitif':    {   'présent':          ""}
-                                            }
-                        },
-                        
                         ## VERBES DU 3E GROUPE
                         
                         {
@@ -946,7 +919,8 @@ tab_irréguliers =   [
                                                                 },
                                                 'infinitif':    {   'présent':          ""}
                                             }
-                        }
+                        },
+                        
                         ## VERBES IMPERSONNELS
                         
                         {
