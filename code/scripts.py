@@ -176,7 +176,9 @@ def conjuguer_tr(terminaison:str, radical:str, personne:str, temps:str) -> str:
     """
     # TESTS DE VALIDITÉ
     tab_temps = init_temps()
-    if not temps in tab_temps: return None
+    for i in tab_temps:
+        if i[0] == temps: temps_est_valide = True
+    if not temps_est_valide: return None
     
     verbe_infinitif = radical + verbe_analyse_term_brute(terminaison)
     # TESTS PRÉLIMINAIRES
