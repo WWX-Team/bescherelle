@@ -8,10 +8,14 @@ def init_temps():
     """
     tab_temps = []
     for i in tabs.tab_temps:
-        for famille in i[1]:
-            temps_composé = ""
-            if i[2] == 'composé': temps_composé = i[3]
-            tab_temps.append((famille + '_' + i, (i[2] == 'composé'), temps_composé))
+        if type(i[1]) == str :
+            mode = i[1]
+            tab_temps.append((mode + '_' + i[0], (i[2] == 'composé'), temps_composé))
+        else: 
+            for mode in i[1]:
+                temps_composé = ""
+                if i[2] == 'composé': temps_composé = i[3]
+                tab_temps.append((mode + '_' + i[0], (i[2] == 'composé'), temps_composé))
     ## Code supplémentaire ?
     return tab_temps
 
