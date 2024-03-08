@@ -54,41 +54,32 @@ Terminaisons
 tab_terminaisons              =    ["-er", "2-ir", "3-ir", "-ir", "-re", "-dre", "-ire", "-oir", "!-rir", "-aire", "-oire", "-ttre", "-aindre", "-eindre", "-oindre"]
 # avancement                  #     √      √       √       |      √      X       X       X       X        X        X        X        X          X          X
 
-tab_terminaisons_cg =    [
-                            {
-                                'term' : '-re',
-                                'grpe' : 1,
-                                'file' :    {
-                                                'temps': 'présent',
-                                                'terms': ['e', 'es', 'e', 'ons', 'ez', 'ent']
+dic_terminaisons_cg =   {
+                            '-er': {
+                                'groupe' : 1,
+                                'temps'  :  {
+                                                'infinitif_présent' : ['e', 'es', 'e', 'ons', 'ez', 'ent']
                                             }
                             },
-                            {
-                                'term' : '2-ir',
-                                'grpe' : 2,
-                                'file' :    {
-                                                'temps': 'présent',
-                                                'terms': ['is', 'is', 'it', 'issons', 'issez', 'issent']
+                            '2-ir': {
+                                'groupe' : 2,
+                                'temps'  :  {
+                                                'infinitif_présent': ['is', 'is', 'it', 'issons', 'issez', 'issent']
                                             }
                             },
-                            {
-                                'term' : '3-ir',
-                                'grpe' : 3,
-                                'file' :    {
-                                                'temps': 'présent',
-                                                'terms': ['s', 's', 't', 'ons', 'ez', 'ent']
+                            '3-ir': {
+                                'groupe' : 3,
+                                'temps'  :  {
+                                                'infinitif_présent': ['s', 's', 't', 'ons', 'ez', 'ent']
                                             }
                             },
-                            {
-                                'term' : '-re',
-                                'grpe' : 3,
-                                'file' :    {
-                                                'temps': 'présent',
-                                                'terms': ['s', 's', 't', 'ons', 'ez', 'ent']
+                            '-re': {
+                                'groupe' : 3,
+                                'temps'  :  {
+                                                'infinitif_présent': ['s', 's', 't', 'ons', 'ez', 'ent']
                                             }
                             }
-                        ]
-
+                        }
 
 """
 Exceptions du 1er et 3e groupe en -ir et -er
