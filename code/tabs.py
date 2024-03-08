@@ -927,7 +927,7 @@ tab_irréguliers =   [
                                                                 },
                                                 'subjonctif':   {
                                                                     'présent':          "faille",
-                                                                    'imparfait':            "fallût"
+                                                                    'imparfait':        "fallût"
                                                                 },
                                                 'impératif':    {   'présent':          "faut" },
                                                 'conditionnel': {   'présent':          "faudrait" },
@@ -951,7 +951,7 @@ tab_irréguliers =   [
                                                                 },
                                                 'subjonctif':   {
                                                                     'présent':          [None,None,"pleuve",None,None,"pleuvent"],
-                                                                    'imparfait':            [None,None,"plût",None,None,"plussent"]
+                                                                    'imparfait':        [None,None,"plût",None,None,"plussent"]
                                                                 },
                                                 'impératif':    {   'présent':          None },
                                                 'conditionnel': {   'présent':          [None,None,"pleuvrait",None,None,"pleuvraient"] },
@@ -968,94 +968,94 @@ tab_irréguliers =   [
                                 'type':     "impersonnel",
                                 'feuille':  {
                                                 'indicatif':    {
-                                                                    'présent':          "neige",
-                                                                    'futur_simple':     "neigera",
-                                                                    'imparfait':        "neigeait",
-                                                                    'passé_simple':     "neigea"
+                                                                    'présent':          "",
+                                                                    'futur_simple':     "",
+                                                                    'imparfait':        "",
+                                                                    'passé_simple':     ""
                                                                 },
                                                 'subjonctif':   {
-                                                                    'présent':          "neige",
-                                                                    'imparfait':            [None,None,"plût",None,None,"plussent"]
+                                                                    'présent':          "",
+                                                                    'imparfait':        ""
                                                                 },
-                                                'impératif':    {   'présent':          None },
-                                                'conditionnel': {   'présent':          [None,None,"pleuvrait",None,None,"pleuvraient"] },
+                                                'impératif':    {   'présent':          "" },
+                                                'conditionnel': {   'présent':          "" },
                                                 'participe':    {
-                                                                    'présent':          "pleuvant",
-                                                                    'passé':            "plu"
+                                                                    'présent':          "",
+                                                                    'passé':            ""
                                                                 },
-                                                'infinitif':    {   'présent':          "pleuvoir"}
+                                                'infinitif':    {   'présent':          ""}
                                             }
                         },
                         {
-                                'verbe':    "falloir",
+                                'verbe':    "venter",
                                 'groupe':   3,
                                 'type':     "impersonnel",
                                 'feuille':  {
                                                 'indicatif':    {
-                                                                    'présent':          "faut",
-                                                                    'futur_simple':     "faudra",
-                                                                    'imparfait':        "fallait",
-                                                                    'passé_simple':     "fallut"
+                                                                    'présent':          "",
+                                                                    'futur_simple':     "",
+                                                                    'imparfait':        "",
+                                                                    'passé_simple':     ""
                                                                 },
                                                 'subjonctif':   {
-                                                                    'présent':          "faille",
-                                                                    'imparfait':            "fallût"
+                                                                    'présent':          "",
+                                                                    'imparfait':        ""
                                                                 },
-                                                'impératif':    {   'présent':          "faut" },
-                                                'conditionnel': {   'présent':          "faudrait" },
+                                                'impératif':    {   'présent':          "" },
+                                                'conditionnel': {   'présent':          "" },
                                                 'participe':    {
-                                                                    'présent':          None,
-                                                                    'passé':            "fallu"
+                                                                    'présent':          "",
+                                                                    'passé':            ""
                                                                 },
-                                                'infinitif':    {   'présent':          "falloir"}
+                                                'infinitif':    {   'présent':          ""}
                                             }
                         },
                         {
-                                'verbe':    "falloir",
+                                'verbe':    "bruiner",
                                 'groupe':   3,
                                 'type':     "impersonnel",
                                 'feuille':  {
                                                 'indicatif':    {
-                                                                    'présent':          "faut",
-                                                                    'futur_simple':     "faudra",
-                                                                    'imparfait':        "fallait",
-                                                                    'passé_simple':     "fallut"
+                                                                    'présent':          "",
+                                                                    'futur_simple':     "",
+                                                                    'imparfait':        "",
+                                                                    'passé_simple':     ""
                                                                 },
                                                 'subjonctif':   {
-                                                                    'présent':          "faille",
-                                                                    'imparfait':            "fallût"
+                                                                    'présent':          "",
+                                                                    'imparfait':        ""
                                                                 },
-                                                'impératif':    {   'présent':          "faut" },
-                                                'conditionnel': {   'présent':          "faudrait" },
+                                                'impératif':    {   'présent':          "" },
+                                                'conditionnel': {   'présent':          "" },
                                                 'participe':    {
-                                                                    'présent':          None,
-                                                                    'passé':            "fallu"
+                                                                    'présent':          "",
+                                                                    'passé':            ""
                                                                 },
-                                                'infinitif':    {   'présent':          "falloir"}
+                                                'infinitif':    {   'présent':          ""}
                                             }
                         },
                         {
-                                'verbe':    "falloir",
+                                'verbe':    "grêler",
                                 'groupe':   3,
                                 'type':     "impersonnel",
                                 'feuille':  {
                                                 'indicatif':    {
-                                                                    'présent':          "faut",
-                                                                    'futur_simple':     "faudra",
-                                                                    'imparfait':        "fallait",
-                                                                    'passé_simple':     "fallut"
+                                                                    'présent':          "",
+                                                                    'futur_simple':     "",
+                                                                    'imparfait':        "",
+                                                                    'passé_simple':     ""
                                                                 },
                                                 'subjonctif':   {
-                                                                    'présent':          "faille",
-                                                                    'imparfait':            "fallût"
+                                                                    'présent':          "",
+                                                                    'imparfait':        ""
                                                                 },
-                                                'impératif':    {   'présent':          "faut" },
-                                                'conditionnel': {   'présent':          "faudrait" },
+                                                'impératif':    {   'présent':          "" },
+                                                'conditionnel': {   'présent':          "" },
                                                 'participe':    {
-                                                                    'présent':          None,
-                                                                    'passé':            "fallu"
+                                                                    'présent':          "",
+                                                                    'passé':            ""
                                                                 },
-                                                'infinitif':    {   'présent':          "falloir"}
+                                                'infinitif':    {   'présent':          ""}
                                             }
                         },
                     ]
