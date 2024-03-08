@@ -51,8 +51,8 @@ Terminaisons
 
 # Tableau des terminaisons à l'infinitif
 # Triées de la plus petite à la plus longue (note : seulement les caractères après le tiret sont comptabilisés)
-tab_terminaisons              =    ["-er", "2-ir", "3-ir", "-ir", "-re", "-dre", "-ire", "-oir", "!-rir", "-aire", "-oire", "-ttre", "-aindre", "-eindre", "-oindre"]
-# avancement                  #     √      √       √       |      √      X       X       X       X        X        X        X        X          X          X
+tab_terminaisons              =    ["-er", "2-ir", "3-ir", "-ir", "-re", "-dre", "-ire", "-oir", "-aire", "-oire", "-ttre", "-aindre", "-eindre", "-oindre"]
+# avancement                  #     √      √       √       |      √      X       X       X       X        X        X        X          X          X
 
 dic_terminaisons_cg =   {
                             '-er': {
