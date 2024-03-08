@@ -228,7 +228,7 @@ tab_irréguliers =   [
                         ## VERBES DU 3E GROUPE
                         
                         {
-                                'verbe':    "",
+                                'verbe':    "asseoir",
                                 'groupe':   3,
                                 'type':     "verbe",
                                 'feuille':  {
@@ -251,7 +251,702 @@ tab_irréguliers =   [
                                                 'infinitif':    {   'présent':          ""}
                                             }
                         },
-                        
+                        {
+                                'verbe':    "clore",
+                                'groupe':   3,
+                                'type':     "verbe",
+                                'feuille':  {
+                                                'indicatif':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'futur_simple':     ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""],
+                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                },
+                                                'subjonctif':   {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
+                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'participe':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'infinitif':    {   'présent':          ""}
+                                            }
+                        },
+                        {
+                                'verbe':    "moudre",
+                                'groupe':   3,
+                                'type':     "verbe",
+                                'feuille':  {
+                                                'indicatif':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'futur_simple':     ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""],
+                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                },
+                                                'subjonctif':   {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
+                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'participe':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'infinitif':    {   'présent':          ""}
+                                            }
+                        },
+                        {
+                                'verbe':    "boire",
+                                'groupe':   3,
+                                'type':     "verbe",
+                                'feuille':  {
+                                                'indicatif':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'futur_simple':     ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""],
+                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                },
+                                                'subjonctif':   {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
+                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'participe':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'infinitif':    {   'présent':          ""}
+                                            }
+                        },
+                        {
+                                'verbe':    "haïr",
+                                'groupe':   3,
+                                'type':     "verbe",
+                                'feuille':  {
+                                                'indicatif':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'futur_simple':     ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""],
+                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                },
+                                                'subjonctif':   {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
+                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'participe':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'infinitif':    {   'présent':          ""}
+                                            }
+                        },
+                        {
+                                'verbe':    "écrire",
+                                'groupe':   3,
+                                'type':     "verbe",
+                                'feuille':  {
+                                                'indicatif':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'futur_simple':     ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""],
+                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                },
+                                                'subjonctif':   {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
+                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'participe':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'infinitif':    {   'présent':          ""}
+                                            }
+                        },
+                        {
+                                'verbe':    "naître",
+                                'groupe':   3,
+                                'type':     "verbe",
+                                'feuille':  {
+                                                'indicatif':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'futur_simple':     ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""],
+                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                },
+                                                'subjonctif':   {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
+                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'participe':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'infinitif':    {   'présent':          ""}
+                                            }
+                        },
+                        {
+                                'verbe':    "coudre",
+                                'groupe':   3,
+                                'type':     "verbe",
+                                'feuille':  {
+                                                'indicatif':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'futur_simple':     ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""],
+                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                },
+                                                'subjonctif':   {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
+                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'participe':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'infinitif':    {   'présent':          ""}
+                                            }
+                        },
+                        {
+                                'verbe':    "croître",
+                                'groupe':   3,
+                                'type':     "verbe",
+                                'feuille':  {
+                                                'indicatif':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'futur_simple':     ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""],
+                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                },
+                                                'subjonctif':   {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
+                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'participe':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'infinitif':    {   'présent':          ""}
+                                            }
+                        },
+                        {
+                                'verbe':    "devoir",
+                                'groupe':   3,
+                                'type':     "verbe",
+                                'feuille':  {
+                                                'indicatif':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'futur_simple':     ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""],
+                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                },
+                                                'subjonctif':   {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
+                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'participe':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'infinitif':    {   'présent':          ""}
+                                            }
+                        },
+                        {
+                                'verbe':    "traire",
+                                'groupe':   3,
+                                'type':     "verbe",
+                                'feuille':  {
+                                                'indicatif':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'futur_simple':     ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""],
+                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                },
+                                                'subjonctif':   {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
+                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'participe':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'infinitif':    {   'présent':          ""}
+                                            }
+                        },
+                        {
+                                'verbe':    "dissoudre",
+                                'groupe':   3,
+                                'type':     "verbe",
+                                'feuille':  {
+                                                'indicatif':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'futur_simple':     ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""],
+                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                },
+                                                'subjonctif':   {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
+                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'participe':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'infinitif':    {   'présent':          ""}
+                                            }
+                        },
+                        {
+                                'verbe':    "dormir",
+                                'groupe':   3,
+                                'type':     "verbe",
+                                'feuille':  {
+                                                'indicatif':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'futur_simple':     ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""],
+                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                },
+                                                'subjonctif':   {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
+                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'participe':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'infinitif':    {   'présent':          ""}
+                                            }
+                        },
+                        {
+                                'verbe':    "dire",
+                                'groupe':   3,
+                                'type':     "verbe",
+                                'feuille':  {
+                                                'indicatif':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'futur_simple':     ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""],
+                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                },
+                                                'subjonctif':   {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
+                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'participe':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'infinitif':    {   'présent':          ""}
+                                            }
+                        },
+                        {
+                                'verbe':    "lire",
+                                'groupe':   3,
+                                'type':     "verbe",
+                                'feuille':  {
+                                                'indicatif':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'futur_simple':     ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""],
+                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                },
+                                                'subjonctif':   {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
+                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'participe':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'infinitif':    {   'présent':          ""}
+                                            }
+                        },
+                        {
+                                'verbe':    "nuire",
+                                'groupe':   3,
+                                'type':     "verbe",
+                                'feuille':  {
+                                                'indicatif':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'futur_simple':     ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""],
+                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                },
+                                                'subjonctif':   {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
+                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'participe':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'infinitif':    {   'présent':          ""}
+                                            }
+                        },
+                        {
+                                'verbe':    "paître",
+                                'groupe':   3,
+                                'type':     "verbe",
+                                'feuille':  {
+                                                'indicatif':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'futur_simple':     ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""],
+                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                },
+                                                'subjonctif':   {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
+                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'participe':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'infinitif':    {   'présent':          ""}
+                                            }
+                        },
+                        {
+                                'verbe':    "suivre",
+                                'groupe':   3,
+                                'type':     "verbe",
+                                'feuille':  {
+                                                'indicatif':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'futur_simple':     ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""],
+                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                },
+                                                'subjonctif':   {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
+                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'participe':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'infinitif':    {   'présent':          ""}
+                                            }
+                        },
+                        {
+                                'verbe':    "pouvoir",
+                                'groupe':   3,
+                                'type':     "verbe",
+                                'feuille':  {
+                                                'indicatif':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'futur_simple':     ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""],
+                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                },
+                                                'subjonctif':   {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
+                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'participe':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'infinitif':    {   'présent':          ""}
+                                            }
+                        },
+                        {
+                                'verbe':    "prendre",
+                                'groupe':   3,
+                                'type':     "verbe",
+                                'feuille':  {
+                                                'indicatif':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'futur_simple':     ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""],
+                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                },
+                                                'subjonctif':   {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
+                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'participe':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'infinitif':    {   'présent':          ""}
+                                            }
+                        },
+                        {
+                                'verbe':    "prévoir",
+                                'groupe':   3,
+                                'type':     "verbe",
+                                'feuille':  {
+                                                'indicatif':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'futur_simple':     ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""],
+                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                },
+                                                'subjonctif':   {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
+                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'participe':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'infinitif':    {   'présent':          ""}
+                                            }
+                        },
+                        {
+                                'verbe':    "recevoir",
+                                'groupe':   3,
+                                'type':     "verbe",
+                                'feuille':  {
+                                                'indicatif':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'futur_simple':     ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""],
+                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                },
+                                                'subjonctif':   {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
+                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'participe':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'infinitif':    {   'présent':          ""}
+                                            }
+                        },
+                        {
+                                'verbe':    "résoudre",
+                                'groupe':   3,
+                                'type':     "verbe",
+                                'feuille':  {
+                                                'indicatif':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'futur_simple':     ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""],
+                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                },
+                                                'subjonctif':   {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
+                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'participe':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'infinitif':    {   'présent':          ""}
+                                            }
+                        },
+                        {
+                                'verbe':    "rire",
+                                'groupe':   3,
+                                'type':     "verbe",
+                                'feuille':  {
+                                                'indicatif':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'futur_simple':     ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""],
+                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                },
+                                                'subjonctif':   {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
+                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'participe':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'infinitif':    {   'présent':          ""}
+                                            }
+                        },
+                        {
+                                'verbe':    "savoir",
+                                'groupe':   3,
+                                'type':     "verbe",
+                                'feuille':  {
+                                                'indicatif':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'futur_simple':     ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""],
+                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                },
+                                                'subjonctif':   {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
+                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'participe':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'infinitif':    {   'présent':          ""}
+                                            }
+                        },
+                        {
+                                'verbe':    "suffire",
+                                'groupe':   3,
+                                'type':     "verbe",
+                                'feuille':  {
+                                                'indicatif':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'futur_simple':     ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""],
+                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                },
+                                                'subjonctif':   {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
+                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'participe':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'infinitif':    {   'présent':          ""}
+                                            }
+                        },
+                        {
+                                'verbe':    "vaincre",
+                                'groupe':   3,
+                                'type':     "verbe",
+                                'feuille':  {
+                                                'indicatif':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'futur_simple':     ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""],
+                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                },
+                                                'subjonctif':   {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
+                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'participe':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'infinitif':    {   'présent':          ""}
+                                            }
+                        },
+                        {
+                                'verbe':    "valoir",
+                                'groupe':   3,
+                                'type':     "verbe",
+                                'feuille':  {
+                                                'indicatif':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'futur_simple':     ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""],
+                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                },
+                                                'subjonctif':   {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
+                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'participe':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'infinitif':    {   'présent':          ""}
+                                            }
+                        },
+                        {
+                                'verbe':    "vouloir",
+                                'groupe':   3,
+                                'type':     "verbe",
+                                'feuille':  {
+                                                'indicatif':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'futur_simple':     ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""],
+                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                },
+                                                'subjonctif':   {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
+                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'participe':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'infinitif':    {   'présent':          ""}
+                                            }
+                        },
+                        {
+                                'verbe':    "voir",
+                                'groupe':   3,
+                                'type':     "verbe",
+                                'feuille':  {
+                                                'indicatif':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'futur_simple':     ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""],
+                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                },
+                                                'subjonctif':   {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
+                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'participe':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'infinitif':    {   'présent':          ""}
+                                            }
+                        }
                         ## VERBES IMPERSONNELS
                         
                         {
@@ -277,5 +972,29 @@ tab_irréguliers =   [
                                                                 },
                                                 'infinitif':    {   'présent':          "falloir"}
                                             }
-                        }
+                        },
+                        {
+                                'verbe':    "pleuvoir",
+                                'groupe':   3,
+                                'type':     "impersonnel",
+                                'feuille':  {
+                                                'indicatif':    {
+                                                                    'présent':          [None,None,"pleut",None,None,"pleuvent"],
+                                                                    'futur_simple':     [None,None,"pleuvra",None,None,"pleuvront"],
+                                                                    'imparfait':        [None,None,"pleuvait",None,None,"pleuvaient"],
+                                                                    'passé_simple':     [None,None,"plut",None,None,"plurent"]
+                                                                },
+                                                'subjonctif':   {
+                                                                    'présent':          [None,None,"pleuve",None,None,"pleuvent"],
+                                                                    'passé':            [None,None,"plût",None,None,"plussent"]
+                                                                },
+                                                'impératif':    {   'présent':          None },
+                                                'conditionnel': {   'présent':          [None,None,"pleuvrait",None,None,"pleuvraient"] },
+                                                'participe':    {
+                                                                    'présent':          "pleuvant",
+                                                                    'passé':            "plu"
+                                                                },
+                                                'infinitif':    {   'présent':          "pleuvoir"}
+                                            }
+                        },
                     ]
