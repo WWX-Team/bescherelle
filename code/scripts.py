@@ -80,9 +80,8 @@ def verbe_analyse_est_irrégulier(verbe:str) -> bool:
     if len(verbe) == 0: return False
     for i in tabs.tab_irréguliers:
         if i['verbe'] == verbe:
-            return True
-    return verbe_analyse_est_composé(verbe)[0]
-    
+            return (True, verbe)
+    return verbe_analyse_est_composé(verbe)
 
 def verbe_analyse_est_composé(verbe:str) -> tuple:
     """
@@ -182,17 +181,20 @@ def conjuguer_tr(terminaison:str, radical:str, personne:str, temps:str) -> str:
             temps_est_composé = i[1]
             temps_composé_référence = i[2]
     if not temps_est_valide: return None
-    
     verbe_infinitif = radical + verbe_analyse_term_brute(terminaison)
     # TESTS PRÉLIMINAIRES
     verbe_est_rir   = 'rir' == (verbe_infinitif[len(verbe_infinitif) - 3 : len(verbe_infinitif)]) and terminaison == '3-ir'
+    verbe_est_irrégulier, verbe_modèle_irrégulier = verbe_analyse_est_irrégulier(verbe)
     verbe_est_e = verbe_infinitif[-1] == 'e'
     verbe_est_c = radical[-1]         == 'c'
     verbe_est_g = radical[-1]         == 'g'
-    
-    
-    
-    return ""
+    # CONJUGAISON
+    if temps_est_composé:
+        return conjuguer_tr('-oir', 'av', personne, temps_composé_référence) + '/' + conjuguer_tr('-re', 'êt', personne, temps_composé_référence) + conjuguer_tr(terminaison, radical, personne, 'participe_passé')
+    else:
+        # à faire   
+        
+    return None
                 
 def conjuguer_tr_rir(verbe:str) -> str:
     """
