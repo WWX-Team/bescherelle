@@ -230,35 +230,42 @@ def conjuguer_tr(terminaison:str, radical:str, personne:str, temps:str) -> str:
                   return None
             else: return None
         if terminaison in tabs.dic_terminaisons_cg.keys():
-            return radical + tabs.dic_terminaisons_cg[terminaison]['temps'][temps][((personne -1) % 6)]
+            cg_terminaison  = tabs.dic_terminaisons_cg[terminaison]['temps'][temps][((personne -1) % 6)]
+            cg_radical      = conjuguer_tr_vérifier_radical(radical, cg_terminaison, temps, personne)
+            return cg_radical +  cg_terminaison
         else:
             return None
         
     return None
-                
-def conjuguer_tr_rir(verbe:str) -> str:
+
+def conjuguer_tr_vérifier_radical(radical:str, term:str, temps:str, personne:str):
     """
-    [Conjugaison / Transformations / Futur verbe en -rir]: Avec un verbe [:str] en -rir, retourne la forme valide du radical futur du verbe en -rir (avec double r). 
+    [Conjugaison / Transformations / Radical]: Voir [Conjugaison / Transformations]. Retourne l'état correct du radical.
     """
-    return verbe_analyse_séparer(verbe)[1] + 'r'
+    cg_radical = radical
+    if temps in ['indicatif_futur_simple']: cg_radical += 'r'
+    cg_radical.conjuguer_tr_e_final(radical)
+    cg_radical.conjuguer_tr_cédille(radical, term)
+    cg_radical.conjuguer_tr_g_final(radical, term)
+    return cg_radical
 
 def conjuguer_tr_e_final(verbe:str) -> str:
     """
-    [Conjugaison / Transformations / Élision -e final]: Avec un verbe à n'importe quel état [:str], retourne la forme sans -e final.
+    [Conjugaison / Transformations / Élision -e final]: Avec un verbe à n'importe quel état [:str], retourne la forme sans -e final [:str].
     """
     if verbe[-1] == 'e': return verbe[0:len(verbe) -1]
     return verbe
 
-def conjuguer_tr_cédille(verbe:str) -> str:
+def conjuguer_tr_cédille(radical:str, term:str) -> str:
     """
-    [Conjugaison / Transformations / Cédille]: Ajoute une cédille au -c final d'un verbe donné [:str] et retourne le résultat.
+    [Conjugaison / Transformations / Cédille]: Ajoute une cédille au -c final d'un radical donné [:str] si la terminaison donnée [:str] le nécessite, et retourne le résultat [:str].
     """
-    if verbe[-1] == 'c': return verbe[0:len(verbe) -1] + 'ç'
-    return verbe
+    if radical[-1] == 'c' and term[0] in 'aou': return radical[0:len(radical) -1] + 'ç'
+    return radical
 
 def conjuguer_tr_g_final(radical:str, term:str) -> str:
     """
-    [Conjugaison / Transformations / -g, -e prononciation] Ajoute un -e de prononciation à un radical donné [:str] en fonction de la term suivante.
+    [Conjugaison / Transformations / -g, -e prononciation] Ajoute un -e de prononciation à un radical donné [:str] en fonction de la term donnée [:str]. Retourne le résultat [:str].
     """
-    if radical[-1] == 'g' and (not term[0] in 'aou'): return radical + 'e'
+    if radical[-1] == 'g' and (term[0] in 'aou'): return radical + 'e'
     return radical
