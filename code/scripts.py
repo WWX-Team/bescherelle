@@ -202,7 +202,9 @@ def conjuguer_tr(terminaison:str, radical:str, personne:str, temps:str) -> str:
     tab_irréguliers   = init_irréguliers()
     cg_mode, cg_temps = verbe_analyse_temps_composé(temps)
     # TESTS VALIDITÉ
-    for i in tab_temps:
+    if not temps in tab_temps: return None
+    temps_est_valide = False
+    for i in tabs.tab_temps:
         if i[0] == temps:
             temps_est_valide = True
             temps_est_composé = i[1]
