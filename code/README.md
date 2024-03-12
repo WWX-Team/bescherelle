@@ -38,6 +38,7 @@ Fichier contenant les donénes nécessaire au fonctionnement du bescherelle.
 - [:type :type2 !type3] -> fait appel à type, type2 mais pas à type3
 ```
 - None sera retourné en cas d'erreur.
+- __Les entrées non documentées ne sont pas à remplir.__
 
 ### Fil d'Ariane
 
@@ -52,6 +53,8 @@ Les docstrings commencent toujours par un **fil d'Ariane** qui indique en partie
 - terminaison brute     -> terminaison de la forme 'er', 'ir'
 - radical               -> verbe sans terminaison de l'infinitif présent
 - famille, mode         -> groupe de temps
+- temps simple          -> temps formé du verbe conjugué
+- temps composé         -> temps formé d'un participe et d'un auxiliaire conjugué
 ```
 
 ----
