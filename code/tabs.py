@@ -968,22 +968,22 @@ tab_irréguliers =   [
                                 'type':     "impersonnel",
                                 'feuille':  {
                                                 'indicatif':    {
-                                                                    'présent':          "",
-                                                                    'futur_simple':     "",
-                                                                    'imparfait':        "",
-                                                                    'passé_simple':     ""
+                                                                    'présent':          "neige",
+                                                                    'futur_simple':     "neigera",
+                                                                    'imparfait':        "neigeait",
+                                                                    'passé_simple':     "neigea"
                                                                 },
                                                 'subjonctif':   {
-                                                                    'présent':          "",
-                                                                    'imparfait':        ""
+                                                                    'présent':          "neige",
+                                                                    'imparfait':        "neigeât"
                                                                 },
-                                                'impératif':    {   'présent':          "" },
-                                                'conditionnel': {   'présent':          "" },
+                                                'impératif':    {   'présent':          None },
+                                                'conditionnel': {   'présent':          "neigerait" },
                                                 'participe':    {
-                                                                    'présent':          "",
-                                                                    'passé':            ""
+                                                                    'présent':          "neigeant",
+                                                                    'passé':            "neigé"
                                                                 },
-                                                'infinitif':    {   'présent':          ""}
+                                                'infinitif':    {   'présent':          "neiger"}
                                             }
                         },
                         {
@@ -992,22 +992,22 @@ tab_irréguliers =   [
                                 'type':     "impersonnel",
                                 'feuille':  {
                                                 'indicatif':    {
-                                                                    'présent':          "",
-                                                                    'futur_simple':     "",
-                                                                    'imparfait':        "",
-                                                                    'passé_simple':     ""
+                                                                    'présent':          "vente",
+                                                                    'futur_simple':     "ventera",
+                                                                    'imparfait':        "ventait",
+                                                                    'passé_simple':     "venta"
                                                                 },
                                                 'subjonctif':   {
-                                                                    'présent':          "",
-                                                                    'imparfait':        ""
+                                                                    'présent':          "vente",
+                                                                    'imparfait':        "ventât"
                                                                 },
-                                                'impératif':    {   'présent':          "" },
-                                                'conditionnel': {   'présent':          "" },
+                                                'impératif':    {   'présent':          None },
+                                                'conditionnel': {   'présent':          "venterait" },
                                                 'participe':    {
-                                                                    'présent':          "",
-                                                                    'passé':            ""
+                                                                    'présent':          "ventant",
+                                                                    'passé':            "venté"
                                                                 },
-                                                'infinitif':    {   'présent':          ""}
+                                                'infinitif':    {   'présent':          "venter"}
                                             }
                         },
                         {
@@ -1016,22 +1016,22 @@ tab_irréguliers =   [
                                 'type':     "impersonnel",
                                 'feuille':  {
                                                 'indicatif':    {
-                                                                    'présent':          "",
-                                                                    'futur_simple':     "",
-                                                                    'imparfait':        "",
-                                                                    'passé_simple':     ""
+                                                                    'présent':          "bruine",
+                                                                    'futur_simple':     "bruinera",
+                                                                    'imparfait':        "bruinait",
+                                                                    'passé_simple':     "bruina"
                                                                 },
                                                 'subjonctif':   {
-                                                                    'présent':          "",
-                                                                    'imparfait':        ""
+                                                                    'présent':          "bruine",
+                                                                    'imparfait':        "bruinât"
                                                                 },
-                                                'impératif':    {   'présent':          "" },
-                                                'conditionnel': {   'présent':          "" },
+                                                'impératif':    {   'présent':          None },
+                                                'conditionnel': {   'présent':          "bruinerait" },
                                                 'participe':    {
-                                                                    'présent':          "",
-                                                                    'passé':            ""
+                                                                    'présent':          "bruinant",
+                                                                    'passé':            "bruiné"
                                                                 },
-                                                'infinitif':    {   'présent':          ""}
+                                                'infinitif':    {   'présent':          "bruiner"}
                                             }
                         },
                         {
@@ -1040,22 +1040,22 @@ tab_irréguliers =   [
                                 'type':     "impersonnel",
                                 'feuille':  {
                                                 'indicatif':    {
-                                                                    'présent':          "",
-                                                                    'futur_simple':     "",
-                                                                    'imparfait':        "",
-                                                                    'passé_simple':     ""
+                                                                    'présent':          "grêle",
+                                                                    'futur_simple':     "grêlera",
+                                                                    'imparfait':        "grêlait",
+                                                                    'passé_simple':     "grêla"
                                                                 },
                                                 'subjonctif':   {
-                                                                    'présent':          "",
-                                                                    'imparfait':        ""
+                                                                    'présent':          "grêle",
+                                                                    'imparfait':        "grêlât"
                                                                 },
-                                                'impératif':    {   'présent':          "" },
-                                                'conditionnel': {   'présent':          "" },
+                                                'impératif':    {   'présent':          None },
+                                                'conditionnel': {   'présent':          "grêlerait" },
                                                 'participe':    {
-                                                                    'présent':          "",
-                                                                    'passé':            ""
+                                                                    'présent':          "grêlant",
+                                                                    'passé':            "grêlé"
                                                                 },
-                                                'infinitif':    {   'présent':          ""}
+                                                'infinitif':    {   'présent':          "grêler"}
                                             }
                         },
                     ]
