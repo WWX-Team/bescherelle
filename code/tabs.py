@@ -143,6 +143,31 @@ tab_irréguliers =   [
                                 'usage':    "état",
                                 'feuille':  {
                                                 'indicatif':    {
+                                                                    'présent':          ["suis", "es", "est", "sommes", "êtes", "sont"],
+                                                                    'futur_simple':     ["serai", "seras", "sera", "serons", "serez", "seront"],
+                                                                    'imparfait':        ["étais", "étais", "était", "étions", "étiez", "étaient"],
+                                                                    'passé_simple':     ["fus", "fus", "fut", "fûmes", "fûtes", "furent"]
+                                                                },
+                                                'subjonctif':   {
+                                                                    'présent':          ["sois", "sois", "soit", "soyons", "soyez", "soient"],
+                                                                    'imparfait':        ["fusse", "fusses", "fût", "fussions", "fussiez", "fussent"]
+                                                                },
+                                                'impératif':    {   'présent':          [None, "sois", None, "soyons", "soyer", None] },
+                                                'conditionnel': {   'présent':          ["serais", "serais", "serait", "serions", "seriez", "seraient"] },
+                                                'participe':    {
+                                                                    'présent':          "étant",
+                                                                    'passé':            "été"
+                                                                },
+                                                'infinitif':    {   'présent':          "être"}
+                                            }
+                        },
+                        {
+                                'verbe':    "avoir",
+                                'groupe':   3,
+                                'type':     "auxiliaire",
+                                'usage':    "état",
+                                'feuille':  {
+                                                'indicatif':    {
                                                                     'présent':          ["", "", "", "", "", ""],
                                                                     'futur_simple':     ["", "", "", "", "", ""],
                                                                     'imparfait':        ["", "", "", "", "", ""],
@@ -160,7 +185,7 @@ tab_irréguliers =   [
                                                                 },
                                                 'infinitif':    {   'présent':          ""}
                                             }
-                        },
+                        }
                         
                         ## VERBES DU 1ER GROUPE
                         
