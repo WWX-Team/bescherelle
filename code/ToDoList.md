@@ -5,9 +5,9 @@ Liste des **tâches à faire** pour le projet.
 ### Verbes
 
 - dans `scripts.py`, avancer sur le script de conjugaison ;
-- dans `scripts.py`, débogguer ;
-- dans `tabs.py`, créer les modèles de terminaison ;
+- dans `tabs.py`, ajouter les verbes IRR du 1er groupe
 - dans `tabs.py`, commencer à remplir les données des verbes irréguliers ;
+- dans `tabs.py`, commencer à remplir les données des terminaisons ;
 - dans `main.py`, commencer à coder une fenêtre tkinter simple
 
 ### Verbes spéciaux et modèles
