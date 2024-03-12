@@ -168,22 +168,22 @@ tab_irréguliers =   [
                                 'usage':    "état",
                                 'feuille':  {
                                                 'indicatif':    {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'futur_simple':     ["", "", "", "", "", ""],
-                                                                    'imparfait':        ["", "", "", "", "", ""],
-                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                    'présent':          ["ai", "as", "a", "avons", "avez", "ont"],
+                                                                    'futur_simple':     ["aurai", "auras", "aura", "aurons", "aurez", "auront"],
+                                                                    'imparfait':        ["avais", "avais", "avait", "avions", "aviez", "avaient"],
+                                                                    'passé_simple':     ["eus", "eus", "eut", "eûmes", "eûtes", "eurent"]
                                                                 },
                                                 'subjonctif':   {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'imparfait':        ["", "", "", "", "", ""]
+                                                                    'présent':          ["aie", "aies", "ait", "ayons", "ayez", "aient"],
+                                                                    'imparfait':        ["eusse", "eusses", "eût", "eussions", "eussiez", "eussent"]
                                                                 },
-                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
-                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'impératif':    {   'présent':          [None, "aie", None, "ayons", "ayez", None] },
+                                                'conditionnel': {   'présent':          ["aurais", "aurais", "aurait", "aurions", "auriez", "auraient"] },
                                                 'participe':    {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                    'présent':          "ayant",
+                                                                    'passé':            ["eu(S)","eu(S)","eu(M.S) eue(F.S)","eus(P)","eus(P)","eus(M.P) eues(F.P)"]
                                                                 },
-                                                'infinitif':    {   'présent':          ""}
+                                                'infinitif':    {   'présent':          "avoir"}
                                             }
                         }
                         
