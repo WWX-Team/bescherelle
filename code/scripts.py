@@ -108,6 +108,7 @@ def verbe_analyse_term_brute(verbe:str, data="") -> str:
     """
     [Verbe / Analyse / Terminaison brute]: Récupère la terminaison [:str] sans le tiret et données précédantes. Retourne [:str].
     """
+    if len(verbe) == 0: return data
     if verbe[-1] != '-':
         return verbe_analyse_term_brute(verbe[0 : len(verbe) -1], verbe[-1] + data)
     return data
