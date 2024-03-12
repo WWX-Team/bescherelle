@@ -215,7 +215,31 @@ tab_irréguliers =   [
                         },
                         
                         ## VERBES DU 3E GROUPE
-                        
+
+                                {
+                                'verbe':    "aller",
+                                'groupe':   3,
+                                'type':     "verbe",
+                                'feuille':  {
+                                                'indicatif':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'futur_simple':     ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""],
+                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                },
+                                                'subjonctif':   {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""]
+                                                                },
+                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
+                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'participe':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'infinitif':    {   'présent':          ""}
+                                            }
+                        },
                         {
                                 'verbe':    "asseoir",
                                 'groupe':   3,
