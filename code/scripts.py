@@ -90,9 +90,7 @@ def verbe_analyse_est_irrégulier(verbe:str) -> bool:
     for i in tabs.tab_irréguliers:
         if i['verbe'] == verbe:
             return (True, verbe)
-        else :
-            return False
-    return verbe_analyse_est_composé(verbe)
+    return False
 
 def verbe_analyse_est_composé(verbe:str) -> tuple:
     """
