@@ -183,13 +183,7 @@ def conjuguer(verbe:str, temps:str) -> list:
     # rad   : radical infinitif [:str]
     if group == None or inf == None or rad == None: return None
     conjugué = []
-    if not verbe_analyse_est_irrégulier(verbe)[0]:
-        if group == 1 :
-            for i in tabs.dic_terminaisons_cg['-er']['temps'][temps]:
-                conjugué.append(rad + i)
-        elif group == 2 :
-            for i in tabs.dic_terminaisons_cg['2-ir']['temps'][temps]:
-                conjugué.append(rad + i)
+    # à faire PAR WILHELM MERCI
     return conjugué
                 
                 # Transformations
