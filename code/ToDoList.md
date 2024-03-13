@@ -20,6 +20,7 @@ Liste des **tâches à faire** pour le projet.
 ```python
 #################################################
 # Personne   | Présent de l'indicatif | Tempx X #
+# ———————————+————————————————————————+———————— #
 # je         | mange                  | ~       #
 # tu         | mangese                | ~       #
 # il/elle/on | mangee                 | ~       #
