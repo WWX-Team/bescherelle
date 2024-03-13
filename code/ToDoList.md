@@ -22,12 +22,12 @@ Liste des **tâches à faire** pour le projet.
 # Personne   | Présent de l'indicatif | Tempx X #
 # ———————————+————————————————————————+———————— #
 # je         | mange                  | ~       #
-# tu         | mangese                | ~       #
-# il/elle/on | mangee                 | ~       #
+# tu         | manges                 | ~       #
+# il/elle/on | mange                  | ~       #
 #            +                        +         #
-# nous       | mangeonse              | ~       #
-# vous       | mangeze                | ~       #
-# ils/elles  | mangente               | ~       #
+# nous       | mangeons               | ~       #
+# vous       | mangez                 | ~       #
+# ils/elles  | mangent                | ~       #
 #################################################
 # Infintif   : manger                           #
 # Participes :                                  #
