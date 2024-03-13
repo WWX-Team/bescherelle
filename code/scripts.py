@@ -90,6 +90,8 @@ def verbe_analyse_est_irrégulier(verbe:str) -> bool:
     for i in tabs.tab_irréguliers:
         if i['verbe'] == verbe:
             return (True, verbe)
+        else :
+            return False
     return verbe_analyse_est_composé(verbe)
 
 def verbe_analyse_est_composé(verbe:str) -> tuple:
@@ -175,7 +177,7 @@ def conjuguer(verbe:str, temps:str) -> list:
     """
     [Conjugaison]:\n
     Conjugue un verbe donné [:str] à un temps donné [:str] ( avec \"famille_temps\").\n
-    Retourne un [:list] des conjuagaisons, OU une [:str] si cas unique, ou [:None] si erreur.
+    Retourne un [:list] des conjugaisons, OU une [:str] si cas unique, ou [:None] si erreur.
     """
     group, inf, rad = verbe_analyse(verbe) 
     # group : groupe du verbe [:int]
@@ -183,7 +185,6 @@ def conjuguer(verbe:str, temps:str) -> list:
     # rad   : radical infinitif [:str]
     if group == None or inf == None or rad == None: return None
     conjugué = []
-    
     
     return conjugué
                 
