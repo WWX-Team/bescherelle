@@ -58,25 +58,25 @@ dic_terminaisons_cg =   {
                             '-er': {
                                 'groupe' : 1,
                                 'temps'  :  {
-                                                'infinitif_présent' : ['e', 'es', 'e', 'ons', 'ez', 'ent']
+                                                'indicatif_présent' : ['e', 'es', 'e', 'ons', 'ez', 'ent']
                                             }
                             },
                             '2-ir': {
                                 'groupe' : 2,
                                 'temps'  :  {
-                                                'infinitif_présent': ['is', 'is', 'it', 'issons', 'issez', 'issent']
+                                                'indicatif_présent': ['is', 'is', 'it', 'issons', 'issez', 'issent']
                                             }
                             },
                             '3-ir': {
                                 'groupe' : 3,
                                 'temps'  :  {
-                                                'infinitif_présent': ['s', 's', 't', 'ons', 'ez', 'ent']
+                                                'indicatif_présent': ['s', 's', 't', 'ons', 'ez', 'ent']
                                             }
                             },
                             '-re': {
                                 'groupe' : 3,
                                 'temps'  :  {
-                                                'infinitif_présent': ['s', 's', 't', 'ons', 'ez', 'ent']
+                                                'indicatif_présent': ['s', 's', 't', 'ons', 'ez', 'ent']
                                             }
                             }
                         }
