@@ -185,7 +185,7 @@ tab_irréguliers =   [
                                                                 },
                                                 'infinitif':    {   'présent':          "avoir"}
                                             }
-                        }
+                        },
                         
                         ## VERBES DU 1ER GROUPE
                         
