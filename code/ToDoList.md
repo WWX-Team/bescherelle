@@ -4,7 +4,7 @@ Liste des **tâches à faire** pour le projet.
 
 ### Verbes
 
-- dans `scripts.py`, avancer sur le script de conjugaison ;
+- dans `scripts.py`, avancer sur le script de conjugaison_tr ;
 - dans `scripts.py`, créer une fonction qui, depuis un tableau de str, créé un tableau (voir figure 2) ;
 - dans `tabs.py`, ajouter les verbes IRR du 1er groupe
 - dans `tabs.py`, commencer à remplir les données des verbes irréguliers ;
