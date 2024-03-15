@@ -190,7 +190,223 @@ tab_irréguliers =   [
                         ## VERBES DU 1ER GROUPE
                         
                         {
-                                'verbe':    "",
+                                'verbe':    "acheter",
+                                'groupe':   1,
+                                'type':     "verbe",
+                                'feuille':  {
+                                                'indicatif':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'futur_simple':     ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""],
+                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                },
+                                                'subjonctif':   {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""]
+                                                                },
+                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
+                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'participe':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'infinitif':    {   'présent':          ""}
+                                            }
+                        },
+                        {
+                                'verbe':    "appeler",
+                                'groupe':   1,
+                                'type':     "verbe",
+                                'feuille':  {
+                                                'indicatif':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'futur_simple':     ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""],
+                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                },
+                                                'subjonctif':   {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""]
+                                                                },
+                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
+                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'participe':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'infinitif':    {   'présent':          ""}
+                                            }
+                        },
+                        {
+                                'verbe':    "envoyer",
+                                'groupe':   1,
+                                'type':     "verbe",
+                                'feuille':  {
+                                                'indicatif':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'futur_simple':     ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""],
+                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                },
+                                                'subjonctif':   {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""]
+                                                                },
+                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
+                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'participe':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'infinitif':    {   'présent':          ""}
+                                            }
+                        },
+                        {
+                                'verbe':    "modeler",
+                                'groupe':   1,
+                                'type':     "verbe",
+                                'feuille':  {
+                                                'indicatif':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'futur_simple':     ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""],
+                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                },
+                                                'subjonctif':   {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""]
+                                                                },
+                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
+                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'participe':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'infinitif':    {   'présent':          ""}
+                                            }
+                        },
+                        {
+                                'verbe':    "peser",
+                                'groupe':   1,
+                                'type':     "verbe",
+                                'feuille':  {
+                                                'indicatif':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'futur_simple':     ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""],
+                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                },
+                                                'subjonctif':   {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""]
+                                                                },
+                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
+                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'participe':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'infinitif':    {   'présent':          ""}
+                                            }
+                        },
+                        {
+                                'verbe':    "précier",
+                                'groupe':   1,
+                                'type':     "verbe",
+                                'feuille':  {
+                                                'indicatif':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'futur_simple':     ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""],
+                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                },
+                                                'subjonctif':   {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""]
+                                                                },
+                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
+                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'participe':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'infinitif':    {   'présent':          ""}
+                                            }
+                        },
+                        {
+                                'verbe':    "broyer",
+                                'groupe':   1,
+                                'type':     "verbe",
+                                'feuille':  {
+                                                'indicatif':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'futur_simple':     ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""],
+                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                },
+                                                'subjonctif':   {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""]
+                                                                },
+                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
+                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'participe':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'infinitif':    {   'présent':          ""}
+                                            }
+                        },
+                        {
+                                'verbe':    "ployer",
+                                'groupe':   1,
+                                'type':     "verbe",
+                                'feuille':  {
+                                                'indicatif':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'futur_simple':     ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""],
+                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                },
+                                                'subjonctif':   {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""]
+                                                                },
+                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
+                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'participe':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'infinitif':    {   'présent':          ""}
+                                            }
+                        },
+                        {
+                                'verbe':    "jeter",
+                                'groupe':   1,
+                                'type':     "verbe",
+                                'feuille':  {
+                                                'indicatif':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'futur_simple':     ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""],
+                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                },
+                                                'subjonctif':   {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""]
+                                                                },
+                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
+                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'participe':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'infinitif':    {   'présent':          ""}
+                                            }
+                        },
+                        {
+                                'verbe':    "payer",
                                 'groupe':   1,
                                 'type':     "verbe",
                                 'feuille':  {
