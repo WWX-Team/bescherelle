@@ -42,7 +42,7 @@ def verbe_analyse(verbe:str) -> tuple:
     \xA0\xA0\xA0• [2] radical du verbe ;\n
     """
     term, rad = verbe_analyse_séparer(verbe)
-    if term ==     "-ir":  term == verbe_analyse_ir(verbe)
+    if term ==     "-ir":  term  = verbe_analyse_ir(verbe)
     if term ==     "-er":  group = 1
     elif term ==   "2-ir": group = 2
     else:                  group = 3
