@@ -213,7 +213,7 @@ tab_irréguliers =   [
                                                 'conditionnel': {   'présent':          ["aurais", "aurais", "aurait", "aurions", "auriez", "auraient"] },
                                                 'participe':    {
                                                                     'présent':          "ayant",
-                                                                    'passé':            ["eu(S)","eu(S)","eu(M.S) eue(F.S)","eus(P)","eus(P)","eus(M.P) eues(F.P)"]
+                                                                    'passé':            "eu"
                                                                 },
                                                 'infinitif':    {   'présent':          "avoir"}
                                             }
@@ -347,22 +347,22 @@ tab_irréguliers =   [
                                 'type':     "verbe",
                                 'feuille':  {
                                                 'indicatif':    {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'futur_simple':     ["", "", "", "", "", ""],
-                                                                    'imparfait':        ["", "", "", "", "", ""],
-                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                    'présent':          ["précie","précies","précie","précions","préciez","précient"],
+                                                                    'futur_simple':     ["précierai","précieras","préciera","précierons","précierez","précieront"],
+                                                                    'imparfait':        ["préciais","préciais","préciait","préciions","préciiez","préciaient"],
+                                                                    'passé_simple':     ["préciai","précias","précia","préciâmes","préciâtes","précièrent"]
                                                                 },
                                                 'subjonctif':   {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'imparfait':        ["", "", "", "", "", ""]
+                                                                    'présent':          ["précie","précies","précie","préciions","préciiez","précient"],
+                                                                    'imparfait':        ["préciasse","préciasses","préciât","préciassions","préciassiez","préciassent"]
                                                                 },
-                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
-                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'impératif':    {   'présent':          [None, "précie",None,"précions","préciez", None] },
+                                                'conditionnel': {   'présent':          ["précierais","précierais","précierait","précierions","précieriez","précieraient"] },
                                                 'participe':    {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                    'présent':          "préciant",
+                                                                    'passé':            "précié"
                                                                 },
-                                                'infinitif':    {   'présent':          ""}
+                                                'infinitif':    {   'présent':          "précier"}
                                             }
                         },
                         {
