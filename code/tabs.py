@@ -57,14 +57,46 @@ tab_terminaisons              =    ["-er", "2-ir", "3-ir", "-ir", "-re", "-dre",
 dic_terminaisons_cg =   {
                             '-er': {
                                 'groupe' : 1,
-                                'temps'  :  {
-                                                'indicatif_présent' : ['e', 'es', 'e', 'ons', 'ez', 'ent']
+                                'temps'  :  {  
+                                                # SIMPLES
+                                                'infinitif_présent' : ['er'],
+                                  
+                                                'participe_présent' : ['ant'],
+                                                'participe_passé' : ['é', 'és', 'ée', 'ées'],
+                                  
+                                                'indicatif_présent' : ['e', 'es', 'e', 'ons', 'ez', 'ent'],
+                                                'indicatif_futur_simple' : ['erai', 'eras', 'era', 'erons', 'erez', 'eront'],
+                                                'indicatif_imparfait' : ['ais', 'ais', 'ait', 'ions', 'iez', 'aient'],
+                                                'indicatif_passé_simple' : ['ai', 'as', 'a', 'âmes', 'âtes', 'èrent'],
+                                  
+                                                'impératif_présent' : [None, 'e', None, 'ons', 'ez', None],
+                                  
+                                                'subjonctif_présent' : ['e', 'es', 'e', 'ions', 'iez', 'ent'],
+                                                'subjonctif_imparfait' : ['asse', 'asses', 'ât', 'assions', 'assiez', 'assent'],
+                                  
+                                                'conditionnel_présent' : ['erais', 'erais', 'erait', 'erions', 'eriez', 'eraient']                                                
                                             }
                             },
                             '2-ir': {
                                 'groupe' : 2,
                                 'temps'  :  {
-                                                'indicatif_présent': ['is', 'is', 'it', 'issons', 'issez', 'issent']
+                                                # SIMPLES
+                                                'infinitif_présent' : ['ir'],
+                                  
+                                                'participe_présent' : ['issant'],
+                                                'participe_passé' : ['i', 'is', 'ie', 'ies'],
+                                  
+                                                'indicatif_présent' : ['is', 'is', 'it', 'issons', 'issez', 'issent'],
+                                                'indicatif_futur_simple' : ['irai', 'iras', 'ira', 'irons', 'irez', 'iront'],
+                                                'indicatif_imparfait' : ['issais', 'issais', 'issait', 'issions', 'issiez', 'issaient'],
+                                                'indicatif_passé_simple' : ['is', 'is', 'it', 'îmes', 'îtes', 'irent'],
+                                  
+                                                'impératif_présent' : [None, 'is', None, 'issons', 'issez', None],
+                                  
+                                                'subjonctif_présent' : ['isse', 'isses', 'isse', 'issions', 'issiez', 'issent'],
+                                                'subjonctif_imparfait' : ['isse', 'isses', 'ît', 'issions', 'issiez', 'issent'],
+                                  
+                                                'conditionnel_présent' : ['irais', 'irais', 'irait', 'irions', 'iriez', 'iraient']
                                             }
                             },
                             '3-ir': {
