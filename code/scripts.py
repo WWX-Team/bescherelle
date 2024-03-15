@@ -75,7 +75,6 @@ def verbe_analyse_séparer(verbe:str) -> tuple:
             terminaison -= 1
             actuelle = tabs.tab_terminaisons[terminaison]
         # retour
-        print(("-" + verbe[len(verbe) - len(actuelle) +1 : len(verbe)]), actuelle)
         if actuelle     == ("-" + verbe[len(verbe) - len(actuelle) +1 : len(verbe)]):
             term = actuelle
             radical = verbe[0 : len(verbe) - len(actuelle) +1]
