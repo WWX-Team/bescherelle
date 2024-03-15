@@ -267,22 +267,22 @@ tab_irréguliers =   [
                                 'type':     "verbe",
                                 'feuille':  {
                                                 'indicatif':    {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'futur_simple':     ["", "", "", "", "", ""],
-                                                                    'imparfait':        ["", "", "", "", "", ""],
-                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                    'présent':          ["modèle", "modèles", "modèle", "modelons", "modelez", "modèlent"],
+                                                                    'futur_simple':     ["modèlerai", "modèleras", "modèlera", "modèlerons", "modèlerez", "modèleront"],
+                                                                    'imparfait':        ["modelais", "modelais", "modelait", "modelions", "modeliez", "modelaient"],
+                                                                    'passé_simple':     ["modelai", "modelas", "modela", "modelâmes", "modelâtes", "modelèrent"]
                                                                 },
                                                 'subjonctif':   {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'imparfait':        ["", "", "", "", "", ""]
+                                                                    'présent':          ["modèle", "modèles", "modèle", "modelions", "modeliez", "modèlent"],
+                                                                    'imparfait':        ["modelasse", "modelasses", "modelât", "modelassions", "modelassiez", "modelassent"]
                                                                 },
-                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
-                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'impératif':    {   'présent':          [None, "modèle",None, "modelons", "modelez",None] },
+                                                'conditionnel': {   'présent':          ["modèlerais", "modèlerais", "modèlerait", "modèlerions", "modèleriez", "modèleraient"] },
                                                 'participe':    {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                    'présent':          "modelant",
+                                                                    'passé':            "modelé"
                                                                 },
-                                                'infinitif':    {   'présent':          ""}
+                                                'infinitif':    {   'présent':          "modeler"}
                                             }
                         },
                         {
@@ -291,22 +291,22 @@ tab_irréguliers =   [
                                 'type':     "verbe",
                                 'feuille':  {
                                                 'indicatif':    {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'futur_simple':     ["", "", "", "", "", ""],
-                                                                    'imparfait':        ["", "", "", "", "", ""],
-                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                    'présent':          ["pèse", "pèses", "pèse", "pesons", "pesez", "pèsent"],
+                                                                    'futur_simple':     ["pèserai", "pèseras", "pèsera", "pèserons", "pèserez", "pèseront"],
+                                                                    'imparfait':        ["pesais", "pesais", "pesait", "pesions", "pesiez", "pesaient"],
+                                                                    'passé_simple':     ["pesai", "pesas", "pesa", "pesâmes", "pesâtes", "pesèrent"]
                                                                 },
                                                 'subjonctif':   {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'imparfait':        ["", "", "", "", "", ""]
+                                                                    'présent':          ["pèse","pèses","pèse","pesions","pesiez","pèsent"],
+                                                                    'imparfait':        ["pesasse","pesasses","pesât","pesassions","pesassiez","pesassent"]
                                                                 },
-                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
-                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'impératif':    {   'présent':          [None, "pèse",None, "pesons", "pesez",None] },
+                                                'conditionnel': {   'présent':          ["pèserais","pèserais","pèserait","pèserions","pèseriez","pèseraient"] },
                                                 'participe':    {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                    'présent':          "pesant",
+                                                                    'passé':            "pesé"
                                                                 },
-                                                'infinitif':    {   'présent':          ""}
+                                                'infinitif':    {   'présent':          "peser"}
                                             }
                         },
                         {
