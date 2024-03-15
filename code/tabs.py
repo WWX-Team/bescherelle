@@ -371,22 +371,22 @@ tab_irréguliers =   [
                                 'type':     "verbe",
                                 'feuille':  {
                                                 'indicatif':    {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'futur_simple':     ["", "", "", "", "", ""],
-                                                                    'imparfait':        ["", "", "", "", "", ""],
-                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                    'présent':          ["broie","broies","broie","broyons","broyez","broient"],
+                                                                    'futur_simple':     ["broierai","broieras","broiera","broierons","broierez","broieront"],
+                                                                    'imparfait':        ["broyais","broyais","broyait","broyions","broyiez","broyaient"],
+                                                                    'passé_simple':     ["broyai","broyas","broya","broyâmes","broyâtes","broyèrent"]
                                                                 },
                                                 'subjonctif':   {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'imparfait':        ["", "", "", "", "", ""]
+                                                                    'présent':          ["broie","broies","broie","broyions","broyiez","broient"],
+                                                                    'imparfait':        ["broyasse","broyasses","broyât","broyassions","broyassiez","broyassent"]
                                                                 },
-                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
-                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'impératif':    {   'présent':          [None,"broie",None,"broyons","broyez",None] },
+                                                'conditionnel': {   'présent':          ["broierais","broierais","broierait","broierions","broieriez","broieraient"] },
                                                 'participe':    {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                    'présent':          "broyant",
+                                                                    'passé':            "broyé"
                                                                 },
-                                                'infinitif':    {   'présent':          ""}
+                                                'infinitif':    {   'présent':          "broyer"}
                                             }
                         },
                         {
@@ -395,22 +395,22 @@ tab_irréguliers =   [
                                 'type':     "verbe",
                                 'feuille':  {
                                                 'indicatif':    {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'futur_simple':     ["", "", "", "", "", ""],
-                                                                    'imparfait':        ["", "", "", "", "", ""],
-                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                    'présent':          ["ploie","ploies","ploie","ployons","ployez","ploient"],
+                                                                    'futur_simple':     ["ploierai","ploieras","ploiera","ploierons","ploierez","ploieront"],
+                                                                    'imparfait':        ["ployais","ployais","ployait","ployions","ployiez","ployaient"],
+                                                                    'passé_simple':     ["ployai","ployas","ploya","ployâmes","ployâtes","ployèrent"]
                                                                 },
                                                 'subjonctif':   {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'imparfait':        ["", "", "", "", "", ""]
+                                                                    'présent':          ["ploie","ploies","ploie","ployions","ployiez","ploient"],
+                                                                    'imparfait':        ["ployasse","ployasses","ployât","ployassions","ployassiez","ployassent"]
                                                                 },
-                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
-                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'impératif':    {   'présent':          [None, "ploie", None, "ployons", "ployez", None] },
+                                                'conditionnel': {   'présent':          ["ploierais","ploierais","ploierait","ploierions","ploieriez","ploieraient"] },
                                                 'participe':    {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                    'présent':          "ployant",
+                                                                    'passé':            "ployé"
                                                                 },
-                                                'infinitif':    {   'présent':          ""}
+                                                'infinitif':    {   'présent':          "ployer"}
                                             }
                         },
                         {
@@ -419,22 +419,22 @@ tab_irréguliers =   [
                                 'type':     "verbe",
                                 'feuille':  {
                                                 'indicatif':    {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'futur_simple':     ["", "", "", "", "", ""],
-                                                                    'imparfait':        ["", "", "", "", "", ""],
-                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                    'présent':          ["jette","jettes","jette","jetons","jetez","jettent"],
+                                                                    'futur_simple':     ["jetterai","jetteras","jettera","jetterons","jetterez","jetteront"],
+                                                                    'imparfait':        ["jetais","jetais","jetait","jetions","jetiez","jetaient"],
+                                                                    'passé_simple':     ["jetai","jetas","jeta","jetâmes","jetâtes","jetèrent"]
                                                                 },
                                                 'subjonctif':   {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'imparfait':        ["", "", "", "", "", ""]
+                                                                    'présent':          ["jette","jettes","jette","jetions","jetiez","jettent"],
+                                                                    'imparfait':        ["jetasse","jetasses","jetât","jetassions","jetassiez","jetassent"]
                                                                 },
-                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
-                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'impératif':    {   'présent':          [None, "jette", None, "jetons", "jetez",None] },
+                                                'conditionnel': {   'présent':          ["jetterais","jetterais","jetterait","jetterions","jetteriez","jetteraient"] },
                                                 'participe':    {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                    'présent':          "jetant",
+                                                                    'passé':            "jeté"
                                                                 },
-                                                'infinitif':    {   'présent':          ""}
+                                                'infinitif':    {   'présent':          "jeter"}
                                             }
                         },
                         {
@@ -443,9 +443,9 @@ tab_irréguliers =   [
                                 'type':     "verbe",
                                 'feuille':  {
                                                 'indicatif':    {
-                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'présent':          ["paie","paies","paie","payons","payez","paient"],
+                                                                    'imparfait':        ["payais","payais","payait","payions","payiez","payaient"],
                                                                     'futur_simple':     ["", "", "", "", "", ""],
-                                                                    'imparfait':        ["", "", "", "", "", ""],
                                                                     'passé_simple':     ["", "", "", "", "", ""]
                                                                 },
                                                 'subjonctif':   {
