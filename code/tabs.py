@@ -195,22 +195,22 @@ tab_irréguliers =   [
                                 'type':     "verbe",
                                 'feuille':  {
                                                 'indicatif':    {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'futur_simple':     ["", "", "", "", "", ""],
-                                                                    'imparfait':        ["", "", "", "", "", ""],
-                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                    'présent':          ["achète", "achètes", "achète", "achetons", "achetez", "achètent"],
+                                                                    'futur_simple':     ["achèterai", "achèteras", "achètera", "achèterons", "achèterez", "achèteront"],
+                                                                    'imparfait':        ["achetais", "achetais", "achetait", "achetions", "achetiez", "achetaient"],
+                                                                    'passé_simple':     ["achetai", "achetas", "acheta", "achetâmes", "achetâtes", "chetèrent"]
                                                                 },
                                                 'subjonctif':   {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'imparfait':        ["", "", "", "", "", ""]
+                                                                    'présent':          ["achète", "achètes", "achète", "achetions", "achetiez", "chètent"],
+                                                                    'imparfait':        ["achetasse", "achetasses", "achetât", "achetassions", "achetassiez", "achetassent"]
                                                                 },
-                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
-                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'impératif':    {   'présent':          [None,"achète",None,"achetons","achetez",None] },
+                                                'conditionnel': {   'présent':          ["achèterais", "achèterais", "achèterait", "achèterions", "achèteriez", "achèteraient"] },
                                                 'participe':    {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                    'présent':          "achetant",
+                                                                    'passé':            "acheté"
                                                                 },
-                                                'infinitif':    {   'présent':          ""}
+                                                'infinitif':    {   'présent':          "acheter"}
                                             }
                         },
                         {
@@ -219,22 +219,22 @@ tab_irréguliers =   [
                                 'type':     "verbe",
                                 'feuille':  {
                                                 'indicatif':    {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'futur_simple':     ["", "", "", "", "", ""],
-                                                                    'imparfait':        ["", "", "", "", "", ""],
-                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                    'présent':          ["appelle", "appelles", "appelle", "appelons", "appelez", "appellent"],
+                                                                    'futur_simple':     ["appellerai", "appelleras", "appellera", "appellerons", "appellerez", "appelleront"],
+                                                                    'imparfait':        ["appelais", "appelais", "appelait", "appelions", "appeliez", "appelaient"],
+                                                                    'passé_simple':     ["appelai", "appelas", "appela", "appelâmes", "appelâtes", "appelèrent"]
                                                                 },
                                                 'subjonctif':   {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'imparfait':        ["", "", "", "", "", ""]
+                                                                    'présent':          ["appelle", "appelles", "appelle", "appelions", "appeliez", "appellent"],
+                                                                    'imparfait':        ["appelasse", "appelasses", "appelasse", "appelassions", "appelassiez", "appelassent"]
                                                                 },
-                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
-                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'impératif':    {   'présent':          [None, "appelle",None, "appelons", "appelez",None] },
+                                                'conditionnel': {   'présent':          ["appellerais", "appellerais", "appellerait", "appellerions", "appelleriez", "appelleraient"] },
                                                 'participe':    {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                    'présent':          "appelant",
+                                                                    'passé':            "appelé"
                                                                 },
-                                                'infinitif':    {   'présent':          ""}
+                                                'infinitif':    {   'présent':          "appeler"}
                                             }
                         },
                         {
@@ -243,22 +243,22 @@ tab_irréguliers =   [
                                 'type':     "verbe",
                                 'feuille':  {
                                                 'indicatif':    {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'futur_simple':     ["", "", "", "", "", ""],
-                                                                    'imparfait':        ["", "", "", "", "", ""],
-                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                    'présent':          ["envoie", "envoies", "envoie", "envoyons", "envoyez", "envoient"],
+                                                                    'futur_simple':     ["enverrai", "enverras", "enverra", "enverrons", "enverrez", "enverront"],
+                                                                    'imparfait':        ["envoyais", "envoyais", "envoyait", "envoyions", "envoyiez", "envoyaient"],
+                                                                    'passé_simple':     ["envoyai", "envoyas", "envoya", "envoyâmes", "envoyâtes", "envoyèrent"]
                                                                 },
                                                 'subjonctif':   {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'imparfait':        ["", "", "", "", "", ""]
+                                                                    'présent':          ["envoie", "envoies", "envoie", "envoyions", "envoyiez", "envoient"],
+                                                                    'imparfait':        ["envoyasse", "envoyasses", "envoyât", "envoyassions", "envoyassiez", "envoyassent"]
                                                                 },
-                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
-                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'impératif':    {   'présent':          [None, "envoie",None, "envoyons", "envoyez",None] },
+                                                'conditionnel': {   'présent':          ["enverrais", "enverrais", "enverrait", "enverrions", "enverriez", "enverraient"] },
                                                 'participe':    {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                    'présent':          "envoyant",
+                                                                    'passé':            "envoyé"
                                                                 },
-                                                'infinitif':    {   'présent':          ""}
+                                                'infinitif':    {   'présent':          "envoyer"}
                                             }
                         },
                         {
