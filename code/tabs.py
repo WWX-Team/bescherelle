@@ -15,14 +15,16 @@ tab_voyelles_accentuées =   {
                                 'e':    { '´':"é", '`':"è", '^':"ê", '¨':"ë" },
                                 'i':    { '´':"í", '`':"ì", '^':"î", '¨':"ï" },
                                 'o':    { '´':"ó", '`':"ò", '^':"ô", '¨':"ö" },
-                                'u':    { '´':"ú", '`':"ù", '^':"û", '¨':"ü" }
+                                'u':    { '´':"ú", '`':"ù", '^':"û", '¨':"ü" },
+                                'y':    { '¨':"ÿ"                            }
                             }
 
 """
 Pronoms
 """
 
-tab_pronoms  = ["me", "te", "se", "nous", "vous", "se"]
+tab_pronoms            = ["me", "te", "se", "nous", "vous", "se"]
+tab_pronoms_personnels = ["je", "tu", "il/elle/iel/on", "nous", "vous", "ils/elles/iels"]
 
 """
 Familles de temps, temps
@@ -51,52 +53,50 @@ Terminaisons
 
 # Tableau des terminaisons à l'infinitif
 # Triées de la plus petite à la plus longue (note : seulement les caractères après le tiret sont comptabilisés)
-tab_terminaisons              =    ["-er", "2-ir", "3-ir", "-ir", "-re", "-dre", "-ire", "-oir", "-aire", "-oire", "-ttre", "-aindre", "-eindre", "-oindre"]
-# avancement                  #     √      √       √       |      √      X       X       X       X        X        X        X          X          X
+tab_terminaisons              =    ["-er", "2-ir", "3-ir", "-ir", "-re", "-dre", "-ire", "-oir", "-enir", "-aire", "-oire", "-ttre", "-aindre", "-eindre", "-oindre"]
+# avancement                  #     √      √       O       None   O      X       X       X       X        X        X        X        X          X          X
 
 dic_terminaisons_cg =   {
                             '-er': {
                                 'groupe' : 1,
                                 'temps'  :  {  
-                                                # SIMPLES
-                                                'infinitif_présent' : ['er'],
+                                                'infinitif_présent'       : ['er'],
                                   
-                                                'participe_présent' : ['ant'],
-                                                'participe_passé' : ['é', 'és', 'ée', 'ées'],
+                                                'participe_présent'       : ['ant'],
+                                                'participe_passé'         : ['é', 'és', 'ée', 'ées'],
                                   
-                                                'indicatif_présent' : ['e', 'es', 'e', 'ons', 'ez', 'ent'],
-                                                'indicatif_futur_simple' : ['erai', 'eras', 'era', 'erons', 'erez', 'eront'],
-                                                'indicatif_imparfait' : ['ais', 'ais', 'ait', 'ions', 'iez', 'aient'],
-                                                'indicatif_passé_simple' : ['ai', 'as', 'a', 'âmes', 'âtes', 'èrent'],
+                                                'indicatif_présent'       : ['e', 'es', 'e', 'ons', 'ez', 'ent'],
+                                                'indicatif_futur_simple'  : ['erai', 'eras', 'era', 'erons', 'erez', 'eront'],
+                                                'indicatif_imparfait'     : ['ais', 'ais', 'ait', 'ions', 'iez', 'aient'],
+                                                'indicatif_passé_simple'  : ['ai', 'as', 'a', 'âmes', 'âtes', 'èrent'],
                                   
-                                                'impératif_présent' : [None, 'e', None, 'ons', 'ez', None],
+                                                'impératif_présent'       : [None, 'e', None, 'ons', 'ez', None],
                                   
-                                                'subjonctif_présent' : ['e', 'es', 'e', 'ions', 'iez', 'ent'],
-                                                'subjonctif_imparfait' : ['asse', 'asses', 'ât', 'assions', 'assiez', 'assent'],
+                                                'subjonctif_présent'      : ['e', 'es', 'e', 'ions', 'iez', 'ent'],
+                                                'subjonctif_imparfait'    : ['asse', 'asses', 'ât', 'assions', 'assiez', 'assent'],
                                   
-                                                'conditionnel_présent' : ['erais', 'erais', 'erait', 'erions', 'eriez', 'eraient']                                                
+                                                'conditionnel_présent'    : ['erais', 'erais', 'erait', 'erions', 'eriez', 'eraient']                                                
                                             }
                             },
                             '2-ir': {
                                 'groupe' : 2,
                                 'temps'  :  {
-                                                # SIMPLES
-                                                'infinitif_présent' : ['ir'],
+                                                'infinitif_présent'       : ['ir'],
                                   
-                                                'participe_présent' : ['issant'],
-                                                'participe_passé' : ['i', 'is', 'ie', 'ies'],
+                                                'participe_présent'       : ['issant'],
+                                                'participe_passé'         : ['i', 'is', 'ie', 'ies'],
                                   
-                                                'indicatif_présent' : ['is', 'is', 'it', 'issons', 'issez', 'issent'],
-                                                'indicatif_futur_simple' : ['irai', 'iras', 'ira', 'irons', 'irez', 'iront'],
-                                                'indicatif_imparfait' : ['issais', 'issais', 'issait', 'issions', 'issiez', 'issaient'],
-                                                'indicatif_passé_simple' : ['is', 'is', 'it', 'îmes', 'îtes', 'irent'],
+                                                'indicatif_présent'       : ['is', 'is', 'it', 'issons', 'issez', 'issent'],
+                                                'indicatif_futur_simple'  : ['irai', 'iras', 'ira', 'irons', 'irez', 'iront'],
+                                                'indicatif_imparfait'     : ['issais', 'issais', 'issait', 'issions', 'issiez', 'issaient'],
+                                                'indicatif_passé_simple'  : ['is', 'is', 'it', 'îmes', 'îtes', 'irent'],
                                   
-                                                'impératif_présent' : [None, 'is', None, 'issons', 'issez', None],
+                                                'impératif_présent'       : [None, 'is', None, 'issons', 'issez', None],
                                   
-                                                'subjonctif_présent' : ['isse', 'isses', 'isse', 'issions', 'issiez', 'issent'],
-                                                'subjonctif_imparfait' : ['isse', 'isses', 'ît', 'issions', 'issiez', 'issent'],
+                                                'subjonctif_présent'      : ['isse', 'isses', 'isse', 'issions', 'issiez', 'issent'],
+                                                'subjonctif_imparfait'    : ['isse', 'isses', 'ît', 'issions', 'issiez', 'issent'],
                                   
-                                                'conditionnel_présent' : ['irais', 'irais', 'irait', 'irions', 'iriez', 'iraient']
+                                                'conditionnel_présent'    : ['irais', 'irais', 'irait', 'irions', 'iriez', 'iraient']
                                             }
                             },
                             '3-ir': {
@@ -117,8 +117,9 @@ dic_terminaisons_cg =   {
 Exceptions du 1er et 3e groupe en -ir et -er
 """
 
-# Référence les verbes du 3e groupe finissant par -ir / 1er à double radical | verbes à radical simple : None ; verbes à double radical : tuple (présent sg, autre) ; irréguliers : False |
-#                                                                                                             ; triple à retour : tuple + True
+# Référence les verbes du 3e groupe finissant par -ir / 1er à double radical | verbes à radical simple, irréguliers : None ; verbes à double radical : tuple (présent sg, autre) |
+#                                                                                                                          ; triple à retour : tuple + True
+# Pour le 1er groupe, le double radical du singulier revient à la 3e personne du pluriel des temps "présent" simples
 
 tab_ex_ir = [
                 # SIMPLES
@@ -131,13 +132,13 @@ tab_ex_ir = [
                 ('offrir',      None),
                 ('souffrir',    None),
                 # IRRÉGULIERS
-                ('venir',       False),
-                ('quérir',      False),
-                ('tenir',       False),
-                ('faillir',     False),
-                ('fuir',        False),
-                ('ouïr',        False),
-                ('gésir',       False),
+                ('venir',       None),
+                ('quérir',      None),
+                ('tenir',       None),
+                ('faillir',     None),
+                ('fuir',        None),
+                ('@ouïr',       None),
+                ('gésir',       None),
                 # À DOUBLE RADICAL
                 ('lire',        ('li', 'lis')),
                 ('bouillir',    ('bou', 'bouill')),
@@ -151,8 +152,8 @@ tab_ex_ir = [
             ]
 
 tab_ex_er = [
-                ('siéger',        ('sièg', 'siég', True)),
-                ('céder',        ('cèd', 'céd', True)),
+                ('siéger',        ('sièg', 'siég')),
+                ('céder',        ('cèd', 'céd')),
             ]
 
 """
@@ -463,6 +464,8 @@ tab_irréguliers =   [
                         },
                         
                         ## VERBES DU 3E GROUPE
+
+                        ## Dissoudre est basé sur soudre. Il y a plein de verbes que tu pourrais supprimer en évitant les composés… Recevoir > voir (mais pas pouvoir, savoir, etc), etc
 
                                 {
                                 'verbe':    "aller",
@@ -1186,6 +1189,127 @@ tab_irréguliers =   [
                         },
                         {
                                 'verbe':    "voir",
+                                'groupe':   3,
+                                'type':     "verbe",
+                                'feuille':  {
+                                                'indicatif':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'futur_simple':     ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""],
+                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                },
+                                                'subjonctif':   {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""]
+                                                                },
+                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
+                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'participe':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'infinitif':    {   'présent':          ""}
+                                            }
+                        },
+                             ## Verbes du 3-ir
+                        {
+                                'verbe':    "fuir",
+                                'groupe':   3,
+                                'type':     "verbe",
+                                'feuille':  {
+                                                'indicatif':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'futur_simple':     ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""],
+                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                },
+                                                'subjonctif':   {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""]
+                                                                },
+                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
+                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'participe':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'infinitif':    {   'présent':          ""}
+                                            }
+                        },
+                        {
+                                'verbe':    "quérir",
+                                'groupe':   3,
+                                'type':     "verbe",
+                                'feuille':  {
+                                                'indicatif':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'futur_simple':     ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""],
+                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                },
+                                                'subjonctif':   {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""]
+                                                                },
+                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
+                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'participe':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'infinitif':    {   'présent':          ""}
+                                            }
+                        },
+                        {
+                                'verbe':    "faillir",
+                                'groupe':   3,
+                                'type':     "verbe",
+                                'feuille':  {
+                                                'indicatif':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'futur_simple':     ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""],
+                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                },
+                                                'subjonctif':   {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""]
+                                                                },
+                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
+                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'participe':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'infinitif':    {   'présent':          ""}
+                                            }
+                        },
+                        {
+                                'verbe':    "ouïr",
+                                'groupe':   3,
+                                'type':     "verbe",
+                                'feuille':  {
+                                                'indicatif':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'futur_simple':     ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""],
+                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                },
+                                                'subjonctif':   {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""]
+                                                                },
+                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
+                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'participe':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'infinitif':    {   'présent':          ""}
+                                            }
+                        },
+                        {
+                                'verbe':    "gésir",
                                 'groupe':   3,
                                 'type':     "verbe",
                                 'feuille':  {
