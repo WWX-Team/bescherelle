@@ -1073,22 +1073,22 @@ tab_irréguliers =   [
                                 'type':     "verbe",
                                 'feuille':  {
                                                 'indicatif':    {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'futur_simple':     ["", "", "", "", "", ""],
-                                                                    'imparfait':        ["", "", "", "", "", ""],
-                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                    'présent':          ["vaincs", "vaincs", "vainc", "vainquons", "vainquez", "vainquent"],
+                                                                    'futur_simple':     ["vaincrai", "vaincras", "vaincra", "vaincrons", "vaincrez", "vaincront"],
+                                                                    'imparfait':        ["vainquais", "vainquais", "vainquait", "vainquions", "vainquiez", "vainquaient"],
+                                                                    'passé_simple':     ["vainquis", "vainquis", "vainquit", "vainquîmes", "vainquîtes", "vainquirent"]
                                                                 },
                                                 'subjonctif':   {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'imparfait':        ["", "", "", "", "", ""]
+                                                                    'présent':          ["vainque", "vainques", "vainque", "vainquions", "vainquiez", "vainquent"],
+                                                                    'imparfait':        ["vainquisse", "vainquisses", "vainquît", "vainquissions", "vainquissiez", "vainquissent"]
                                                                 },
-                                                'impératif':    {   'présent':          [None, "", None, "", "", None] },
-                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'impératif':    {   'présent':          [None, "vaincs", None, "vainquons", "vainquez", None] },
+                                                'conditionnel': {   'présent':          ["vaincrais", "vaincrais", "vaincrait", "vaincrions", "vaincriez", "vaincraient"] },
                                                 'participe':    {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                    'présent':          "vainquant",
+                                                                    'passé':            "vaincu"
                                                                 },
-                                                'infinitif':    {   'présent':          ""}
+                                                'infinitif':    {   'présent':          "vaincre"}
                                             }
                         },
                         {
