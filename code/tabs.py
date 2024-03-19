@@ -1097,22 +1097,22 @@ tab_irréguliers =   [
                                 'type':     "verbe",
                                 'feuille':  {
                                                 'indicatif':    {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'futur_simple':     ["", "", "", "", "", ""],
-                                                                    'imparfait':        ["", "", "", "", "", ""],
-                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                    'présent':          ["vaux","vaux","vaut","valons","valez","valent"],
+                                                                    'futur_simple':     ["vaudrai","vaudras","vaudra","vaudrons","vaudrez","vaudront"],
+                                                                    'imparfait':        ["valais","valais","valait","valions","valiez","valaient"],
+                                                                    'passé_simple':     ["valus","valus","valut","valûmes","valûtes","valurent"]
                                                                 },
                                                 'subjonctif':   {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'imparfait':        ["", "", "", "", "", ""]
+                                                                    'présent':          ["vaille","vailles","vaille","valions","valiez","vaillent"],
+                                                                    'imparfait':        ["valusse","valusses","valût","valussions","valussiez","valussent"]
                                                                 },
-                                                'impératif':    {   'présent':          [None, "", None, "", "", None] },
-                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'impératif':    {   'présent':          [None, "vaux", None, "valons", "valez", None] },
+                                                'conditionnel': {   'présent':          ["vaudrais","vaudrais","vaudrait","vaudrions","vaudriez","vaudraient"] },
                                                 'participe':    {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                    'présent':          "valant",
+                                                                    'passé':            "valu"
                                                                 },
-                                                'infinitif':    {   'présent':          ""}
+                                                'infinitif':    {   'présent':          "valoir"}
                                             }
                         },
                         {
@@ -1121,22 +1121,22 @@ tab_irréguliers =   [
                                 'type':     "verbe",
                                 'feuille':  {
                                                 'indicatif':    {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'futur_simple':     ["", "", "", "", "", ""],
-                                                                    'imparfait':        ["", "", "", "", "", ""],
-                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                    'présent':          ["veux","veux","veut","voulons","voulez","veulent"],
+                                                                    'futur_simple':     ["voudrai","voudras","voudra","voudrons","voudrez","voudront"],
+                                                                    'imparfait':        ["voulais","voulais","voulait","voulions","vouliez","voulaient"],
+                                                                    'passé_simple':     ["voulus","voulus","voulut","voulûmes","voulûtes","voulurent"]
                                                                 },
                                                 'subjonctif':   {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'imparfait':        ["", "", "", "", "", ""]
+                                                                    'présent':          ["veuille","veuilles","veuille","voulions","vouliez","veuillent"],
+                                                                    'imparfait':        ["voulusse","voulusses","voulût","voulussions","voulussiez","voulussent"]
                                                                 },
-                                                'impératif':    {   'présent':          [None, "", None, "", "", None] },
-                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'impératif':    {   'présent':          [None, "veuille", None, "voulons", "vouillez", None] },
+                                                'conditionnel': {   'présent':          ["voudrais","voudrais","voudrait","voudrions","voudriez","voudraient"] },
                                                 'participe':    {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                    'présent':          "voulant",
+                                                                    'passé':            "voulu"
                                                                 },
-                                                'infinitif':    {   'présent':          ""}
+                                                'infinitif':    {   'présent':          "vouloir"}
                                             }
                         },
                              ## Verbes du 3-ir
