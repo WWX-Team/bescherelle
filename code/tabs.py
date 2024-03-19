@@ -140,7 +140,6 @@ tab_ex_ir = [
                 ('@ouïr',       None),
                 ('gésir',       None),
                 # À DOUBLE RADICAL
-                ('lire',        ('li', 'lis')),
                 ('bouillir',    ('bou', 'bouill')),
                 ('mentir',      ('men', 'ment')),
                 ('sentir',      ('sen', 'sent')),
@@ -155,6 +154,42 @@ tab_ex_er = [
                 ('siéger',        ('sièg', 'siég')),
                 ('céder',        ('cèd', 'céd')),
             ]
+
+"""
+Feuile de verbe vide
+"""
+
+dic_verbe = {
+                                                'indicatif':    {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé_composé':    ["", "", "", "", "", ""],
+                                                                    'plus_que_parfait': ["", "", "", "", "", ""],
+                                                                    'futur_simple':     ["", "", "", "", "", ""],
+                                                                    'futur_antérieur':  ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""],
+                                                                    'passé_simple':     ["", "", "", "", "", ""],
+                                                                    'passé_antérieur':  ["", "", "", "", "", ""]
+                                                                },
+                                                'subjonctif':   {
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""],
+                                                                    'imparfait':        ["", "", "", "", "", ""],
+                                                                    'plus_que_parfait': ["", "", "", "", "", ""]
+                                                                },
+                                                'impératif':    {   
+                                                                    'présent':          [None, "", None, "", "", None],
+                                                                    'passé':            [None, "", None, "", "", None]
+                                                                },
+                                                'conditionnel': {   
+                                                                    'présent':          ["", "", "", "", "", ""],
+                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                },
+                                                'participe':    {
+                                                                    'présent':          "",
+                                                                    'passé':            ""
+                                                                },
+                                                'infinitif':    {   'présent':          ""}
+            }
 
 """
 Liste des verbes irréguliers
