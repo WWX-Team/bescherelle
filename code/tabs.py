@@ -713,22 +713,22 @@ tab_irréguliers =   [
                                 'type':     "verbe",
                                 'feuille':  {
                                                 'indicatif':    {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'futur_simple':     ["", "", "", "", "", ""],
-                                                                    'imparfait':        ["", "", "", "", "", ""],
-                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                    'présent':          ["dois","dois","doit","devons","devez","doivent"],
+                                                                    'futur_simple':     ["devrai","devras","devra","devrons","devrez","devront"],
+                                                                    'imparfait':        ["devais","devais","devait","devions","deviez","devaient"],
+                                                                    'passé_simple':     ["dus","dus","dut","dûmes","dûtes","durent"]
                                                                 },
                                                 'subjonctif':   {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'imparfait':        ["", "", "", "", "", ""]
+                                                                    'présent':          ["doive","doives","doive","devions","deviez","doivent"],
+                                                                    'imparfait':        ["dusse","dusses","dût","dussions","dussiez","dussent"]
                                                                 },
-                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
-                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'impératif':    {   'présent':          [None, "dois", None, "devons", "devez", None] },
+                                                'conditionnel': {   'présent':          ["devrais","devrais","devrait","devrions","devriez","devraient"] },
                                                 'participe':    {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                    'présent':          "devant",
+                                                                    'passé':            "dû"
                                                                 },
-                                                'infinitif':    {   'présent':          ""}
+                                                'infinitif':    {   'présent':          "devoir"}
                                             }
                         },
                         {
