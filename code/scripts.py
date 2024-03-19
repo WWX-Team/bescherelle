@@ -187,7 +187,7 @@ def conjuguer(verbe:str, temps:str) -> list:
                 
                 # Transformations
                 
-def conjuguer_tr(terminaison:str, radical:str, personne:str, temps:str, groupe:int) -> str:
+def conjuguer_tr(terminaison:str, radical:str, personne:int, temps:str, groupe:int) -> str:
     """
     [Conjugaison / Transformations]: Entrées : \n
     \xA0\xA0\xA0• Terminaison du verbe (infinitif présent) ;\n
@@ -202,14 +202,14 @@ def conjuguer_tr(terminaison:str, radical:str, personne:str, temps:str, groupe:i
     tab_irréguliers   = init_irréguliers()
     cg_mode, cg_temps = verbe_analyse_temps_composé(temps)
     # TESTS VALIDITÉ
-    if not temps in tab_temps: return None
-    temps_est_valide = False
-    for i in tabs.tab_temps:
+    temps_est_valide  = False
+    for i in tab_temps:
         if i[0] == temps:
             temps_est_valide = True
             temps_est_composé = i[1]
             temps_composé_référence = i[2]
     if not temps_est_valide: return None
+    if cg_mode == 'impératif' and personne not in [2, 4, 5]: return None 
     verbe_infinitif = radical + verbe_analyse_term_brute(terminaison)
     # TESTS IRRÉGULIER
     verbe_est_rir   = 'rir' == (verbe_infinitif[len(verbe_infinitif) - 3 : len(verbe_infinitif)]) and terminaison == '3-ir'
@@ -222,35 +222,38 @@ def conjuguer_tr(terminaison:str, radical:str, personne:str, temps:str, groupe:i
     verbe_est_g = radical[-1]         == 'g'
     # CONJUGAISON
     if temps_est_composé:
-        return conjuguer_tr('-oir', 'av', personne, temps_composé_référence) + '/' + conjuguer_tr('-re', 'êt', personne, temps_composé_référence) + conjuguer_tr(terminaison, radical, personne, 'participe_passé')
+        return conjuguer_tr('-oir', 'av', personne, temps_composé_référence, 3) + '/' + conjuguer_tr('-re', 'êt', personne, temps_composé_référence, 3) + ' ' + conjuguer_tr(terminaison, radical, 1, 'participe_passé', groupe)
     else:
         if verbe_est_irrégulier:
             if verbe_irrégulier_modèle in tab_irréguliers:
-                  # return tabs.tab_irréguliers.index(verbe_irrégulier_modèle)['feuille'][cg_mode][cg_temps][((personne -1) % 6)]
-                  return None
-            else: return None
+                cg_path        = tabs.tab_irréguliers[init_irréguliers().index(verbe_irrégulier_modèle)]['feuille'][cg_mode][cg_temps]
+                cg_len         = len(cg_path)
+                cg_terminaison = cg_path[((personne -1) % cg_len)]
+                if cg_terminaison == None: return ""
+                return verbe_irrégulier_préfixe + cg_terminaison
+            else: return "Erreur/Verbe Non Enregistré"
         if terminaison in tabs.dic_terminaisons_cg.keys():
-            cg_terminaison  = tabs.dic_terminaisons_cg[terminaison]['temps'][temps][((personne -1) % 6)]
-            cg_radical      = conjuguer_tr_vérifier_radical(radical, cg_terminaison, temps, personne)
-            return cg_radical +  cg_terminaison
-        else:
-            return None
-        
-    return None
+            cg_path         = tabs.dic_terminaisons_cg[terminaison]['temps'][temps]
+            cg_len          = len(cg_path)
+            cg_terminaison  = cg_path[((personne -1) % cg_len)]
+            if cg_terminaison == None: return None
+            cg_radical      = conjuguer_tr_vérifier_radical(radical, cg_terminaison, temps, personne, groupe)
+            return cg_radical +  cg_terminaison  
+    return "Erreur/Pas Un Verbe"
 
-def conjuguer_tr_vérifier_radical(radical:str, term:str, temps:str, personne:str):
+def conjuguer_tr_vérifier_radical(radical:str, term:str, temps:str, personne:str, groupe:int):
     """
     [Conjugaison / Transformations / Radical]: Voir [Conjugaison / Transformations]. Retourne l'état correct du radical.
     """
     cg_radical = radical
     if temps in ['indicatif_futur_simple']: cg_radical += 'r'
     if temps in ['participe_présent']     :
-        if   group == 1: cg_radical = cg_radical
-        elif group == 2: cg_radical = cg_radical + 'iss'
-        elif group == 3: cg_radical = cg_radical
-    cg_radical.conjuguer_tr_e_final(radical)
-    cg_radical.conjuguer_tr_cédille(radical, term)
-    cg_radical.conjuguer_tr_g_final(radical, term)
+        if   groupe == 1: cg_radical = cg_radical
+        elif groupe == 2: cg_radical = cg_radical + 'iss'
+        elif groupe == 3: cg_radical = cg_radical
+    cg_radical = conjuguer_tr_e_final(radical)
+    cg_radical = conjuguer_tr_cédille(radical, term)
+    cg_radical = conjuguer_tr_g_final(radical, term)
     return cg_radical
 
 def conjuguer_tr_e_final(verbe:str) -> str:
@@ -273,3 +276,9 @@ def conjuguer_tr_g_final(radical:str, term:str) -> str:
     """
     if radical[-1] == 'g' and (term[0] in 'aou'): return radical + 'e'
     return radical
+
+for temps in init_temps():
+    print(f'###### {temps[0]} ######')
+    for prs in range(1, 7):
+        print(' + ' + str(conjuguer_tr(terminaison = '-er', radical = 'mang', groupe = '1', personne = prs, temps = temps[0])))
+    print()
