@@ -756,7 +756,7 @@ tab_irréguliers =   [
                                             }
                         },
                         {
-                                'verbe':    "dissoudre",
+                                'verbe':    "soudre",
                                 'groupe':   3,
                                 'type':     "verbe",
                                 'feuille':  {
@@ -972,55 +972,7 @@ tab_irréguliers =   [
                                             }
                         },
                         {
-                                'verbe':    "prévoir",
-                                'groupe':   3,
-                                'type':     "verbe",
-                                'feuille':  {
-                                                'indicatif':    {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'futur_simple':     ["", "", "", "", "", ""],
-                                                                    'imparfait':        ["", "", "", "", "", ""],
-                                                                    'passé_simple':     ["", "", "", "", "", ""]
-                                                                },
-                                                'subjonctif':   {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'imparfait':        ["", "", "", "", "", ""]
-                                                                },
-                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
-                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
-                                                'participe':    {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'passé':            ["", "", "", "", "", ""]
-                                                                },
-                                                'infinitif':    {   'présent':          ""}
-                                            }
-                        },
-                        {
-                                'verbe':    "recevoir",
-                                'groupe':   3,
-                                'type':     "verbe",
-                                'feuille':  {
-                                                'indicatif':    {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'futur_simple':     ["", "", "", "", "", ""],
-                                                                    'imparfait':        ["", "", "", "", "", ""],
-                                                                    'passé_simple':     ["", "", "", "", "", ""]
-                                                                },
-                                                'subjonctif':   {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'imparfait':        ["", "", "", "", "", ""]
-                                                                },
-                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
-                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
-                                                'participe':    {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'passé':            ["", "", "", "", "", ""]
-                                                                },
-                                                'infinitif':    {   'présent':          ""}
-                                            }
-                        },
-                        {
-                                'verbe':    "résoudre",
+                                'verbe':    "voir",
                                 'groupe':   3,
                                 'type':     "verbe",
                                 'feuille':  {
@@ -1165,30 +1117,6 @@ tab_irréguliers =   [
                         },
                         {
                                 'verbe':    "vouloir",
-                                'groupe':   3,
-                                'type':     "verbe",
-                                'feuille':  {
-                                                'indicatif':    {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'futur_simple':     ["", "", "", "", "", ""],
-                                                                    'imparfait':        ["", "", "", "", "", ""],
-                                                                    'passé_simple':     ["", "", "", "", "", ""]
-                                                                },
-                                                'subjonctif':   {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'imparfait':        ["", "", "", "", "", ""]
-                                                                },
-                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
-                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
-                                                'participe':    {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'passé':            ["", "", "", "", "", ""]
-                                                                },
-                                                'infinitif':    {   'présent':          ""}
-                                            }
-                        },
-                        {
-                                'verbe':    "voir",
                                 'groupe':   3,
                                 'type':     "verbe",
                                 'feuille':  {
