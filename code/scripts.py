@@ -187,13 +187,14 @@ def conjuguer(verbe:str, temps:str) -> list:
                 
                 # Transformations
                 
-def conjuguer_tr(terminaison:str, radical:str, personne:str, temps:str) -> str:
+def conjuguer_tr(terminaison:str, radical:str, personne:str, temps:str, groupe:int) -> str:
     """
     [Conjugaison / Transformations]: Entrées : \n
     \xA0\xA0\xA0• Terminaison du verbe (infinitif présent) ;\n
     \xA0\xA0\xA0• Radical du verbe (infinitif présent) ;\n
     \xA0\xA0\xA0• Personne de conjugaison ;\n
     \xA0\xA0\xA0• Temps de conjugaison ;\n
+    \xA0\xA0\xA0• Groupe du verbe ;\n
     Retourne le verbe conjugué pour cette personne, temps [:str].
     """
     # INITIALISATION
@@ -243,6 +244,10 @@ def conjuguer_tr_vérifier_radical(radical:str, term:str, temps:str, personne:st
     """
     cg_radical = radical
     if temps in ['indicatif_futur_simple']: cg_radical += 'r'
+    if temps in ['participe_présent']     :
+        if   group == 1: cg_radical = cg_radical
+        elif group == 2: cg_radical = cg_radical + 'iss'
+        elif group == 3: cg_radical = cg_radical
     cg_radical.conjuguer_tr_e_final(radical)
     cg_radical.conjuguer_tr_cédille(radical, term)
     cg_radical.conjuguer_tr_g_final(radical, term)
