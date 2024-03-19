@@ -28,6 +28,19 @@ def init_irréguliers():
         tab_irréguliers.append(i['verbe'])
     return tab_irréguliers
 
+def init_exceptions():
+    """
+    [Launch]: Initialise les données nécessaires au projet.
+    """
+    dic_exceptions = {}
+    for uplet in tabs.tab_ex_er:
+        if uplet[1] != None:
+            dic_exceptions[uplet[0]] = uplet[1]
+    for uplet in tabs.tab_ex_ir:
+        if uplet[1] != None:
+            dic_exceptions[uplet[0]] = uplet[1]
+    return dic_exceptions
+
 ## VERBES #####
 
           # ANALYSES
@@ -181,7 +194,7 @@ def conjuguer(verbe:str, temps:str) -> list:
     # inf   : terminaison infinitive non brute [:str]
     # rad   : radical infinitif [:str]
     if group == None or inf == None or rad == None: return None
-    conjugué = []
+    conjugué =  tabs.dic_verbe
     # à faire PAR WILHELM MERCI
     return conjugué
                 
@@ -223,23 +236,39 @@ def conjuguer_tr(terminaison:str, radical:str, personne:int, temps:str, groupe:i
     # CONJUGAISON
     if temps_est_composé:
         return conjuguer_tr('-oir', 'av', personne, temps_composé_référence, 3) + '/' + conjuguer_tr('-re', 'êt', personne, temps_composé_référence, 3) + ' ' + conjuguer_tr(terminaison, radical, 1, 'participe_passé', groupe)
-    else:
+    else                :
         if verbe_est_irrégulier:
-            if verbe_irrégulier_modèle in tab_irréguliers:
-                cg_path        = tabs.tab_irréguliers[init_irréguliers().index(verbe_irrégulier_modèle)]['feuille'][cg_mode][cg_temps]
-                cg_len         = len(cg_path)
-                cg_terminaison = cg_path[((personne -1) % cg_len)]
-                if cg_terminaison == None: return ""
-                return verbe_irrégulier_préfixe + cg_terminaison
-            else: return "Erreur/Verbe Non Enregistré"
-        if terminaison in tabs.dic_terminaisons_cg.keys():
-            cg_path         = tabs.dic_terminaisons_cg[terminaison]['temps'][temps]
-            cg_len          = len(cg_path)
-            cg_terminaison  = cg_path[((personne -1) % cg_len)]
-            if cg_terminaison == None: return None
-            cg_radical      = conjuguer_tr_vérifier_radical(radical, cg_terminaison, temps, personne, groupe)
-            return cg_radical +  cg_terminaison  
-    return "Erreur/Pas Un Verbe"
+            # Si le verbe est irrégulier, le chemin est dans le tableau des irréguliers
+            cg_path                  = tabs.tab_irréguliers[init_irréguliers().index(verbe_irrégulier_modèle)]['feuille'][cg_mode][cg_temps]
+        else                   :
+            # Si le verbe est régulier, le chemin est dans le dictionnaire des terminaisons
+            cg_path                  = tabs.dic_terminaisons_cg[terminaison]['temps'][temps]
+        # Code commun
+        cg_len         = len(cg_path)
+        cg_terminaison = cg_path[((personne -1) % cg_len)]
+        # Si la terminaison n'existe pas pour cette personne, retourne None
+        if cg_terminaison == None: return None
+        # Défini un radicla au verbe en fonction de sa régularité
+        if verbe_est_irrégulier:
+            cg_radical = verbe_irrégulier_préfixe
+        else                   :
+            # Si verbe à radical particulier
+            verbe_double_radicaux = init_exceptions()
+            if verbe_infinitif in verbe_double_radicaux.keys():
+                if groupe == 1:
+                    if personne in [1, 2, 3, 6] and temps in ['indicatif_présent', 'impératif_présent', 'subjonctif_présent']:
+                        cg_radical = verbe_double_radicaux[verbe_infinitif][0]
+                    else:
+                        cg_radical = verbe_double_radicaux[verbe_infinitif][1]
+                else:
+                    if personne in [1, 2, 3] and temps in ['indicatif_présent', 'impératif_présent']:
+                        cg_radical = verbe_double_radicaux[verbe_infinitif][0]
+                    else:
+                        cg_radical = verbe_double_radicaux[verbe_infinitif][1]
+            else:
+                cg_radical = conjuguer_tr_vérifier_radical(radical, cg_terminaison, temps, personne, groupe)
+                
+        return cg_radical + cg_terminaison
 
 def conjuguer_tr_vérifier_radical(radical:str, term:str, temps:str, personne:str, groupe:int):
     """
