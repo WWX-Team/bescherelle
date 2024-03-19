@@ -446,20 +446,20 @@ tab_irréguliers =   [
                                                 'indicatif':    {
                                                                     'présent':          ["paie","paies","paie","payons","payez","paient"],
                                                                     'imparfait':        ["payais","payais","payait","payions","payiez","payaient"],
-                                                                    'futur_simple':     ["", "", "", "", "", ""],
-                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                    'futur_simple':     ["paierai","paieras","paiera","paierons","paierez","paieront"],
+                                                                    'passé_simple':     ["payai","payas","paya","payâmes","payâtes","payèrent"]
                                                                 },
                                                 'subjonctif':   {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'imparfait':        ["", "", "", "", "", ""]
+                                                                    'présent':          ["paie","paies","paie","payions","payiez","paient"],
+                                                                    'imparfait':        ["payasse","payasses","payât","payassions","payassiez","payassent"]
                                                                 },
-                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
-                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'impératif':    {   'présent':          [None, "paie", None, "payons", "payez", None] },
+                                                'conditionnel': {   'présent':          ["paierais","paierais","paierait","paierions","paieriez","paieraient"] },
                                                 'participe':    {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                    'présent':          "payant",
+                                                                    'passé':            "payé"
                                                                 },
-                                                'infinitif':    {   'présent':          ""}
+                                                'infinitif':    {   'présent':          "payer"}
                                             }
                         },
                         
@@ -473,22 +473,22 @@ tab_irréguliers =   [
                                 'type':     "verbe",
                                 'feuille':  {
                                                 'indicatif':    {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'futur_simple':     ["", "", "", "", "", ""],
-                                                                    'imparfait':        ["", "", "", "", "", ""],
-                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                    'présent':          ["vais","vas","va","allons","allez","vont"],
+                                                                    'futur_simple':     ["irai","iras","ira","irons","irez","iront"],
+                                                                    'imparfait':        ["allais","allais","allait","allions","alliez","allaient"],
+                                                                    'passé_simple':     ["allai","allas","alla","allâmes","allâtes","allèrent"]
                                                                 },
                                                 'subjonctif':   {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'imparfait':        ["", "", "", "", "", ""]
+                                                                    'présent':          ["aille","ailles","aille","allions","alliez","aillent"],
+                                                                    'imparfait':        ["allasse","allasses","allât","allassions","allassiez","allassent"]
                                                                 },
-                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
-                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'impératif':    {   'présent':          [None, "va", None, "allons", "allez", None] },
+                                                'conditionnel': {   'présent':          ["irais","irais","irait","irions","iriez","iraient"] },
                                                 'participe':    {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                    'présent':          "allant",
+                                                                    'passé':            "allé"
                                                                 },
-                                                'infinitif':    {   'présent':          ""}
+                                                'infinitif':    {   'présent':          "aller"}
                                             }
                         },
                         {
@@ -497,22 +497,22 @@ tab_irréguliers =   [
                                 'type':     "verbe",
                                 'feuille':  {
                                                 'indicatif':    {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'futur_simple':     ["", "", "", "", "", ""],
-                                                                    'imparfait':        ["", "", "", "", "", ""],
-                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                    'présent':          ["assois","assois","assoit","assoyons","assoyez","assoient"],
+                                                                    'futur_simple':     ["assoirai","assoiras","assoira","assoirons","assoirez","assoiront"],
+                                                                    'imparfait':        ["assoyais","assoyais","assoyait","assoyions","assoyiez","assoyaient"],
+                                                                    'passé_simple':     ["assis","assis","assit","assîmes","assîtes","assirent"]
                                                                 },
                                                 'subjonctif':   {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'imparfait':        ["", "", "", "", "", ""]
+                                                                    'présent':          ["assoie","assoies","assoie","assoyions","assoyiez","assoient"],
+                                                                    'imparfait':        ["assisse","assisses","assît","assissions","assissiez","assissent"]
                                                                 },
-                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
-                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'impératif':    {   'présent':          [None, "assois", None, "assoyons", "assoyez", None] },
+                                                'conditionnel': {   'présent':          ["assoirais","assoirais","assoirait","assoirions","assoiriez","assoiraient"] },
                                                 'participe':    {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                    'présent':          "assoyant",
+                                                                    'passé':            "assis"
                                                                 },
-                                                'infinitif':    {   'présent':          ""}
+                                                'infinitif':    {   'présent':          "asseoir"}
                                             }
                         },
                         {
@@ -521,22 +521,22 @@ tab_irréguliers =   [
                                 'type':     "verbe",
                                 'feuille':  {
                                                 'indicatif':    {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'futur_simple':     ["", "", "", "", "", ""],
-                                                                    'imparfait':        ["", "", "", "", "", ""],
-                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                    'présent':          ["clos","clos","clôt",None,None,"closent"],
+                                                                    'futur_simple':     ["clorai", "cloras", "clora", "clorons", "clorez", "cloront"],
+                                                                    'imparfait':        None,
+                                                                    'passé_simple':     None
                                                                 },
                                                 'subjonctif':   {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'imparfait':        ["", "", "", "", "", ""]
+                                                                    'présent':          ["close","closes","close","closions","closiez","closent"],
+                                                                    'imparfait':        None
                                                                 },
-                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
-                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'impératif':    {   'présent':          [None, "clos", None, None, None, None] },
+                                                'conditionnel': {   'présent':          ["clorai","sclorais","clorait","clorions","cloriez","cloraient"] },
                                                 'participe':    {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                    'présent':          "closant",
+                                                                    'passé':            "clos"
                                                                 },
-                                                'infinitif':    {   'présent':          ""}
+                                                'infinitif':    {   'présent':          "clore"}
                                             }
                         },
                         {
@@ -545,22 +545,22 @@ tab_irréguliers =   [
                                 'type':     "verbe",
                                 'feuille':  {
                                                 'indicatif':    {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'futur_simple':     ["", "", "", "", "", ""],
-                                                                    'imparfait':        ["", "", "", "", "", ""],
-                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                    'présent':          ["mouds","mouds","moud","moulons","moulez","moulent"],
+                                                                    'futur_simple':     ["moudrai","moudras","moudra","moudrons","moudrez","moudront"],
+                                                                    'imparfait':        ["moulais","moulais","moulait","moulions","mouliez","moulaient"],
+                                                                    'passé_simple':     ["moulus","moulus","moulut","moulûmes","moulûtes","moulurent"]
                                                                 },
                                                 'subjonctif':   {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'imparfait':        ["", "", "", "", "", ""]
+                                                                    'présent':          ["moule","moules","moule","moulions","mouliez","moulent"],
+                                                                    'imparfait':        ["moulusse","moulusses","moulût","moulussions","moulussiez","moulussent"]
                                                                 },
-                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
-                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'impératif':    {   'présent':          [None, "mouds", None, "moulons", "moulez", None] },
+                                                'conditionnel': {   'présent':          ["moudrais","moudrais","moudrait","moudrions","moudriez","moudraient"] },
                                                 'participe':    {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                    'présent':          "moulant",
+                                                                    'passé':            "moulu"
                                                                 },
-                                                'infinitif':    {   'présent':          ""}
+                                                'infinitif':    {   'présent':          "moudre"}
                                             }
                         },
                         {
@@ -569,22 +569,22 @@ tab_irréguliers =   [
                                 'type':     "verbe",
                                 'feuille':  {
                                                 'indicatif':    {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'futur_simple':     ["", "", "", "", "", ""],
-                                                                    'imparfait':        ["", "", "", "", "", ""],
-                                                                    'passé_simple':     ["", "", "", "", "", ""]
+                                                                    'présent':          ["bois","bois","boit","buvons","buvez","boivent"],
+                                                                    'futur_simple':     ["boirai","boiras","boira","boirons","boirez","boiront"],
+                                                                    'imparfait':        ["buvais","buvais","buvait","buvions","buviez","buvaient"],
+                                                                    'passé_simple':     ["bus","bus","but","bûmes","bûtes","burent"]
                                                                 },
                                                 'subjonctif':   {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'imparfait':        ["", "", "", "", "", ""]
+                                                                    'présent':          ["boive","boives","boive","buvions","buviez","boivent"],
+                                                                    'imparfait':        ["busse","busses","bût","bussions","bussiez","bussent"]
                                                                 },
-                                                'impératif':    {   'présent':          ["", "", "", "", "", ""] },
-                                                'conditionnel': {   'présent':          ["", "", "", "", "", ""] },
+                                                'impératif':    {   'présent':          [None, "bois", None, "buvons", "buvez", None] },
+                                                'conditionnel': {   'présent':          ["boirais","boirais","boirait","boirions","boiriez","boiraient"] },
                                                 'participe':    {
-                                                                    'présent':          ["", "", "", "", "", ""],
-                                                                    'passé':            ["", "", "", "", "", ""]
+                                                                    'présent':          "buvant",
+                                                                    'passé':            "bu"
                                                                 },
-                                                'infinitif':    {   'présent':          ""}
+                                                'infinitif':    {   'présent':          "boire"}
                                             }
                         },
                         {
