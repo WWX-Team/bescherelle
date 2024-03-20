@@ -57,11 +57,12 @@ label_title.pack(pady=25, expand='YES')
 # Input 
 frame_input = tkinter.Frame(frame, bg=theme['bg'])
                             
-verbe_input = tkinter.Entry(frame_input, font=(theme['typo'], 20), bg=theme['bg_input'], fg=theme['text_input'])
-verbe_input.pack()
+entry_search = tkinter.Entry(frame_input, font=(theme['typo'], 20), bg=theme['bg_input'], fg=theme['text_input'])
+verbe = entry_search.get()
+entry_search.pack()
 
-recherche_button = tkinter.Button(frame_input, text='Rechercher', font=(theme['typo'],20), bg=theme['bg_input'], fg=theme['text_input'], command=scripts.conjuguer)
-recherche_button.pack(pady=10, fill='x')
+button_search = tkinter.Button(frame_input, text='Rechercher', font=(theme['typo'],20), bg=theme['bg_input'], fg=theme['text_input'], command=scripts.conjuguer)
+button_search.pack(pady=10, fill='x')
 
 frame_input.pack() 
 
