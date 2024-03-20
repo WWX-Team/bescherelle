@@ -55,6 +55,7 @@ Terminaisons
 # Triées de la plus petite à la plus longue (note : seulement les caractères après le tiret sont comptabilisés)
 tab_terminaisons              =    ["-er", "2-ir", "3-ir", "-ir", "-re", "-dre", "-ire", "-oir", "-enir", "-aire", "-oire", "-ttre", "-aindre", "-eindre", "-oindre"]
 # avancement                  #     √      √       O       None   O      X       X       X       X        X        X        X        X          X          X
+# à ajouter : eillir, uire, https://www.conjugaisons.net/verbes/groupe/3/
 
 dic_terminaisons_cg =   {
                             '-er': {
@@ -102,7 +103,22 @@ dic_terminaisons_cg =   {
                             '3-ir': {
                                 'groupe' : 3,
                                 'temps'  :  {
-                                                'indicatif_présent': ['s', 's', 't', 'ons', 'ez', 'ent']
+                                                'infinitif_présent'       : [''],
+                                  
+                                                'participe_présent'       : [''],
+                                                'participe_passé'         : [''],
+                                  
+                                                'indicatif_présent'       : ['', '', '', '', '', ''],
+                                                'indicatif_futur_simple'  : ['', '', '', '', '', ''],
+                                                'indicatif_imparfait'     : ['', '', '', '', '', ''],
+                                                'indicatif_passé_simple'  : ['', '', '', '', '', ''],
+                                  
+                                                'impératif_présent'       : [None, '', None, '', '', None],
+                                  
+                                                'subjonctif_présent'      : ['', '', '', '', '', ''],
+                                                'subjonctif_imparfait'    : ['', '', '', '', '', ''],
+                                  
+                                                'conditionnel_présent'    : ['', '', '', '', '', '']
                                             }
                             },
                             '-re': {
