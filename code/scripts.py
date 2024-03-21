@@ -16,7 +16,6 @@ def init_temps():
         else: 
             for mode in i[1]:
                 tab_temps.append((mode + '_' + i[0], (i[2] == 'composé'), mode + '_' + temps_composé))
-    ## Code supplémentaire ?
     return tab_temps
 
 def init_irréguliers():
@@ -163,31 +162,28 @@ def mot_analyse_décomposer(chaîne:str) -> list:
 
         # TRANSFORMATIONS
 
-def mot_tr_élision(mot:str) -> str:
-    """
-    [Mot / Transformation / Élision -e final (pronom)]: Transforme un -e final d'un mot donné [:str] en apostrophe, [:None] si erreur.
-    """
-    if len(mot) == 0:    return None
-    elif mot[-1] == "e": return mot[0:-1] + "'"
-    else:                return mot
-    
-def mot_tr_accentuer(lettre:str, accent:str="^") -> str:
-    """
-    [Mot / Transformation / Accentuation lettre]: Accentue une lettre [:str] avec un accent donné [:str], par défaut, \"^\", retourne la lettre donnée si erreur.
-    """
-    if lettre in tabs.tab_voyelles and not lettre == 'y' and accent in '`´^¨':
-        return tabs.tab_voyelles_accentuées[lettre][accent]
-    return lettre
+def mot_tr_remplacer(mot:str, symbole:str='_', avec:str=' ', data:str=''):
+    if len(mot) == 0: return data
+    else            :
+        actuelle = mot[0]
+        if actuelle == symbole: actuelle = avec
+        return mot_tr_remplacer(mot = mot[1:len(mot)], symbole = symbole, avec = avec, data = (data + actuelle))
+
+def mot_tr_former_temps(mode:str, temps:str) -> str:
+    if mode in ['participe', 'infinitif']: return mode[0].upper() + mode[1:len(mode)] + ' ' + temps
+    nom_temps =  temps[0].upper()
+    nom_temps += mot_tr_remplacer(temps[1:len(temps)])
+    if mode[0] in 'aeiouy': liaison = "de l\'"
+    else                  : liaison = "du "
+    return nom_temps + ' ' + liaison + mot_tr_remplacer(mode)
 
 ## CONJUGAISONS #####
 
                 # Principal
                 
-def conjuguer(verbe:str, temps:str) -> list:
+def conjuguer(verbe:str, affichage:bool=False):
     """
     [Conjugaison]:\n
-    Conjugue un verbe donné [:str] à un temps donné [:str] ( avec \"famille_temps\").\n
-    Retourne un [:list] des conjugaisons, OU une [:str] si cas unique, ou [:None] si erreur.
     """
     group, inf, rad = verbe_analyse(verbe) 
     # group : groupe du verbe [:int]
@@ -195,7 +191,49 @@ def conjuguer(verbe:str, temps:str) -> list:
     # rad   : radical infinitif [:str]
     if group == None or inf == None or rad == None: return None
     conjugué =  tabs.dic_verbe
-    # à faire PAR WILHELM MERCI
+    conjugué['!affichage'] = {}
+    for __mode, __groupe_temps in tabs.dic_verbe.items():
+        if __mode[0] != '!':
+            conjugué['!affichage'][__mode] = {}
+            conjugué['!affichage']['?' + __mode] = __mode[0].upper() + __mode[1:len(__mode)]
+            for __temps, __terminaisons in __groupe_temps.items():
+                conjugué['!affichage'][__mode][__temps]       = mot_tr_former_temps(__mode, __temps)
+                conjugué['!affichage'][__mode]['?' + __temps] = __temps[0].upper() + mot_tr_remplacer(__temps[1:len(__temps)])
+                if   isinstance(__terminaisons, list):
+                    for i in range(1, 7):
+                        conjugué[__mode][__temps][i-1] = conjuguer_tr(terminaison = inf, radical = rad, personne = i, temps = (__mode + '_' + __temps), groupe = group)
+                elif isinstance(__terminaisons, str) :
+                    conjugué[__mode][__temps] = conjuguer_tr(terminaison = inf, radical = rad, personne = 1, temps = (__mode + '_' + __temps), groupe = group)
+                else                                 :   
+                    conjugué[__mode][__temps] = None
+    conjugué['!verbe']  = verbe
+    conjugué['!groupe'] = group
+    conjugué['!term']   = inf
+    if verbe in ['être', 'avoir']: conjugué['type'] = 'auxiliaire'
+    else                         : conjugué['type'] = 'commun'
+    """
+    [Conjugaison / Documentation des données]
+    Les données sont présententes sous le format
+    {
+        '!affichage' : {
+                            'mode_1': {
+                                            'temps_complet':  "Temps complet du mode 1"
+                                            '?temps_complet': "Temps complet"
+                        },
+                        },
+        'mode_1': {
+                    'temps_complet': ["","","","","",""]       // plupart du et des temps
+                    'temps_unique' : ""                        // modes : infinitif, participe
+                    'temps_partiel': [None,None,"","","",None] // modes : impératif
+                    'temps_invalid': None                      // certains verbes, impersonnels particulièrement
+                },
+        '!verbe' : [:str],
+        '!groupe': [:int],
+        '!term'  : [:str],
+        '!type'  : [:str],
+    }
+    """
+    #if affichage:
     return conjugué
                 
                 # Transformations
@@ -248,7 +286,7 @@ def conjuguer_tr(terminaison:str, radical:str, personne:int, temps:str, groupe:i
         cg_terminaison = cg_path[((personne -1) % cg_len)]
         # Si la terminaison n'existe pas pour cette personne, retourne None
         if cg_terminaison == None: return None
-        # Défini un radicla au verbe en fonction de sa régularité
+        # Défini un radical au verbe en fonction de sa régularité
         if verbe_est_irrégulier:
             cg_radical = verbe_irrégulier_préfixe
         else                   :
@@ -306,8 +344,8 @@ def conjuguer_tr_g_final(radical:str, term:str) -> str:
     if radical[-1] == 'g' and (term[0] in 'aou'): return radical + 'e'
     return radical
 
-for temps in init_temps():
-    print(f'###### {temps[0]} ######')
-    for prs in range(1, 7):
-        print(' + ' + str(conjuguer_tr(terminaison = '-er', radical = 'mang', groupe = '1', personne = prs, temps = temps[0])))
-    print()
+#for temps in init_temps():
+#    print(f'###### {temps[0]} ######')
+#    for prs in range(1, 7):
+#        print(' + ' + str(conjuguer_tr(terminaison = '-er', radical = 'mang', groupe = '1', personne = prs, temps = temps[0])))
+#    print()
