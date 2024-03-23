@@ -23,7 +23,6 @@
 ###############################################################################
 # Import des MODULES
 import tkinter as tk
-import tkinter.font as tkf
 from scripts import conjuguer
 
 theme = {
@@ -31,7 +30,7 @@ theme = {
         'bg'         : '#000000',
         'bg_input'   : '#b21948',
         'text_input' : 'white',
-        'typo'       : ''     # typo à trouver
+        'typo'       : 'Helvetica'     # typo à trouver
         }
 ###############################################################################
 """
@@ -81,7 +80,7 @@ frame = tk.Frame(window, bg=theme['bg'])
 label_title = tk.Label (
                                 frame, 
                                 text = 'TITRE', 
-                                font = tkf.Font(family='', size=60, weight='normal'), 
+                                font = ('Impact', 60), 
                                 bg   = theme['bg'], 
                                 fg   = theme['title']
                             )  
