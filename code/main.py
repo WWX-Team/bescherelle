@@ -27,7 +27,7 @@ from scripts import conjuguer
 
 theme = {
         'title'      : '#80002a',
-        'bg'         : '#1D1D1D',
+        'bg'         : '#1a0008',
         'bg_entry'   : '#660022',
         'bg_button'  : '#80002a',  
         'text_entry' : 'white',
