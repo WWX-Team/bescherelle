@@ -211,6 +211,8 @@ dic_verbe = {
 Liste des verbes d'état
 """
 
+tab_états = ['être', 'sembler', 'paraître', 'rester', 'demeurer', 'devenir']
+
 """
 Liste des verbes irréguliers
 """
