@@ -217,20 +217,20 @@ def conjuguer(verbe:str, affichage:bool=False):
     {
         '!affichage' : {
                             'mode_1': {
-                                            'temps_complet':  "Temps complet du mode 1"
+                                            'temps_complet':  "Temps complet du mode 1",
                                             '?temps_complet': "Temps complet"
                         },
                         },
         'mode_1': {
-                    'temps_complet': ["","","","","",""]       // plupart du et des temps
-                    'temps_unique' : ""                        // modes : infinitif, participe
-                    'temps_partiel': [None,None,"","","",None] // modes : impératif
-                    'temps_invalid': None                      // certains verbes, impersonnels particulièrement
+                    'temps_complet': ["","","","","",""],       // plupart du et des temps
+                    'temps_unique' : "",                        // modes : infinitif, participe
+                    'temps_partiel': [None,None,"","","",None], // modes : impératif
+                    'temps_invalid': None                       // certains verbes, impersonnels particulièrement
                 },
         '!verbe' : [:str],
         '!groupe': [:int],
         '!term'  : [:str],
-        '!type'  : [:str],
+        '!type'  : [:str]
     }
     """
     #if affichage:
