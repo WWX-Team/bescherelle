@@ -64,7 +64,7 @@ label_title.pack(pady=25, expand='YES')
 # Input 
 frame_input = tkinter.Frame(
                                 frame, 
-                                bg   = theme['bg']
+                                bg = theme['bg']
                             )
                             
 entry_search = tkinter.Entry(
