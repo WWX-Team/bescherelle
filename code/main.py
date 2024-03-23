@@ -23,7 +23,7 @@
 ###############################################################################
 # Import des MODULES
 import tkinter
-import scripts
+from scripts import conjuguer
 
 theme = {
         'title'      : '#b21948',
@@ -83,7 +83,7 @@ button_search = tkinter.Button(
                                  font    = (theme['typo'],20), 
                                  bg      = theme['bg_input'], 
                                  fg      = theme['text_input'], 
-                                 command = scripts.conjuguer(verbe)
+                                 command = conjuguer(verbe)
                               )
 button_search.pack(pady=10, fill='x')
 
