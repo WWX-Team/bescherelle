@@ -22,7 +22,8 @@
 """
 ###############################################################################
 # Import des MODULES
-import tkinter
+import tkinter as tk
+import tkinter.font as tkf
 from scripts import conjuguer
 
 theme = {
@@ -44,12 +45,12 @@ def conjuguer_return ():
     """
     verbe = entry_search.get()
     
-    frame_return = tkinter.Frame (
+    frame_return = tk.Frame (
                                      frame, 
                                      bg   = theme['bg']
                                  )
 
-    label_return = tkinter.Label ( 
+    label_return = tk.Label ( 
                                      frame_return,
                                      text = conjuguer(verbe),
                                      justify = 'center',
@@ -65,7 +66,7 @@ def conjuguer_return ():
  - Gestion TKINTER
 """
 
-window = tkinter.Tk() 
+window = tk.Tk() 
 
 # Personnalisation
 window.title('Bescherelle')   # Nom à trouver
@@ -75,12 +76,12 @@ window.minsize(480, 360)
 window.config(background=theme['bg'])
               
 # Titre
-frame = tkinter.Frame(window, bg=theme['bg'])
+frame = tk.Frame(window, bg=theme['bg'])
 
-label_title = tkinter.Label (
+label_title = tk.Label (
                                 frame, 
                                 text = 'TITRE', 
-                                font = (theme['typo'], 60), 
+                                font = tkf.Font(family='', size=60, weight='normal'), 
                                 bg   = theme['bg'], 
                                 fg   = theme['title']
                             )  
@@ -90,12 +91,12 @@ label_title.pack(pady=25, expand='YES')
 
 
 # Input 
-frame_input = tkinter.Frame (
+frame_input = tk.Frame (
                                 frame, 
                                 bg = theme['bg']
                             )
                             
-entry_search = tkinter.Entry (
+entry_search = tk.Entry (
                                 frame_input, 
                                 font = (theme['typo'], 20), 
                                 bg   = theme['bg_input'], 
@@ -103,7 +104,7 @@ entry_search = tkinter.Entry (
                              )
 entry_search.pack()
 
-button_search = tkinter.Button (
+button_search = tk.Button (
                                  frame_input, 
                                  text    = 'Rechercher', 
                                  font    = (theme['typo'],20), 
