@@ -4,7 +4,7 @@
 
 ``` Repositery "Bescherelle" - Trophée NSI ```
 
-Réalisé par Wilhelm, Anselme & Lorick
+*Réalisé par wilhelm43, wedego & IIllux*
 
 Bescherelle semi-automatique générant des conjugaisons pour des verbes, même non existants.
 
