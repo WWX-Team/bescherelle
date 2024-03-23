@@ -95,17 +95,17 @@ def verbe_analyse_séparer(verbe:str) -> tuple:
 
 def verbe_analyse_est_irrégulier(verbe:str) -> bool:
     """
-    [Verbe / Analyse / Est irrégulier]: Vérifie si un verbe donné [:str] est irrégulier. Retourne un [:bool].
+    [Verbe / Analyse / Est irrégulier]: Vérifie si un verbe donné [:str] est irrégulier. Retourne un [:tuple] contenant un [:bool], et le verbe irrégulier modèle [:str].
     """
     if len(verbe) == 0: return False
     for i in tabs.tab_irréguliers:
         if i['verbe'] == verbe:
             return (True, verbe)
-    return (False, None)
+    return verbe_analyse_est_composé(verbe)
 
 def verbe_analyse_est_composé(verbe:str) -> tuple:
     """
-    [Verbe / Analyse / Est composé]: Vérifie si un verbe donné est un composé (d'un verbe irrégulier). Retourne un [:tuple] contenant un [:bool], et le verbe irrégulier modèle [:str].
+    [Verbe / Analyse / Est irrégulier / Est composé]: Vérifie si un verbe donné est un composé (d'un verbe irrégulier). Retourne un [:tuple] contenant un [:bool], et le verbe irrégulier modèle [:str].
     """      
     if len(verbe) == 0: return (False, None)
     for i in tabs.tab_irréguliers:
@@ -114,6 +114,18 @@ def verbe_analyse_est_composé(verbe:str) -> tuple:
             if v == verbe[len(verbe) - len(v) +1 : len(verbe)]:
                 return (True, v)
     return (False, None)
+
+def verbe_analyse_est_état(verbe:str) -> str:
+    """
+    [Verbe / Analyse / Verbes d'état]: Retourne une [:str] indiquant soit "état", soit "personnel", soit "impersonnel".
+    """
+    for i in tabs.tab_états:
+        if verbe[len(verbe) - len(i) : len(verbe)] == i:
+            return "état"
+    for i in tabs.tab_irréguliers:
+        if verbe[len(verbe) - len(i) : len(verbe)] == i['verbe'] and i['type'] == 'impersonnel':
+            return "impersonnel"
+    return "personnel"
 
 def verbe_analyse_term_brute(verbe:str, data="") -> str:
     """
@@ -206,11 +218,14 @@ def conjuguer(verbe:str, affichage:bool=False):
                     conjugué[__mode][__temps] = conjuguer_tr(terminaison = inf, radical = rad, personne = 1, temps = (__mode + '_' + __temps), groupe = group)
                 else                                 :   
                     conjugué[__mode][__temps] = None
-    conjugué['!verbe']  = verbe
-    conjugué['!groupe'] = group
-    conjugué['!term']   = inf
-    if verbe in ['être', 'avoir']: conjugué['type'] = 'auxiliaire'
-    else                         : conjugué['type'] = 'commun'
+    conjugué['!verbe']                                     = verbe
+    conjugué['!groupe']                                    = group
+    conjugué['!term']                                      = inf
+    conjugué['!usage']                                     = verbe_analyse_est_état(verbe)
+    if verbe_analyse_est_irrégulier() : conjugué['!build'] = 'irrégulier'
+    else                              : conjugué['!build'] = 'régulier'
+    if verbe in ['être', 'avoir']     : conjugué['type']   = 'auxiliaire'
+    else                              : conjugué['type']   = 'commun'
     """
     [Conjugaison / Documentation des données]
     Les données sont présententes sous le format
