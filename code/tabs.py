@@ -208,6 +208,10 @@ dic_verbe = {
             }
 
 """
+Liste des verbes d'état
+"""
+
+"""
 Liste des verbes irréguliers
 """
 
@@ -1230,7 +1234,7 @@ tab_irréguliers =   [
                                                                     'présent':          ["quière","quières","quière","quérions","quériez","quièrent"],
                                                                     'imparfait':        ["quisse","quisses","quît","quissions","quissiez","quissent"]
                                                                 },
-                                                'impératif':    {   'présent':          [None,"quiers",None,"quérons","quérez",None],
+                                                'impératif':    {   'présent':          [None,"quiers",None,"quérons","quérez",None], },
                                                 'conditionnel': {   'présent':          ["querrais","querrais","querrait","querrions","querriez","querraient"] },
                                                 'participe':    {
                                                                     'présent':          "quérant",
