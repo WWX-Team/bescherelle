@@ -30,8 +30,36 @@ theme = {
         'bg'         : '#000000',
         'bg_input'   : '#b21948',
         'text_input' : 'white',
-        'typo'       : 'Arial'       # typo à trouver
+        'typo'       : ''     # typo à trouver
         }
+###############################################################################
+"""
+ - Fonction affichage
+"""
+ 
+def conjuguer_return ():
+    """
+    affiche la fonction [conjuguer] de [scripts.py] après que l'utilisateur 
+    ai cliqué sur [button_search]
+    """
+    verbe = entry_search.get()
+    
+    frame_return = tkinter.Frame (
+                                     frame, 
+                                     bg   = theme['bg']
+                                 )
+
+    label_return = tkinter.Label ( 
+                                     frame_return,
+                                     text = conjuguer(verbe),
+                                     justify = 'center',
+                                     font = (theme['typo'], 20), 
+                                     bg   = theme['bg'], 
+                                     fg   = theme['title']
+                                 )
+    label_return.pack()
+    
+    frame_return.pack(side='bottom')
 ###############################################################################
 """
  - Gestion TKINTER
@@ -49,7 +77,7 @@ window.config(background=theme['bg'])
 # Titre
 frame = tkinter.Frame(window, bg=theme['bg'])
 
-label_title = tkinter.Label(
+label_title = tkinter.Label (
                                 frame, 
                                 text = 'TITRE', 
                                 font = (theme['typo'], 60), 
@@ -62,35 +90,30 @@ label_title.pack(pady=25, expand='YES')
 
 
 # Input 
-frame_input = tkinter.Frame(
+frame_input = tkinter.Frame (
                                 frame, 
                                 bg = theme['bg']
                             )
                             
-entry_search = tkinter.Entry(
+entry_search = tkinter.Entry (
                                 frame_input, 
                                 font = (theme['typo'], 20), 
                                 bg   = theme['bg_input'], 
                                 fg   = theme['text_input']
-                            )
-verbe = entry_search.get()
-
+                             )
 entry_search.pack()
 
-button_search = tkinter.Button(
+button_search = tkinter.Button (
                                  frame_input, 
                                  text    = 'Rechercher', 
                                  font    = (theme['typo'],20), 
                                  bg      = theme['bg_input'], 
                                  fg      = theme['text_input'], 
-                                 command = conjuguer(verbe)
-                              )
+                                 command = conjuguer_return
+                               )
 button_search.pack(pady=10, fill='x')
 
 frame_input.pack() 
-
-
-
 frame.pack(side='top')                           
 
 ###############################################################################
@@ -98,4 +121,3 @@ frame.pack(side='top')
  - Boucle principale
 """
 window.mainloop()
-
