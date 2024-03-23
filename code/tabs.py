@@ -1221,20 +1221,20 @@ tab_irréguliers =   [
                                 'type':     "verbe",
                                 'feuille':  {
                                                 'indicatif':    {
-                                                                    'présent':          None,
-                                                                    'futur_simple':     None,
-                                                                    'imparfait':        None,
-                                                                    'passé_simple':     None
+                                                                    'présent':          ["quiers","quiers","quiert","quérons","quérez","quièrent"],
+                                                                    'futur_simple':     ["querrai","querras","querra","querrons","querrez","querront"],
+                                                                    'imparfait':        ["quérais","quérais","quérait","quérions","quériez","quéraient"],
+                                                                    'passé_simple':     ["quis","quis","quit","quîmes","quîtes","quirent"]
                                                                 },
                                                 'subjonctif':   {
-                                                                    'présent':          None,
-                                                                    'imparfait':        None
+                                                                    'présent':          ["quière","quières","quière","quérions","quériez","quièrent"],
+                                                                    'imparfait':        ["quisse","quisses","quît","quissions","quissiez","quissent"]
                                                                 },
-                                                'impératif':    {   'présent':          None,
-                                                'conditionnel': {   'présent':          None },
+                                                'impératif':    {   'présent':          [None,"quiers",None,"quérons","quérez",None],
+                                                'conditionnel': {   'présent':          ["querrais","querrais","querrait","querrions","querriez","querraient"] },
                                                 'participe':    {
-                                                                    'présent':          None
-                                                                    'passé':            None
+                                                                    'présent':          "quérant",
+                                                                    'passé':            "quis"
                                                                 },
                                                 'infinitif':    {   'présent':          "quérir"}
                                             }
