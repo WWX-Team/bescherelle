@@ -224,7 +224,7 @@ def conjuguer(verbe:str, affichage:bool=False):
         'mode_1': {
                     'temps_complet': ["","","","","",""],       // plupart du et des temps
                     'temps_unique' : "",                        // modes : infinitif, participe
-                    'temps_partiel': [None,None,"","","",None], // modes : impératif
+                    'temps_partiel': [None,"",None,"","",None], // modes : impératif
                     'temps_invalid': None                       // certains verbes, impersonnels particulièrement
                 },
         '!verbe' : [:str],
