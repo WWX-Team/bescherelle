@@ -218,14 +218,14 @@ def conjuguer(verbe:str, affichage:bool=False):
                     conjugué[__mode][__temps] = conjuguer_tr(terminaison = inf, radical = rad, personne = 1, temps = (__mode + '_' + __temps), groupe = group)
                 else                                 :   
                     conjugué[__mode][__temps] = None
-    conjugué['!verbe']                                     = verbe
-    conjugué['!groupe']                                    = group
-    conjugué['!term']                                      = inf
-    conjugué['!usage']                                     = verbe_analyse_est_état(verbe)
-    if verbe_analyse_est_irrégulier() : conjugué['!build'] = 'irrégulier'
-    else                              : conjugué['!build'] = 'régulier'
-    if verbe in ['être', 'avoir']     : conjugué['type']   = 'auxiliaire'
-    else                              : conjugué['type']   = 'commun'
+    conjugué['!verbe']                                             = verbe
+    conjugué['!groupe']                                            = group
+    conjugué['!term']                                              = inf
+    conjugué['!usage']                                             = verbe_analyse_est_état(verbe)
+    if verbe_analyse_est_irrégulier(verbe)[0] : conjugué['!build'] = 'irrégulier'
+    else                                      : conjugué['!build'] = 'régulier'
+    if verbe in ['être', 'avoir']             : conjugué['type']   = 'auxiliaire'
+    else                                      : conjugué['type']   = 'commun'
     """
     [Conjugaison / Documentation des données]
     Les données sont présententes sous le format
