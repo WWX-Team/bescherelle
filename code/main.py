@@ -125,6 +125,7 @@ button_search = tk.Button(
                                 bg               = theme['bg_button'], 
                                 fg               = theme['text_button'],
                                 activebackground = theme['bg_entry'],
+                                relief           = 'raised',
                                 command          = conjuguer_return
                           )
 button_search.pack(pady=10, fill='x')
