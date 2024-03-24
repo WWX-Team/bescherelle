@@ -76,7 +76,6 @@ window.minsize(480, 360)
 window.iconbitmap("../img/LPP_only_logo.ico")
 window.config(background=theme['bg'])
               
-# Titre
 frame = tk.Frame(
                     window, 
                     bg = theme['bg']
@@ -87,25 +86,13 @@ frame_title = tk.Frame(
                             bg = theme['bg']
                        )
 
-label_title = tk.Label(
-                                frame_title, 
-                                text = 'Le Petit Pascal', 
-                                font = ('Impact', 60), 
-                                bg   = theme['bg'], 
-                                fg   = theme['title']
-                        )  
- 
-label_title.pack()
-
-frame_title.grid(row=0, column=1, sticky='e')
-
 # Image
 image_logo = tk.PhotoImage(
                                 file="../img/lpp.png"
                             )
 
 canvas_logo = tk.Canvas(
-                                frame,
+                                frame_title,
                                 width=500,
                                 height=300,
                                 bg=theme['bg'],
@@ -113,7 +100,9 @@ canvas_logo = tk.Canvas(
                                 highlightthickness=0
                         )
 canvas_logo.create_image(500/2,300/2, image=image_logo)
-canvas_logo.grid(row=0, column=0, sticky='w')
+canvas_logo.pack()
+
+frame_title.grid(row=0, column=0, sticky='n', pady=20)
 
 # Input
 frame_input = tk.Frame(
@@ -139,7 +128,7 @@ button_search = tk.Button(
                           )
 button_search.pack(pady=10, fill='x')
 
-frame_input.grid(row=1, column=1, sticky='n') 
+frame_input.grid(row=1, column=0, sticky='s', pady=20) 
 
 
 
@@ -150,3 +139,4 @@ frame.pack(side='top')
  - Boucle principale
 """
 window.mainloop()
+
