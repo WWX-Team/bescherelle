@@ -119,12 +119,13 @@ entry_search = tk.Entry(
 entry_search.pack()
 
 button_search = tk.Button(
-                                 frame_input, 
-                                 text    = 'Rechercher', 
-                                 font    = (theme['typo'],20), 
-                                 bg      = theme['bg_button'], 
-                                 fg      = theme['text_button'], 
-                                 command = conjuguer_return
+                                frame_input,  
+                                text             = 'Rechercher', 
+                                font             = (theme['typo'],20), 
+                                bg               = theme['bg_button'], 
+                                fg               = theme['text_button'],
+                                activebackground = theme['bg_entry'],
+                                command          = conjuguer_return
                           )
 button_search.pack(pady=10, fill='x')
 
