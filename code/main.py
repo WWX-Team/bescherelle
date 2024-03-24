@@ -61,7 +61,7 @@ def conjuguer_return():
                             )
     label_return.pack()
     
-    frame_return.pack(side='bottom')
+    frame_return.grid(row=2, column=0, sticky='n')
 ###############################################################################
 """
  - Gestion TKINTER
