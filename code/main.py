@@ -45,7 +45,8 @@ def conjuguer_return():
     ai cliqué sur [button_search]
     """
     verbe = entry_search.get()
-    
+    cj = conjuguer(verbe)
+ 
     frame_return = tk.Frame(
                                      frame, 
                                      bg   = theme['bg']
@@ -53,7 +54,7 @@ def conjuguer_return():
 
     label_return = tk.Label( 
                                      frame_return,
-                                     text = conjuguer(verbe),
+                                     text = cj,
                                      justify = 'center',
                                      font = (theme['typo'], 20), 
                                      bg   = theme['bg'], 
