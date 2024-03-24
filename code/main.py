@@ -62,6 +62,7 @@ def conjuguer_return():
     label_return.pack()
     
     frame_return.pack(side='bottom')
+ 
 ###############################################################################
 """
  - Gestion TKINTER
@@ -70,10 +71,10 @@ def conjuguer_return():
 window = tk.Tk() 
 
 # Personnalisation
-window.title('Bescherelle')   # Nom à trouver
+window.title('Le Petit Pascal')   # Nom à trouver
 window.geometry('1080x720')
 window.minsize(480, 360)
-#window.iconbitmap()
+window.iconbitmap("../img/LPP_only_logo.ico")
 window.config(background=theme['bg'])
               
 # Titre
@@ -81,7 +82,7 @@ frame = tk.Frame(window, bg=theme['bg'])
 
 label_title = tk.Label(
                                 frame, 
-                                text = 'Le Saint Bescherelle', 
+                                text = 'Le Petit Pascal', 
                                 font = ('Impact', 60), 
                                 bg   = theme['bg'], 
                                 fg   = theme['title']
