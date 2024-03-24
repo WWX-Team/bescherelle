@@ -62,7 +62,6 @@ def conjuguer_return():
     label_return.pack()
     
     frame_return.pack(side='bottom')
- 
 ###############################################################################
 """
  - Gestion TKINTER
@@ -88,9 +87,21 @@ label_title = tk.Label(
                                 fg   = theme['title']
                         )  
  
-label_title.pack(pady=25, expand='YES')
+label_title.grid(row=0, column=1, sticky='w')
 
+# Image
+image_logo = tk.PhotoImage(
+                                file="../img/lpp.png"
+                            )
 
+canvas_logo = tk.Canvas(
+                                frame,
+                                width=300,
+                                height=300,
+                                bg=theme['bg']
+                        )
+canvas_logo.create_image(150/2, 94/2, image=image_logo)
+canvas_logo.grid(row=0, column=0, sticky='w')
 
 # Input 
 frame_input = tk.Frame(
@@ -116,7 +127,7 @@ button_search = tk.Button(
                           )
 button_search.pack(pady=10, fill='x')
 
-frame_input.pack() 
+frame_input.grid(row=1, column=1, sticky='w') 
 
 
 
