@@ -121,10 +121,27 @@ dic_terminaisons_cg =   {
                                                 'conditionnel_présent'    : ['', '', '', '', '', '']
                                             }
                             },
-                            '-re': {
+                            '-enir': {
                                 'groupe' : 3,
                                 'temps'  :  {
-                                                'indicatif_présent': ['s', 's', 't', 'ons', 'ez', 'ent']
+                                                'infinitif_présent'       : ['enir'],
+                                  
+                                                'participe_présent'       : ['enant'],
+                                                'participe_passé'         : ['enu'],
+                                  
+                                                'indicatif_présent'       : ['iens', 'iens', 'ient', 'enons', 'enez', 'iennent'],
+                                                'indicatif_futur_simple'  : ['iendrai', 'iendras', 'iendra', 'iendrons', 'iendrez', 'iendront'],
+                                                'indicatif_imparfait'     : ['enais', 'enais', 'enait', 'enions', 'eniez', 'enaient'],
+                                                'indicatif_passé_simple'  : ['ins', 'ins', 'int', 'înmes', 'întes', 'inrent'],
+                                  
+                                                'impératif_présent'       : [None, '', None, '', '', None],
+                                  
+                                                'subjonctif_présent'      : ['ienne', 'iennes', 'ienne', 'enions', 'eniez', 'iennent'],
+                                                'subjonctif_imparfait'    : ['insse', 'insses', 'înt', 'inssions', 'inssiez', 'inssent'],
+                                  
+                                                'conditionnel_présent'    : ['iendrais', 'iendrais', 'iendrait', 'iendrions', 'iendriez', 'iendraient'],
+
+                                                'tags'                    : ["build/sans_rad_futur_simple"]
                                             }
                             }
                         }
