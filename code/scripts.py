@@ -290,12 +290,16 @@ def conjuguer_tr(terminaison:str, radical:str, personne:int, temps:str, groupe:i
     if temps_est_composé:
         return conjuguer_tr('-oir', 'av', personne, temps_composé_référence, 3) + '/' + conjuguer_tr('-re', 'êt', personne, temps_composé_référence, 3) + ' ' + conjuguer_tr(terminaison, radical, 1, 'participe_passé', groupe)
     else                :
+        cg_tags = []
         if verbe_est_irrégulier:
             # Si le verbe est irrégulier, le chemin est dans le tableau des irréguliers
             cg_path                  = tabs.tab_irréguliers[init_irréguliers().index(verbe_irrégulier_modèle)]['feuille'][cg_mode][cg_temps]
+            
         else                   :
             # Si le verbe est régulier, le chemin est dans le dictionnaire des terminaisons
             cg_path                  = tabs.dic_terminaisons_cg[terminaison]['temps'][temps]
+            if 'tags' in tabs.dic_terminaisons_cg[terminaison].keys():
+                cg_tags              = tabs.dic_terminaisons_cg[terminaison]['tags']
         # Code commun
         cg_len         = len(cg_path)
         cg_terminaison = cg_path[((personne -1) % cg_len)]
@@ -307,6 +311,7 @@ def conjuguer_tr(terminaison:str, radical:str, personne:int, temps:str, groupe:i
         else                   :
             # Si verbe à radical particulier
             verbe_double_radicaux = init_exceptions()
+            cg_radical = radical
             if verbe_infinitif in verbe_double_radicaux.keys():
                 if groupe == 1:
                     if personne in [1, 2, 3, 6] and temps in ['indicatif_présent', 'impératif_présent', 'subjonctif_présent']:
@@ -318,17 +323,17 @@ def conjuguer_tr(terminaison:str, radical:str, personne:int, temps:str, groupe:i
                         cg_radical = verbe_double_radicaux[verbe_infinitif][0]
                     else:
                         cg_radical = verbe_double_radicaux[verbe_infinitif][1]
-            else:
-                cg_radical = conjuguer_tr_vérifier_radical(radical, cg_terminaison, temps, personne, groupe)
+            cg_radical = conjuguer_tr_vérifier_radical(cg_radical, cg_terminaison, temps, personne, groupe)
                 
         return cg_radical + cg_terminaison
 
-def conjuguer_tr_vérifier_radical(radical:str, term:str, temps:str, personne:str, groupe:int):
+def conjuguer_tr_vérifier_radical(radical:str, term:str, temps:str, personne:str, groupe:int, tags:list=[""]):
     """
     [Conjugaison / Transformations / Radical]: Voir [Conjugaison / Transformations]. Retourne l'état correct du radical.
     """
     cg_radical = radical
-    if temps in ['indicatif_futur_simple']: cg_radical += 'r'
+    if temps in ['indicatif_futur_simple'] and not 'build/sans_rad_futur_simple' in tags:
+        cg_radical += 'r'
     if temps in ['participe_présent']     :
         if   groupe == 1: cg_radical = cg_radical
         elif groupe == 2: cg_radical = cg_radical + 'iss'
