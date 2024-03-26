@@ -55,7 +55,7 @@ Terminaisons
 # Triées de la plus petite à la plus longue (note : seulement les caractères après le tiret sont comptabilisés)
 tab_terminaisons              =    ["-er", "2-ir", "3-ir", "-ir", "-re", "-dre", "-ire", "-oir", "-enir", "-aire", "-oire", "-ettre", "-aindre", "-eindre", "-oindre"]
 # avancement                  #     √      √       O       None   O      X       X       X       X        X        ok          ok         ok           ok           ok
-# à ajouter : eillir, uire, https://www.conjugaisons.net/verbes/groupe/3/
+
 
 dic_terminaisons_cg =   {
                             '-er': {
