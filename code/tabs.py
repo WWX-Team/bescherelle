@@ -100,25 +100,71 @@ dic_terminaisons_cg =   {
                                                 'conditionnel_présent'    : ['irais', 'irais', 'irait', 'irions', 'iriez', 'iraient']
                                             }
                             },
-                            '3-ir': {
+                            '-dre': {
                                 'groupe' : 3,
                                 'temps'  :  {
-                                                'infinitif_présent'       : [''],
+                                                'infinitif_présent'       : ['dre'],
                                   
-                                                'participe_présent'       : [''],
-                                                'participe_passé'         : [''],
+                                                'participe_présent'       : ['nant'],
+                                                'participe_passé'         : ['is'],
                                   
-                                                'indicatif_présent'       : ['', '', '', '', '', ''],
-                                                'indicatif_futur_simple'  : ['', '', '', '', '', ''],
-                                                'indicatif_imparfait'     : ['', '', '', '', '', ''],
+                                                'indicatif_présent'       : ['ds', 'ds', 'd', 'nons', 'nez', 'nent'],
+                                                'indicatif_futur_simple'  : ['ai', 'as', 'a', 'ons', 'ez', 'ont'],
+                                                'indicatif_imparfait'     : ['ais', 'ais', 'ait', 'ions', 'iez', 'aient'],
                                                 'indicatif_passé_simple'  : ['', '', '', '', '', ''],
                                   
-                                                'impératif_présent'       : [None, '', None, '', '', None],
+                                                'impératif_présent'       : [None, 'ds', None, 'dons', 'dez', None],
                                   
-                                                'subjonctif_présent'      : ['', '', '', '', '', ''],
-                                                'subjonctif_imparfait'    : ['', '', '', '', '', ''],
+                                                'subjonctif_présent'      : ['de', 'des', 'de', 'dions', 'diez', 'dent'],
+                                                'subjonctif_imparfait'    : ['disse', 'disses', 'dît', 'dissions', 'dissiez', 'dissent'],
                                   
-                                                'conditionnel_présent'    : ['', '', '', '', '', '']
+                                                'conditionnel_présent'    : ['drais', 'drais', 'drait', 'drions', 'driez', 'draient']
+                                            }
+                            },
+                            '-ire': {
+                                'groupe' : 3,
+                                'temps'  :  {
+                                                'infinitif_présent'       : ['ire'],
+                                  
+                                                'participe_présent'       : ['isant'],
+                                                'participe_passé'         : ['u'],
+                                  
+                                                'indicatif_présent'       : ['is', 'is', 'it', 'isons', 'isez', 'isent'],
+                                                'indicatif_futur_simple'  : ['irai', 'iras', 'ira', 'irons', 'irez', 'iront'],
+                                                'indicatif_imparfait'     : ['isais', 'isais', 'isait', 'isions', 'isiez', 'isaient'],
+                                                'indicatif_passé_simple'  : ['us', 'us', 'ut', 'ûmes', 'ûtes', 'lurent'],
+                                  
+                                                'impératif_présent'       : [None, 'is', None, 'isons', 'isez', None],
+                                  
+                                                'subjonctif_présent'      : ['ise', 'ises', 'ise', 'isions', 'isiez', 'isent'],
+                                                'subjonctif_imparfait'    : ['usse', 'usses', 'ût', 'ussions', 'ussiez', 'ussent'],
+                                  
+                                                'conditionnel_présent'    : ['irais', 'irais', 'irait', 'irions', 'iriez', 'iraient'],
+                                                
+                                                'tags'                    : ["build/sans_rad_futur_simple"]
+                                            }
+                            },
+                            '-oir': {
+                                'groupe' : 3,
+                                'temps'  :  {
+                                                'infinitif_présent'       : ['oir'],
+                                  
+                                                'participe_présent'       : ['oyant'],
+                                                'participe_passé'         : ['u'],
+                                  
+                                                'indicatif_présent'       : ['ois', 'ois', 'oit', 'oyons', 'oyez', 'oyent'],
+                                                'indicatif_futur_simple'  : ['errais', 'errais', 'errait', 'errons', 'errez', 'erront'],
+                                                'indicatif_imparfait'     : ['oyais', 'oyais', 'oyait', 'oyions', 'oyiez', 'oyaient'],
+                                                'indicatif_passé_simple'  : ['is', 'is', 'it', 'îmes', 'îtes', 'inrent'],
+                                  
+                                                'impératif_présent'       : [None, 'ois', None, 'oyons', 'oyez', None],
+                                  
+                                                'subjonctif_présent'      : ['oie', 'oies', 'oie', 'oyions', 'oyiez', 'voient'],
+                                                'subjonctif_imparfait'    : ['isse', 'isses', 'ît', 'issions', 'issiez', 'issent'],
+                                  
+                                                'conditionnel_présent'    : ['errais', 'errais', 'errait', 'errions', 'erriez', 'erraient'],
+                                                
+                                                'tags'                    : ["build/sans_rad_futur_simple"]
                                             }
                             },
                             '-enir': {
@@ -143,7 +189,30 @@ dic_terminaisons_cg =   {
 
                                                 'tags'                    : ["build/sans_rad_futur_simple"]
                                             }
-                            }
+                            },
+                            '-aire': {
+                                'groupe' : 3,
+                                'temps'  :  {
+                                                'infinitif_présent'       : ['aire'],
+                                  
+                                                'participe_présent'       : ['ayant'],
+                                                'participe_passé'         : ['ait'],
+                                  
+                                                'indicatif_présent'       : ['ais', 'ais', 'ait', 'ayons', 'ayez', 'aient'],
+                                                'indicatif_futur_simple'  : ['airai', 'airas', 'aira', 'airons', 'airez', 'airont'],
+                                                'indicatif_imparfait'     : ['ayais', 'ayais', 'ayait', 'ayions', 'ayiez', 'ayaient'],
+                                                'indicatif_passé_simple'  : None,
+                                  
+                                                'impératif_présent'       : [None, 'ais', None, 'ayons', 'ayez', None],
+                                  
+                                                'subjonctif_présent'      : ['aie', 'aies', 'aie', 'ayions', 'ayiez', 'aient'],
+                                                'subjonctif_imparfait'    : None,
+                                  
+                                                'conditionnel_présent'    : ['airais', 'airais', 'airait', 'airions', 'airiez', 'airaient'],
+                                                
+                                                'tags'                    : ["build/sans_rad_futur_simple"]
+                                            }
+                            },
                         }
 
 """
