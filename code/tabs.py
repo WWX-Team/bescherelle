@@ -213,6 +213,168 @@ dic_terminaisons_cg =   {
                                                 'tags'                    : ["build/sans_rad_futur_simple"]
                                             }
                             },
+                            '-oindre': {
+                                'groupe' : 3,
+                                'temps'  :  {
+                                                'infinitif_présent'       : ['oindre'],
+                                  
+                                                'participe_présent'       : ['oignant'],
+                                                'participe_passé'         : ['oint'],
+                                  
+                                                'indicatif_présent'       : ['oins','oins','oint','oignons','oignez','oignent'],
+                                                'indicatif_futur_simple'  : ['oindrai','oindras','oindra','oindrons','oindrez','oindront'],
+                                                'indicatif_imparfait'     : ['oignais','oignais','oignait','oignions','oigniez','oignaient'],
+                                                'indicatif_passé_simple'  : ['oignis','oignis','oignit','oignîmes','oignîtes','oignirent'],
+                                  
+                                                'impératif_présent'       : [None, 'oins', None, 'oignons', 'oignez', None],
+                                  
+                                                'subjonctif_présent'      : ['oigne','oignes','oigne','oignions','oigniez','oignent'],
+                                                'subjonctif_imparfait'    : ['oignisse','oignisses','oignît','oignissions','oignissiez','oignissent'],
+                                  
+                                                'conditionnel_présent'    : ['oindrais','oindrais','oindrait','oindrions','oindriez','oindraient'],
+
+                                                'tags'                    : ["build/sans_rad_futur_simple"]
+                                            }
+                                
+                            },
+                            '-eindre': {
+                                'groupe' : 3,
+                                'temps'  :  {
+                                                'infinitif_présent'       : ['eindre'],
+                                  
+                                                'participe_présent'       : ['eignant'],
+                                                'participe_passé'         : ['eint'],
+                                  
+                                                'indicatif_présent'       : ['eins','eins','eint','eignons','eignez','eignent'],
+                                                'indicatif_futur_simple'  : ['eindrai','eindras','eindra','eindrons','eindrez','eindront'],
+                                                'indicatif_imparfait'     : ['eignais','eignais','eignait','eignions','eigniez','eignaient'],
+                                                'indicatif_passé_simple'  : ['eignis','eignis','eignit','eignîmes','eignîtes','eignirent'],
+                                  
+                                                'impératif_présent'       : [None, 'eins', None, 'eignons', 'eignez', None],
+                                  
+                                                'subjonctif_présent'      : ['eigne','eignes','eigne','eignions','eigniez','eignent'],
+                                                'subjonctif_imparfait'    : ['eignisse','eignisses','eignît','eignissions','eignissiez','eignissent'],
+                                  
+                                                'conditionnel_présent'    : ['eindrais','eindrais','eindrait','eindrions','eindriez','eindraient'],
+
+                                                'tags'                    : ["build/sans_rad_futur_simple"]
+                                            }
+                            },
+                            '-aindre': {
+                                'groupe' : 3,
+                                'temps'  :  {
+                                                'infinitif_présent'       : ['aindre'],
+                                  
+                                                'participe_présent'       : ['aignant'],
+                                                'participe_passé'         : ['aint'],
+                                  
+                                                'indicatif_présent'       : ['ains','ains','aint','aignons','aignez','aignent'],
+                                                'indicatif_futur_simple'  : ['aindrai','aindras','aindra','aindrons','aindrez','aindront'],
+                                                'indicatif_imparfait'     : ['aignais','aignais','aignait','aignions','aigniez','aignaient'],
+                                                'indicatif_passé_simple'  : ['aignis','aignis','aignit','aignîmes','aignîtes','aignirent'],
+                                  
+                                                'impératif_présent'       : [None, '', None, '', '', None],
+                                  
+                                                'subjonctif_présent'      : ['aigne','aignes','aigne','aignions','aigniez','aignent'],
+                                                'subjonctif_imparfait'    : ['aignisse','aignisses','aignît','aignissions','aignissiez','aignissent'],
+                                  
+                                                'conditionnel_présent'    : ['aindrais','aindrais','aindrait','aindrions','aindriez','aindraient'],
+
+                                                'tags'                    : ["build/sans_rad_futur_simple"]
+                                            }
+                            },
+                            '-ettre': {
+                                'groupe' : 3,
+                                'temps'  :  {
+                                                'infinitif_présent'       : ['ettre'],
+                                  
+                                                'participe_présent'       : ['ettant'],
+                                                'participe_passé'         : ['is'],
+                                  
+                                                'indicatif_présent'       : ['ets','ets','et','ettons','ettez','mettent'],
+                                                'indicatif_futur_simple'  : ['ettrai','ettras','ettra','ettrons','ettrez','mettront'],
+                                                'indicatif_imparfait'     : ['ettais','ettais','ettait','ettions','ettiez','ettaient'],
+                                                'indicatif_passé_simple'  : ['is','is','it','îmes','îtes','irent'],
+                                  
+                                                'impératif_présent'       : [None, 'ets', None, 'ettons', 'ettez', None],
+                                  
+                                                'subjonctif_présent'      : ['ette','ettes','ette','ettions','ettiez','ettent'],
+                                                'subjonctif_imparfait'    : ['isse','isses','ît','issions','issiez','issent'],
+                                  
+                                                'conditionnel_présent'    : ['ettrais','ettrais', 'ettrait', 'ettrions', 'ettriez', 'ettraient'],
+
+                                                'tags'                    : ["build/sans_rad_futur_simple"]
+                                            }
+                            },
+                            '-uire': {
+                                'groupe' : 3,
+                                'temps'  :  {
+                                                'infinitif_présent'       : ['uire'],
+                                  
+                                                'participe_présent'       : ['uisant'],
+                                                'participe_passé'         : ['ui'],
+                                  
+                                                'indicatif_présent'       : ['uis','uis','uit','uisons','uisez','uisent'],
+                                                'indicatif_futur_simple'  : ['uirai','uiras','uira','uirons','uirez','uiront'],
+                                                'indicatif_imparfait'     : ['uisais','uisais','uisait','uisions','uisiez','uisaient'],
+                                                'indicatif_passé_simple'  : ['uisis','uisis','uisit','uisîmes','uisîtes','uisirent],
+                                  
+                                                'impératif_présent'       : [None, 'uis', None, 'uisons', 'uisez', None],
+                                  
+                                                'subjonctif_présent'      : ['uise','uises','uise','uisions','uisiez','uisent'],
+                                                'subjonctif_imparfait'    : ['uisisse','uisisses','uisît','uisissions','uisissiez','uisissent'],
+                                  
+                                                'conditionnel_présent'    : ['uirais','uirais','uirait','uirions','uiriez','uiraient'],
+
+                                                'tags'                    : ["build/sans_rad_futur_simple"]
+                                            }
+                            },
+                            '-oire': {
+                                'groupe' : 3,
+                                'temps'  :  {
+                                                'infinitif_présent'       : ['oire'],
+                                  
+                                                'participe_présent'       : ['oyant'],
+                                                'participe_passé'         : ['u'],
+                                  
+                                                'indicatif_présent'       : ['ois','ois','oit','oyons','oyez','oient'],
+                                                'indicatif_futur_simple'  : ['oirai','oiras','oira','oirons','oirez','oiront'],
+                                                'indicatif_imparfait'     : ['oyais','oyais','oyait','oyions','oyiez','oyaient'],
+                                                'indicatif_passé_simple'  : ['us','us','ut','ûmes','ûtes','urent'],
+                                  
+                                                'impératif_présent'       : [None, 'ois', None, 'oyons', 'oyez', None],
+                                  
+                                                'subjonctif_présent'      : ['oie','oies','oie','oyions','oyiez','oient'],
+                                                'subjonctif_imparfait'    : ['usse','usses','ût','ussions','ussiez','ussent'],
+                                  
+                                                'conditionnel_présent'    : ['oirais','oirais','oirait','oirions','oiriez','oiraient'],
+
+                                                'tags'                    : ["build/sans_rad_futur_simple"]
+                                            }
+                            },
+                            '-eillir': {
+                                'groupe' : 3,
+                                'temps'  :  {
+                                                'infinitif_présent'       : ['eillir'],
+                                  
+                                                'participe_présent'       : ['eillant'],
+                                                'participe_passé'         : ['eilli'],
+                                  
+                                                'indicatif_présent'       : ['eille','eilles','eille','eillons','eillez','eillent'],
+                                                'indicatif_futur_simple'  : ['eillerai','eilleras','eillera','eillerons','eillerez','eilleront'],
+                                                'indicatif_imparfait'     : ['eillais','eillais','eillait','eillions','eilliez','eillaient'],
+                                                'indicatif_passé_simple'  : ['eillis','eillis','eillit','eillîmes','eillîtes','eillirent'],
+                                  
+                                                'impératif_présent'       : [None, 'eille', None, 'eillons', 'eillez', None],
+                                  
+                                                'subjonctif_présent'      : ['eille','eilles','eille','eillions','eilliez','eillent'],
+                                                'subjonctif_imparfait'    : ['eillisse','eillisses','eillît','eillissions','eillissiez','eillissent'],
+                                  
+                                                'conditionnel_présent'    : ['eillerais','eillerais','eillerait','eillerions','eilleriez','eilleraient'],
+
+                                                'tags'                    : ["build/sans_rad_futur_simple"]
+                                            }
+                            }
                         }
 
 """
