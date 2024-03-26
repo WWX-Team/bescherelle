@@ -215,9 +215,9 @@ def conjuguer(verbe:str, affichage:bool=False):
                     for i in range(1, 7):
                         conjugué[__mode][__temps][i-1] = conjuguer_tr(terminaison = inf, radical = rad, personne = i, temps = (__mode + '_' + __temps), groupe = group)
                 elif isinstance(__terminaisons, str) :
-                    conjugué[__mode][__temps] = conjuguer_tr(terminaison = inf, radical = rad, personne = 1, temps = (__mode + '_' + __temps), groupe = group)
+                    conjugué['modes'][__mode][__temps] = conjuguer_tr(terminaison = inf, radical = rad, personne = 1, temps = (__mode + '_' + __temps), groupe = group)
                 else                                 :   
-                    conjugué[__mode][__temps] = None
+                    conjugué['modes'][__mode][__temps] = None
     conjugué['!verbe']                                             = verbe
     conjugué['!groupe']                                            = group
     conjugué['!term']                                              = inf
@@ -236,11 +236,12 @@ def conjuguer(verbe:str, affichage:bool=False):
                                             '?temps_complet': "Temps complet"
                         },
                         },
-        'mode_1': {
-                    'temps_complet': ["","","","","",""],       // plupart du et des temps
-                    'temps_unique' : "",                        // modes : infinitif, participe
-                    'temps_partiel': [None,"",None,"","",None], // modes : impératif
-                    'temps_invalid': None                       // certains verbes, impersonnels particulièrement
+        'modes': {    'mode_1': {
+                            'temps_complet': ["","","","","",""],       // plupart du et des temps
+                            'temps_unique' : "",                        // modes : infinitif, participe
+                            'temps_partiel': [None,"",None,"","",None], // modes : impératif
+                            'temps_invalid': None                       // certains verbes, impersonnels particulièrement
+                            }
                 },
         '!verbe' : [:str],
         '!groupe': [:int],
