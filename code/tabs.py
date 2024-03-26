@@ -1,5 +1,5 @@
 """
-Utilitaires idk
+Utilitaires
 """
 
 tab_favoris  = ["er", "bonsoir"]
