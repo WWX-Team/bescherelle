@@ -204,6 +204,7 @@ def conjuguer(verbe:str, affichage:bool=False):
     if group == None or inf == None or rad == None: return None
     conjugué =  tabs.dic_verbe
     conjugué['!affichage'] = {}
+    conjugué['modes']      = {}
     for __mode, __groupe_temps in tabs.dic_verbe.items():
         if __mode[0] != '!':
             conjugué['!affichage'][__mode] = {}
