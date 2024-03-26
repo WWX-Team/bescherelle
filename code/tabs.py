@@ -289,8 +289,8 @@ dic_terminaisons_cg =   {
                                                 'participe_présent'       : ['ettant'],
                                                 'participe_passé'         : ['is'],
                                   
-                                                'indicatif_présent'       : ['ets','ets','et','ettons','ettez','mettent'],
-                                                'indicatif_futur_simple'  : ['ettrai','ettras','ettra','ettrons','ettrez','mettront'],
+                                                'indicatif_présent'       : ['ets','ets','et','ettons','ettez','ettent'],
+                                                'indicatif_futur_simple'  : ['ettrai','ettras','ettra','ettrons','ettrez','ettront'],
                                                 'indicatif_imparfait'     : ['ettais','ettais','ettait','ettions','ettiez','ettaient'],
                                                 'indicatif_passé_simple'  : ['is','is','it','îmes','îtes','irent'],
                                   
@@ -315,7 +315,7 @@ dic_terminaisons_cg =   {
                                                 'indicatif_présent'       : ['uis','uis','uit','uisons','uisez','uisent'],
                                                 'indicatif_futur_simple'  : ['uirai','uiras','uira','uirons','uirez','uiront'],
                                                 'indicatif_imparfait'     : ['uisais','uisais','uisait','uisions','uisiez','uisaient'],
-                                                'indicatif_passé_simple'  : ['uisis','uisis','uisit','uisîmes','uisîtes','uisirent],
+                                                'indicatif_passé_simple'  : ['uisis','uisis','uisit','uisîmes','uisîtes','uisirent'],
                                   
                                                 'impératif_présent'       : [None, 'uis', None, 'uisons', 'uisez', None],
                                   
