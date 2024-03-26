@@ -718,6 +718,30 @@ tab_irréguliers =   [
                                             }
                         },
                         {
+                                'verbe':    "braire",
+                                'groupe':   1,
+                                'type':     "verbe",
+                                'feuille':  {
+                                                'indicatif':    {
+                                                                    'présent':          [None,None,"brait",None,None,"braient"],
+                                                                    'futur_simple':     [None,None,"braira",None,None,"brairont"],
+                                                                    'imparfait':        [None,None,"brayait",None,None,"brayaient"],
+                                                                    'passé_simple':     None
+                                                                },
+                                                'subjonctif':   {
+                                                                    'présent':          [None,None,"braie",None,None,"braient"],
+                                                                    'imparfait':        None
+                                                                },
+                                                'impératif':    {   'présent':          None },
+                                                'conditionnel': {   'présent':          [None,None,"brairait",None,None,"brairaient"] },
+                                                'participe':    {
+                                                                    'présent':          "braire",
+                                                                    'passé':            None
+                                                                },
+                                                'infinitif':    {   'présent':          "braire"}
+                                            }
+                        },
+                        {
                                 'verbe':    "jeter",
                                 'groupe':   1,
                                 'type':     "verbe",
