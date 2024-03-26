@@ -94,13 +94,13 @@ image_logo = tk.PhotoImage(
 
 canvas_logo = tk.Canvas(
                                 frame_title,
-                                width=500,
-                                height=300,
-                                bg=theme['bg'],
-                                bd=0,
-                                highlightthickness=0
+                                width              = 560,
+                                height             = 359,
+                                bg                 = theme['bg'],
+                                bd                 = 0,
+                                highlightthickness = 0
                         )
-canvas_logo.create_image(500/2,300/2, image=image_logo)
+canvas_logo.create_image(560/2,359/2, image=image_logo)
 canvas_logo.pack()
 
 frame_title.grid(row=0, column=0, sticky='n', pady=20)
