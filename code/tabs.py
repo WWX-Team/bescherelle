@@ -55,8 +55,6 @@ Terminaisons
 # Triées de la plus petite à la plus longue (note : seulement les caractères après le tiret sont comptabilisés)
 tab_terminaisons              =    ["-er", "2-ir", "3-ir", "-ir", "-re", "-dre", "-ire", "-oir", "-enir", "-aire", "-oire", "-ettre", "-aindre", "-eindre", "-oindre"]
 
-
-
 dic_terminaisons_cg =   {
                             '-er': {
                                 'groupe' : 1,
