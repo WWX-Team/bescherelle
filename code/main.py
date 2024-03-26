@@ -51,15 +51,38 @@ def conjuguer_return():
                                      frame, 
                                      bg   = theme['bg']
                             )
-
-    label_return = tk.Label( 
-                                     frame_return,
-                                     text = cj,
-                                     justify = 'center',
-                                     font = (theme['typo'], 20), 
-                                     bg   = theme['bg'], 
-                                     fg   = theme['title']
-                            )
+    
+    for mode in cj['modes'].keys():
+        label_return = tk.Label( 
+                                         frame_return,
+                                         text = 'X', #cj['!affichage'],
+                                         justify = 'center',
+                                         font = (theme['typo'], 20), 
+                                         bg   = theme['bg'], 
+                                         fg   = theme['title']
+                                        )
+        for temps in cj['modes'][mode].keys():
+            if   isinstance(temps, list):
+                """si liste"""
+            elif isinstance(temps, str) :
+                label_return = tk.Label( 
+                                         frame_return,
+                                         text = mode + temps,
+                                         justify = 'center',
+                                         font = (theme['typo'], 20), 
+                                         bg   = theme['bg'], 
+                                         fg   = theme['title']
+                                        )
+                
+            for term in cj['modes'][mode][temps].keys():
+                label_return = tk.Label( 
+                                         frame_return,
+                                         text = mode + temps + term,
+                                         justify = 'center',
+                                         font = (theme['typo'], 20), 
+                                         bg   = theme['bg'], 
+                                         fg   = theme['title']
+                                        )
     label_return.pack()
     
     frame_return.grid(row=2, column=0, sticky='n')
