@@ -53,7 +53,7 @@ Terminaisons
 
 # Tableau des terminaisons à l'infinitif
 # Triées de la plus petite à la plus longue (note : seulement les caractères après le tiret sont comptabilisés)
-tab_terminaisons              =    ["-er", "2-ir", "3-ir", "-ir", "-re", "-dre", "-ire", "-oir", "-enir", "-aire", "-oire", "-ettre", "-aindre", "-eindre", "-oindre"]
+tab_terminaisons              =    ["-er", "2-ir", "3-ir", "-ir", "-re", "-dre", "-ire", "-oir", "-enir", "-aire", "-oire", "-uire", "-ettre", "-aindre", "-eindre", "-oindre", "-eillir"]
 
 dic_terminaisons_cg =   {
                             '-er': {
@@ -289,8 +289,8 @@ dic_terminaisons_cg =   {
                                                 'participe_présent'       : ['ettant'],
                                                 'participe_passé'         : ['is'],
                                   
-                                                'indicatif_présent'       : ['ets','ets','et','ettons','ettez','ettent'],
-                                                'indicatif_futur_simple'  : ['ettrai','ettras','ettra','ettrons','ettrez','ettront'],
+                                                'indicatif_présent'       : ['ets','ets','et','ettons','ettez','mettent'],
+                                                'indicatif_futur_simple'  : ['ettrai','ettras','ettra','ettrons','ettrez','mettront'],
                                                 'indicatif_imparfait'     : ['ettais','ettais','ettait','ettions','ettiez','ettaient'],
                                                 'indicatif_passé_simple'  : ['is','is','it','îmes','îtes','irent'],
                                   
