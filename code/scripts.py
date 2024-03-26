@@ -202,9 +202,9 @@ def conjuguer(verbe:str, affichage:bool=False):
     # inf   : terminaison infinitive non brute [:str]
     # rad   : radical infinitif [:str]
     if group == None or inf == None or rad == None: return None
-    conjugué =  tabs.dic_verbe
+    conjugué = {}
     conjugué['!affichage'] = {}
-    conjugué['modes']      = {}
+    conjugué['modes']      = tabs.dic_verbe
     for __mode, __groupe_temps in tabs.dic_verbe.items():
         if __mode[0] != '!':
             conjugué['!affichage'][__mode] = {}
