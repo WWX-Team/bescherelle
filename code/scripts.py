@@ -189,6 +189,10 @@ def mot_tr_former_temps(mode:str, temps:str) -> str:
     else                  : liaison = "du "
     return nom_temps + ' ' + liaison + mot_tr_remplacer(mode)
 
+def mot_tr_élision(mot : str, suivant : str):
+    if mot[-1] == 'e' and suivant[0] in tabs.tab_voyelles: return mot[0 : len(mot) -1] + '\'' + suivant
+    return mot + ' ' + suivant
+
 ## CONJUGAISONS #####
 
                 # Principal
@@ -235,7 +239,8 @@ def conjuguer(verbe:str, affichage:bool=False):
                             'mode_1': {
                                             'temps_complet':  "Temps complet du mode 1",
                                             '?temps_complet': "Temps complet"
-                        },
+                                      },
+                            '?mode_1': 'Mode 1'
                         },
         'modes': {    'mode_1': {
                             'temps_complet': ["","","","","",""],       // plupart du et des temps
@@ -250,7 +255,19 @@ def conjuguer(verbe:str, affichage:bool=False):
         '!type'  : [:str]
     }
     """
-    #if affichage:
+    if affichage:
+        for af_mode in conjugué['modes'].keys():
+            print(f" | {conjugué['!affichage']['?' + af_mode]}" + " ––––––––––––––––––––––––––––––––––––––––––––––––––"[0 : 50 - len(conjugué['!affichage']['?' + af_mode])] + '\n')
+            for af_temps in conjugué['modes'][af_mode].keys():
+                print (f" :    - {conjugué['!affichage'][af_mode]['?' + af_temps]}")  
+                if   isinstance(conjugué['modes'][af_mode][af_temps], list):
+                    personne = 0
+                    for af_term in conjugué['modes'][af_mode][af_temps]:
+                        if af_term != None : print(f" :        • {mot_tr_élision(tabs.tab_pronoms_personnels[personne], af_term)}")
+                        personne += 1 
+                elif isinstance(conjugué['modes'][af_mode][af_temps], str):
+                    print(f" :        • {conjugué['modes'][af_mode][af_temps]}")
+            print()
     return conjugué
                 
                 # Transformations
@@ -365,9 +382,3 @@ def conjuguer_tr_g_final(radical:str, term:str) -> str:
     """
     if radical[-1] == 'g' and (term[0] in 'aou'): return radical + 'e'
     return radical
-
-#for temps in init_temps():
-#    print(f'###### {temps[0]} ######')
-#    for prs in range(1, 7):
-#        print(' + ' + str(conjuguer_tr(terminaison = '-er', radical = 'mang', groupe = '1', personne = prs, temps = temps[0])))
-#    print()
