@@ -357,9 +357,9 @@ def conjuguer_tr_vérifier_radical(radical:str, term:str, temps:str, personne:st
         if   groupe == 1: cg_radical = cg_radical
         elif groupe == 2: cg_radical = cg_radical + 'iss'
         elif groupe == 3: cg_radical = cg_radical
-    cg_radical = conjuguer_tr_e_final(radical)
-    cg_radical = conjuguer_tr_cédille(radical, term)
-    cg_radical = conjuguer_tr_g_final(radical, term)
+    cg_radical = conjuguer_tr_e_final(cg_radical)
+    cg_radical = conjuguer_tr_cédille(cg_radical, term)
+    cg_radical = conjuguer_tr_g_final(cg_radical, term)
     return cg_radical
 
 def conjuguer_tr_e_final(verbe:str) -> str:
@@ -373,7 +373,7 @@ def conjuguer_tr_cédille(radical:str, term:str) -> str:
     """
     [Conjugaison / Transformations / Cédille]: Ajoute une cédille au -c final d'un radical donné [:str] si la terminaison donnée [:str] le nécessite, et retourne le résultat [:str].
     """
-    if radical[-1] == 'c' and term[0] in 'aou': return radical[0:len(radical) -1] + 'ç'
+    if radical[-1] == 'c' and term[0] in ['a', 'o', 'u']: return radical[0:len(radical) -1] + 'ç'
     return radical
 
 def conjuguer_tr_g_final(radical:str, term:str) -> str:
@@ -382,3 +382,5 @@ def conjuguer_tr_g_final(radical:str, term:str) -> str:
     """
     if radical[-1] == 'g' and (term[0] in 'aou'): return radical + 'e'
     return radical
+
+conjuguer("manger", True)
