@@ -476,7 +476,6 @@ tab_irréguliers =   [
                                 'verbe':    "être",
                                 'groupe':   3,
                                 'type':     "auxiliaire",
-                                'usage':    "état",
                                 'feuille':  {
                                                 'indicatif':    {
                                                                     'présent':          ["suis", "es", "est", "sommes", "êtes", "sont"],
@@ -501,7 +500,6 @@ tab_irréguliers =   [
                                 'verbe':    "avoir",
                                 'groupe':   3,
                                 'type':     "auxiliaire",
-                                'usage':    "état",
                                 'feuille':  {
                                                 'indicatif':    {
                                                                     'présent':          ["ai", "as", "a", "avons", "avez", "ont"],
@@ -520,6 +518,30 @@ tab_irréguliers =   [
                                                                     'passé':            "eu"
                                                                 },
                                                 'infinitif':    {   'présent':          "avoir"}
+                                            }
+                        },
+                        {
+                                'verbe':    "faire",
+                                'groupe':   3,
+                                'type':     "verbe",
+                                'feuille':  {
+                                                'indicatif':    {
+                                                                    'présent':          ["fais", "fais", "fait", "faisons", "faites", "font"],
+                                                                    'futur_simple':     ["ferai", "feras", "fera", "ferons", "ferez", "feront"],
+                                                                    'imparfait':        ["faisais", "faisais", "faisait", "faisions", "faisiez", "faisaient"],
+                                                                    'passé_simple':     ["fis", "fis", "fit", "fîmes", "fîtes", "firent"]
+                                                                },
+                                                'subjonctif':   {
+                                                                    'présent':          ["fasse", "fasses", "fasse", "fassions", "fassiez", "fassent"],
+                                                                    'imparfait':        ["fisse", "fisse", "fît", "fissions", "fissiez", "fissent"]
+                                                                },
+                                                'impératif':    {   'présent':          [None, "fais", None, "faisons", "faites", None] },
+                                                'conditionnel': {   'présent':          ["ferais", "ferais", "ferait", "ferions", "feriez", "feraient"] },
+                                                'participe':    {
+                                                                    'présent':          "faisant",
+                                                                    'passé':            "fait"
+                                                                },
+                                                'infinitif':    {   'présent':          "faire"}
                                             }
                         },
                         
