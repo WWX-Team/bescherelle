@@ -447,10 +447,10 @@ dic_verbe = {
                                                                     'passé':            ["", "", "", "", "", ""]
                                                                 },
                                                 'participe':    {
-                                                                    'présent':          "",
-                                                                    'passé':            ""
+                                                                    'présent':          [""],
+                                                                    'passé':            [""]
                                                                 },
-                                                'infinitif':    {   'présent':          ""}
+                                                'infinitif':    {   'présent':          [""]}
             }
 
 """
