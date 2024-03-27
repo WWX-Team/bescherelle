@@ -56,8 +56,8 @@ def conjuguer_return():
     window_return.config(background=theme['bg'])
     
     frame_return = tk.Frame(
-                                     window_return, 
-                                     bg = theme['bg']
+                                window_return, 
+                                bg = theme['bg']
                             )
     
     row = 0
@@ -78,7 +78,7 @@ def conjuguer_return():
                                     frame_mode,
                                     text    = cj['!affichage']['?' + mode],
                                     justify = 'center',
-                                    font    = (theme['typo'], 30), 
+                                    font    = (theme['typo'], 20), 
                                     bg      = theme['back'][iteration % len(theme['back'])], 
                                     fg      = 'white'
                                 )
@@ -102,7 +102,7 @@ def conjuguer_return():
                                             frame_temps,
                                             text    = cj['!affichage'][mode]['?' + temps],
                                             justify = 'center',
-                                            font    = (theme['typo'], 20), 
+                                            font    = (theme['typo'], 10), 
                                             bg      = theme['back'][iteration % len(theme['back'])], 
                                             fg      = 'white'
                                         )
@@ -122,7 +122,7 @@ def conjuguer_return():
                                                 frame_term,
                                                 text    = term,
                                                 justify = 'center',
-                                                font    = (theme['typo'], 20), 
+                                                font    = (theme['typo'], 10), 
                                                 bg      = theme['back'][iteration % len(theme['back'])], 
                                                 fg      = 'white'
                                             )
@@ -135,8 +135,9 @@ def conjuguer_return():
         frame_gen.pack()
         
         iteration += 1
-            
+           
     frame_return.pack(side='top')
+    
     window_return.mainloop()
 ###############################################################################
 """
@@ -214,6 +215,9 @@ frame.pack(side='top')
 
 ###############################################################################
 """
+ - Boucle principale
+"""
+window.mainloop()
  - Boucle principale
 """
 window.mainloop()
