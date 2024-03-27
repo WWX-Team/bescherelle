@@ -49,42 +49,50 @@ def conjuguer_return():
  
     frame_return = tk.Frame(
                                      frame, 
-                                     bg   = theme['bg']
+                                     bg = theme['bg']
                             )
     
     for mode in cj['modes'].keys():
+        frame_mode = tk.Frame(
+                                frame_return,
+                                bg = theme['bg']
+                            )
         label_return = tk.Label( 
-                                         frame_return,
-                                         text = 'X', #cj['!affichage'],
-                                         justify = 'center',
-                                         font = (theme['typo'], 20), 
-                                         bg   = theme['bg'], 
-                                         fg   = theme['title']
-                                        )
+                                    frame_mode,
+                                    text    = cj['!affichage'],
+                                    justify = 'center',
+                                    font    = (theme['typo'], 20), 
+                                    bg      = theme['bg'], 
+                                    fg      = theme['title']
+                                )
         for temps in cj['modes'][mode].keys():
             if   isinstance(temps, list):
                 """si liste"""
+                
             elif isinstance(temps, str) :
-                label_return = tk.Label( 
-                                         frame_return,
-                                         text = mode + temps,
-                                         justify = 'center',
-                                         font = (theme['typo'], 20), 
-                                         bg   = theme['bg'], 
-                                         fg   = theme['title']
+                label_return2 = tk.Label( 
+                                            frame_return,
+                                            text    = cj['!affichage'][mode],
+                                            justify = 'center',
+                                            font    = (theme['typo'], 20), 
+                                            bg      = theme['bg'], 
+                                            fg      = theme['title']
                                         )
                 
-            for term in cj['modes'][mode][temps].keys():
-                label_return = tk.Label( 
-                                         frame_return,
-                                         text = mode + temps + term,
-                                         justify = 'center',
-                                         font = (theme['typo'], 20), 
-                                         bg   = theme['bg'], 
-                                         fg   = theme['title']
-                                        )
-    label_return.pack()
+  #              for term in cj['modes'][mode][temps].keys():
+  #                  label_return3 = tk.Label( 
+  #                                              frame_return,
+  #                                              text    = cj['!affichage'][mode][temps],
+  #                                              justify = 'center',
+  #                                              font    = (theme['typo'], 20), 
+  #                                              bg      = theme['bg'], 
+  #                                              fg      = theme['title']
+  #                                          )
+                label_return.pack()
+                label_return2.pack()
+  #              label_return3.pack()
     
+        frame_mode.pack()
     frame_return.grid(row=2, column=0, sticky='n')
 ###############################################################################
 """
