@@ -32,7 +32,8 @@ theme = {
         'bg_button'  : '#80002a',  
         'text_entry' : 'white',
         'text_button': 'white',
-        'typo'       : 'Helvetica'     
+        'typo'       : 'Helvetica',
+        'back'       : ['#a31743', '#96b2cb', '#e1b876', '#274e13', '#7c608f', '#f45f59']
         }
 ###############################################################################
 """
@@ -46,54 +47,97 @@ def conjuguer_return():
     """
     verbe = entry_search.get()
     cj = conjuguer(verbe)
- 
+    
+    window_return = tk.Tk()
+    window_return.title('Le Petit Pascal')   
+    window_return.geometry('1080x720')
+    window_return.minsize(480, 360)
+    window_return.iconbitmap("../img/LPP_only_logo.ico")
+    window_return.config(background=theme['bg'])
+    
     frame_return = tk.Frame(
-                                     frame, 
+                                     window_return, 
                                      bg = theme['bg']
                             )
     
+    row = 0
+    iteration = 0
+    
     for mode in cj['modes'].keys():
-        frame_mode = tk.Frame(
+        frame_gen = tk.Frame(
                                 frame_return,
-                                bg = theme['bg']
-                            )
+                                bg = theme['back'][iteration % len(theme['back'])]
+                             )
+        
+        frame_mode = tk.Frame(
+                                frame_gen,
+                                bg = theme['back'][iteration % len(theme['back'])]
+                             )
+        
         label_return = tk.Label( 
                                     frame_mode,
-                                    text    = cj['!affichage'],
+                                    text    = cj['!affichage']['?' + mode],
                                     justify = 'center',
-                                    font    = (theme['typo'], 20), 
-                                    bg      = theme['bg'], 
-                                    fg      = theme['title']
+                                    font    = (theme['typo'], 30), 
+                                    bg      = theme['back'][iteration % len(theme['back'])], 
+                                    fg      = 'white'
                                 )
+        
+        label_return.pack()       
+        frame_mode.grid(row=row, column=0, sticky='w') 
+        
+        row += 1
+        
         for temps in cj['modes'][mode].keys():
-            if   isinstance(temps, list):
+            if   isinstance(cj['modes'][mode][temps], str):
                 """si liste"""
                 
-            elif isinstance(temps, str) :
+            elif isinstance(cj['modes'][mode][temps], list) :
+                frame_temps = tk.Frame(
+                                            frame_gen,
+                                            bg = theme['back'][iteration % len(theme['back'])]
+                                       )                                              
+                                                        
                 label_return2 = tk.Label( 
-                                            frame_return,
-                                            text    = cj['!affichage'][mode],
+                                            frame_temps,
+                                            text    = cj['!affichage'][mode]['?' + temps],
                                             justify = 'center',
                                             font    = (theme['typo'], 20), 
-                                            bg      = theme['bg'], 
-                                            fg      = theme['title']
+                                            bg      = theme['back'][iteration % len(theme['back'])], 
+                                            fg      = 'white'
                                         )
                 
-  #              for term in cj['modes'][mode][temps].keys():
-  #                  label_return3 = tk.Label( 
-  #                                              frame_return,
-  #                                              text    = cj['!affichage'][mode][temps],
-  #                                              justify = 'center',
-  #                                              font    = (theme['typo'], 20), 
-  #                                              bg      = theme['bg'], 
-  #                                              fg      = theme['title']
-  #                                          )
-                label_return.pack()
                 label_return2.pack()
-  #              label_return3.pack()
-    
-        frame_mode.pack()
-    frame_return.grid(row=2, column=0, sticky='n')
+                frame_temps.grid(row=row, column=0, sticky='w')
+                
+                
+                
+                for term in cj['modes'][mode][temps]:
+                    frame_term = tk.Frame(
+                                                frame_gen,
+                                                bg = theme['back'][iteration % len(theme['back'])]
+                                           )
+                    
+                    label_return3 = tk.Label( 
+                                                frame_term,
+                                                text    = term,
+                                                justify = 'center',
+                                                font    = (theme['typo'], 20), 
+                                                bg      = theme['back'][iteration % len(theme['back'])], 
+                                                fg      = 'white'
+                                            )
+                    
+                    label_return3.pack()
+                    frame_term.grid(row=row, column=1, sticky='w')
+                
+                row += 1
+                
+        frame_gen.pack()
+        
+        iteration += 1
+            
+    frame_return.pack(side='top')
+    window_return.mainloop()
 ###############################################################################
 """
  - Gestion TKINTER
@@ -102,7 +146,7 @@ def conjuguer_return():
 window = tk.Tk() 
 
 # Personnalisation
-window.title('Le Petit Pascal')   # Nom à trouver
+window.title('Le Petit Pascal')   
 window.geometry('1080x720')
 window.minsize(480, 360)
 window.iconbitmap("../img/LPP_only_logo.ico")
