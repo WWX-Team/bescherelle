@@ -217,7 +217,7 @@ def conjuguer(verbe:str, affichage:bool=False):
                 conjugué['!affichage'][__mode][__temps]       = mot_tr_former_temps(__mode, __temps)
                 conjugué['!affichage'][__mode]['?' + __temps] = __temps[0].upper() + mot_tr_remplacer(__temps[1:len(__temps)])
                 if   isinstance(__terminaisons, list):
-                    for i in range(1, 7):
+                    for i in range(1, len(conjugué['modes'][__mode][__temps]) +1):
                         conjugué['modes'][__mode][__temps][i-1] = conjuguer_tr(terminaison = inf, radical = rad, personne = i, temps = (__mode + '_' + __temps), groupe = group)
                 elif isinstance(__terminaisons, str) :
                     conjugué['modes'][__mode][__temps] = conjuguer_tr(terminaison = inf, radical = rad, personne = 1, temps = (__mode + '_' + __temps), groupe = group)
