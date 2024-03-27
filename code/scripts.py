@@ -313,13 +313,13 @@ def conjuguer_tr(terminaison:str, radical:str, personne:int, temps:str, groupe:i
         if verbe_est_irrégulier:
             # Si le verbe est irrégulier, le chemin est dans le tableau des irréguliers
             cg_path                  = tabs.tab_irréguliers[init_irréguliers().index(verbe_irrégulier_modèle)]['feuille'][cg_mode][cg_temps]
-            
         else                   :
             # Si le verbe est régulier, le chemin est dans le dictionnaire des terminaisons
             cg_path                  = tabs.dic_terminaisons_cg[terminaison]['temps'][temps]
             if 'tags' in tabs.dic_terminaisons_cg[terminaison].keys():
                 cg_tags              = tabs.dic_terminaisons_cg[terminaison]['tags']
         # Code commun
+        if cg_path == None: return None
         cg_len         = len(cg_path)
         cg_terminaison = cg_path[((personne -1) % cg_len)]
         # Si la terminaison n'existe pas pour cette personne, retourne None
@@ -383,4 +383,4 @@ def conjuguer_tr_g_final(radical:str, term:str) -> str:
     if radical[-1] == 'g' and (term[0] in 'aou'): return radical + 'e'
     return radical
 
-conjuguer("manger", True)
+conjuguer("faire", True)
