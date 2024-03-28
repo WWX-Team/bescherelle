@@ -22,9 +22,15 @@
 """
 ###############################################################################
 # Import des MODULES
-import tkinter as tk
-from scripts import conjuguer
-
+# Sur certains OS, nommé tkinter, d'autres, Tkinter, ce court code résoud cette division.
+try:
+    import tkinter as tk
+except ImportError:
+    import Tkinter as tk
+# Import des FONCTIONS LOCALES
+from scripts import conjuguer, conjuger_an_temps_est_composé
+from tabs import tab_pronoms_personnels
+# Définitions des THÈMES
 theme = {
         'title'      : '#80002a',
         'bg'         : '#1a0008',
@@ -33,7 +39,10 @@ theme = {
         'text_entry' : 'white',
         'text_button': 'white',
         'typo'       : 'Helvetica',
-        'back'       : ['#a31743', '#96b2cb', '#e1b876', '#274e13', '#7c608f', '#f45f59']
+        'back'       : ['#a31743', '#0f9473', '#5a8bb7', '#df941b', '#885ca5', '#d04f32'],
+        'back_1'     : ['#ac2e55', '#269e81', '#6a96be', '#e29e31', '#936cae', '#d46046'],
+        'back_2'     : ['#b54568', '#3ea98f', '#8badcc', '#e5a948', '#9f7cb7', '#d9725a'],
+        'back_3'     : ['#be5c7b', '#57b49d', '#8badcc', '#e8b45f', '#ab8cc0', '#de836f']
         }
 ###############################################################################
 """
@@ -42,16 +51,16 @@ theme = {
  
 def conjuguer_return():
     """
-    affiche la fonction [conjuguer] de [scripts.py] après que l'utilisateur 
-    ai cliqué sur [button_search]
+    affiche la fonction [conjuguer] de [scripts.py] après que l'utilisateur ait cliqué sur [button_search]
     """
     verbe = entry_search.get()
     cj = conjuguer(verbe)
     
     window_return = tk.Tk()
     window_return.title('Le Petit Pascal')   
-    window_return.geometry('1080x720')
-    window_return.minsize(480, 360)
+    window_return.geometry('1000x1400')
+    window_return.minsize(960, 960)
+    window_return.maxsize(960, 1500)
     window_return.iconbitmap("../img/LPP_only_logo.ico")
     window_return.config(background=theme['bg'])
     
@@ -59,22 +68,45 @@ def conjuguer_return():
                                 window_return, 
                                 bg = theme['bg']
                             )
-    
-    row = 0
-    iteration = 0
-    
-    for mode in cj['modes'].keys():
-        frame_gen = tk.Frame(
-                                frame_return,
-                                bg = theme['back'][iteration % len(theme['back'])]
-                             )
         
-        frame_mode = tk.Frame(
-                                frame_gen,
-                                bg = theme['back'][iteration % len(theme['back'])]
-                             )
+    columnSimple  = tk.Frame(window_return, bg = '#565656')
+    columnComposé = tk.Frame(window_return, bg = '#565656')
+    
+    columnSimple.place (relx= 0.1,  rely= 0, relwidth = 0.3, relheight = 1)
+    columnComposé.place(relx= 0.6, rely= 0,  relwidth = 0.3, relheight = 1)
+    __composé = True
+    print()
+    for quelle_frame in (columnSimple, columnComposé):
+        if __composé :
+            __composé   = False
+            __composé_t = "Temps Simples"
+        else         :
+            __composé   = True
+            __composé_t = "Temps Composés"
         
-        label_return = tk.Label( 
+        aligner_modes = tk.Frame(
+                                quelle_frame,
+                                bg = theme['title']
+                             )
+        type_temps   = tk.Label( 
+                                    aligner_modes,
+                                    text    = __composé_t,
+                                    justify = 'center',
+                                    font    = (theme['typo'], 25), 
+                                    bg = '#242424',
+                                    fg = 'white'
+                                )
+        type_temps.pack()
+        # Break
+        iteration = 0
+        for mode in cj['modes'].keys():
+            # BREAK 
+            frame_mode = tk.Frame(
+                                aligner_modes,
+                                bg = theme['back'][iteration % len(theme['back'])],
+                             )
+            # BREAK
+            label_return = tk.Label( 
                                     frame_mode,
                                     text    = cj['!affichage']['?' + mode],
                                     justify = 'center',
@@ -82,63 +114,51 @@ def conjuguer_return():
                                     bg      = theme['back'][iteration % len(theme['back'])], 
                                     fg      = 'white'
                                 )
-        
-        label_return.pack()       
-        frame_mode.grid(row=row, column=0, sticky='w') 
-        
-        row += 1
-        
-        for temps in cj['modes'][mode].keys():
-            if   isinstance(cj['modes'][mode][temps], str):
-                """si liste"""
-                
-            elif isinstance(cj['modes'][mode][temps], list) :
-                frame_temps = tk.Frame(
-                                            frame_gen,
-                                            bg = theme['back'][iteration % len(theme['back'])]
-                                       )                                              
-                                                        
-                label_return2 = tk.Label( 
+            label_return.pack()
+            # BREAK 
+            for temps in cj['modes'][mode].keys():
+                if conjuger_an_temps_est_composé(mode = mode, temps = temps) == __composé:
+                    frame_temps = tk.Frame(
+                                            frame_mode,
+                                            bg = theme['back_1'][iteration % len(theme['back'])]
+                                       )
+                    #                                      
+                    label_return2 = tk.Label( 
                                             frame_temps,
                                             text    = cj['!affichage'][mode]['?' + temps],
                                             justify = 'center',
-                                            font    = (theme['typo'], 10), 
-                                            bg      = theme['back'][iteration % len(theme['back'])], 
+                                            font    = (theme['typo'], 15), 
+                                            bg      = theme['back_1'][iteration % len(theme['back'])], 
                                             fg      = 'white'
                                         )
-                
-                label_return2.pack()
-                frame_temps.grid(row=row, column=0, sticky='w')
-                
-                
-                
-                for term in cj['modes'][mode][temps]:
+                    label_return2.pack()
+                    #              
                     frame_term = tk.Frame(
-                                                frame_gen,
-                                                bg = theme['back'][iteration % len(theme['back'])]
+                                                frame_temps,
+                                                bg = theme['back_2'][iteration % len(theme['back'])]
                                            )
-                    
-                    label_return3 = tk.Label( 
+                    for term in cj['modes'][mode][temps]:
+                        if term != None:        label_return3 = tk.Label( 
                                                 frame_term,
                                                 text    = term,
                                                 justify = 'center',
                                                 font    = (theme['typo'], 10), 
-                                                bg      = theme['back'][iteration % len(theme['back'])], 
+                                                bg      = theme['back_2'][iteration % len(theme['back'])], 
                                                 fg      = 'white'
                                             )
-                    
-                    label_return3.pack()
-                    frame_term.grid(row=row, column=1, sticky='w')
-                
-                row += 1
-                
-        frame_gen.pack()
-        
-        iteration += 1
-           
+                        # BREAK
+                        label_return3.pack()
+                    frame_term.pack()
+                    frame_temps.pack(padx=10, pady=2.5, )
+                    # BREAK
+            frame_mode.pack()
+            iteration += 1
+        aligner_modes.place(relx= 0.1, rely= 0,  relwidth = 0.8, relheight = 1)
+        aligner_modes.pack()
+    # BREAK
     frame_return.pack(side='top')
-    
     window_return.mainloop()
+
 ###############################################################################
 """
  - Gestion TKINTER
@@ -163,10 +183,7 @@ frame_title = tk.Frame(
                             bg = theme['bg']
                        )
 
-# Image
-image_logo = tk.PhotoImage(
-                                file="../img/lpp.png"
-                            )
+image_logo = tk.PhotoImage(file = "../img/lpp.svg", format= 'svg')
 
 canvas_logo = tk.Canvas(
                                 frame_title,
@@ -208,9 +225,6 @@ button_search = tk.Button(
 button_search.pack(pady=10, fill='x')
 
 frame_input.grid(row=1, column=0, sticky='s', pady=20) 
-
-
-
 frame.pack(side='top')                           
 
 ###############################################################################
@@ -218,7 +232,3 @@ frame.pack(side='top')
  - Boucle principale
 """
 window.mainloop()
- - Boucle principale
-"""
-window.mainloop()
-
