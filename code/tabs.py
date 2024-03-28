@@ -490,10 +490,10 @@ tab_irréguliers =   [
                                                 'impératif':    {   'présent':          [None, "sois", None, "soyons", "soyer", None] },
                                                 'conditionnel': {   'présent':          ["serais", "serais", "serait", "serions", "seriez", "seraient"] },
                                                 'participe':    {
-                                                                    'présent':          "étant",
-                                                                    'passé':            "été"
+                                                                    'présent':          ["étant"],
+                                                                    'passé':            ["été"]
                                                                 },
-                                                'infinitif':    {   'présent':          "être"}
+                                                'infinitif':    {   'présent':          ["être"]}
                                             }
                         },
                         {
@@ -514,10 +514,10 @@ tab_irréguliers =   [
                                                 'impératif':    {   'présent':          [None, "aie", None, "ayons", "ayez", None] },
                                                 'conditionnel': {   'présent':          ["aurais", "aurais", "aurait", "aurions", "auriez", "auraient"] },
                                                 'participe':    {
-                                                                    'présent':          "ayant",
-                                                                    'passé':            "eu"
+                                                                    'présent':          ["ayant"],
+                                                                    'passé':            ["eu"]
                                                                 },
-                                                'infinitif':    {   'présent':          "avoir"}
+                                                'infinitif':    {   'présent':          ["avoir"]}
                                             }
                         },
                         {
@@ -538,10 +538,10 @@ tab_irréguliers =   [
                                                 'impératif':    {   'présent':          [None, "fais", None, "faisons", "faites", None] },
                                                 'conditionnel': {   'présent':          ["ferais", "ferais", "ferait", "ferions", "feriez", "feraient"] },
                                                 'participe':    {
-                                                                    'présent':          "faisant",
-                                                                    'passé':            "fait"
+                                                                    'présent':          ["faisant"],
+                                                                    'passé':            ["fait"]
                                                                 },
-                                                'infinitif':    {   'présent':          "faire"}
+                                                'infinitif':    {   'présent':          ["faire"]}
                                             }
                         },
                         
@@ -565,10 +565,10 @@ tab_irréguliers =   [
                                                 'impératif':    {   'présent':          [None,"achète",None,"achetons","achetez",None] },
                                                 'conditionnel': {   'présent':          ["achèterais", "achèterais", "achèterait", "achèterions", "achèteriez", "achèteraient"] },
                                                 'participe':    {
-                                                                    'présent':          "achetant",
-                                                                    'passé':            "acheté"
+                                                                    'présent':          ["achetant"],
+                                                                    'passé':            ["acheté"]
                                                                 },
-                                                'infinitif':    {   'présent':          "acheter"}
+                                                'infinitif':    {   'présent':          ["acheter"]}
                                             }
                         },
                         {
@@ -589,10 +589,10 @@ tab_irréguliers =   [
                                                 'impératif':    {   'présent':          [None, "appelle",None, "appelons", "appelez",None] },
                                                 'conditionnel': {   'présent':          ["appellerais", "appellerais", "appellerait", "appellerions", "appelleriez", "appelleraient"] },
                                                 'participe':    {
-                                                                    'présent':          "appelant",
-                                                                    'passé':            "appelé"
+                                                                    'présent':          ["appelant"],
+                                                                    'passé':            ["appelé"]
                                                                 },
-                                                'infinitif':    {   'présent':          "appeler"}
+                                                'infinitif':    {   'présent':          ["appeler"]}
                                             }
                         },
                         {
@@ -613,10 +613,10 @@ tab_irréguliers =   [
                                                 'impératif':    {   'présent':          [None, "envoie",None, "envoyons", "envoyez",None] },
                                                 'conditionnel': {   'présent':          ["enverrais", "enverrais", "enverrait", "enverrions", "enverriez", "enverraient"] },
                                                 'participe':    {
-                                                                    'présent':          "envoyant",
-                                                                    'passé':            "envoyé"
+                                                                    'présent':          ["envoyant"],
+                                                                    'passé':            ["envoyé"]
                                                                 },
-                                                'infinitif':    {   'présent':          "envoyer"}
+                                                'infinitif':    {   'présent':          ["envoyer"]}
                                             }
                         },
                         {
@@ -637,10 +637,10 @@ tab_irréguliers =   [
                                                 'impératif':    {   'présent':          [None, "modèle",None, "modelons", "modelez",None] },
                                                 'conditionnel': {   'présent':          ["modèlerais", "modèlerais", "modèlerait", "modèlerions", "modèleriez", "modèleraient"] },
                                                 'participe':    {
-                                                                    'présent':          "modelant",
-                                                                    'passé':            "modelé"
+                                                                    'présent':          ["modelant"],
+                                                                    'passé':            ["modelé"]
                                                                 },
-                                                'infinitif':    {   'présent':          "modeler"}
+                                                'infinitif':    {   'présent':          ["modeler"]}
                                             }
                         },
                         {
@@ -661,10 +661,10 @@ tab_irréguliers =   [
                                                 'impératif':    {   'présent':          [None, "pèse",None, "pesons", "pesez",None] },
                                                 'conditionnel': {   'présent':          ["pèserais","pèserais","pèserait","pèserions","pèseriez","pèseraient"] },
                                                 'participe':    {
-                                                                    'présent':          "pesant",
-                                                                    'passé':            "pesé"
+                                                                    'présent':          ["pesant"],
+                                                                    'passé':            ["pesé"]
                                                                 },
-                                                'infinitif':    {   'présent':          "peser"}
+                                                'infinitif':    {   'présent':          ["peser"]}
                                             }
                         },
                         {
@@ -685,10 +685,10 @@ tab_irréguliers =   [
                                                 'impératif':    {   'présent':          [None, "précie",None,"précions","préciez", None] },
                                                 'conditionnel': {   'présent':          ["précierais","précierais","précierait","précierions","précieriez","précieraient"] },
                                                 'participe':    {
-                                                                    'présent':          "préciant",
-                                                                    'passé':            "précié"
+                                                                    'présent':          ["préciant"],
+                                                                    'passé':            ["précié"]
                                                                 },
-                                                'infinitif':    {   'présent':          "précier"}
+                                                'infinitif':    {   'présent':          ["précier"]}
                                             }
                         },
                         {
@@ -709,10 +709,10 @@ tab_irréguliers =   [
                                                 'impératif':    {   'présent':          [None,"broie",None,"broyons","broyez",None] },
                                                 'conditionnel': {   'présent':          ["broierais","broierais","broierait","broierions","broieriez","broieraient"] },
                                                 'participe':    {
-                                                                    'présent':          "broyant",
-                                                                    'passé':            "broyé"
+                                                                    'présent':          ["broyant"],
+                                                                    'passé':            ["broyé"]
                                                                 },
-                                                'infinitif':    {   'présent':          "broyer"}
+                                                'infinitif':    {   'présent':          ["broyer"]}
                                             }
                         },
                         {
@@ -733,34 +733,10 @@ tab_irréguliers =   [
                                                 'impératif':    {   'présent':          [None, "ploie", None, "ployons", "ployez", None] },
                                                 'conditionnel': {   'présent':          ["ploierais","ploierais","ploierait","ploierions","ploieriez","ploieraient"] },
                                                 'participe':    {
-                                                                    'présent':          "ployant",
-                                                                    'passé':            "ployé"
+                                                                    'présent':          ["ployant"],
+                                                                    'passé':            ["ployé"]
                                                                 },
-                                                'infinitif':    {   'présent':          "ployer"}
-                                            }
-                        },
-                        {
-                                'verbe':    "braire",
-                                'groupe':   1,
-                                'type':     "verbe",
-                                'feuille':  {
-                                                'indicatif':    {
-                                                                    'présent':          [None,None,"brait",None,None,"braient"],
-                                                                    'futur_simple':     [None,None,"braira",None,None,"brairont"],
-                                                                    'imparfait':        [None,None,"brayait",None,None,"brayaient"],
-                                                                    'passé_simple':     None
-                                                                },
-                                                'subjonctif':   {
-                                                                    'présent':          [None,None,"braie",None,None,"braient"],
-                                                                    'imparfait':        None
-                                                                },
-                                                'impératif':    {   'présent':          None },
-                                                'conditionnel': {   'présent':          [None,None,"brairait",None,None,"brairaient"] },
-                                                'participe':    {
-                                                                    'présent':          "braire",
-                                                                    'passé':            None
-                                                                },
-                                                'infinitif':    {   'présent':          "braire"}
+                                                'infinitif':    {   'présent':          ["ployer"]}
                                             }
                         },
                         {
@@ -781,10 +757,10 @@ tab_irréguliers =   [
                                                 'impératif':    {   'présent':          [None, "jette", None, "jetons", "jetez",None] },
                                                 'conditionnel': {   'présent':          ["jetterais","jetterais","jetterait","jetterions","jetteriez","jetteraient"] },
                                                 'participe':    {
-                                                                    'présent':          "jetant",
-                                                                    'passé':            "jeté"
+                                                                    'présent':          ["jetant"],
+                                                                    'passé':            ["jeté"]
                                                                 },
-                                                'infinitif':    {   'présent':          "jeter"}
+                                                'infinitif':    {   'présent':          ["jeter"]}
                                             }
                         },
                         {
@@ -805,17 +781,39 @@ tab_irréguliers =   [
                                                 'impératif':    {   'présent':          [None, "paie", None, "payons", "payez", None] },
                                                 'conditionnel': {   'présent':          ["paierais","paierais","paierait","paierions","paieriez","paieraient"] },
                                                 'participe':    {
-                                                                    'présent':          "payant",
-                                                                    'passé':            "payé"
+                                                                    'présent':          ["payant"],
+                                                                    'passé':            ["payé"]
                                                                 },
-                                                'infinitif':    {   'présent':          "payer"}
+                                                'infinitif':    {   'présent':          ["payer"]}
                                             }
                         },
                         
                         ## VERBES DU 3E GROUPE
 
-                        ## Dissoudre est basé sur soudre. Il y a plein de verbes que tu pourrais supprimer en évitant les composés… Recevoir > voir (mais pas pouvoir, savoir, etc), etc
-
+                        {
+                                'verbe':    "braire",
+                                'groupe':   3,
+                                'type':     "verbe",
+                                'feuille':  {
+                                                'indicatif':    {
+                                                                    'présent':          [None,None,"brait",None,None,"braient"],
+                                                                    'futur_simple':     [None,None,"braira",None,None,"brairont"],
+                                                                    'imparfait':        [None,None,"brayait",None,None,"brayaient"],
+                                                                    'passé_simple':     None
+                                                                },
+                                                'subjonctif':   {
+                                                                    'présent':          [None,None,"braie",None,None,"braient"],
+                                                                    'imparfait':        None
+                                                                },
+                                                'impératif':    {   'présent':          None },
+                                                'conditionnel': {   'présent':          [None,None,"brairait",None,None,"brairaient"] },
+                                                'participe':    {
+                                                                    'présent':          ["braire"],
+                                                                    'passé':            None
+                                                                },
+                                                'infinitif':    {   'présent':          ["braire"]}
+                                            }
+                        },
                                 {
                                 'verbe':    "aller",
                                 'groupe':   3,
