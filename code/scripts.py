@@ -221,8 +221,8 @@ def conjuguer(verbe:str, affichage:bool=False):
                         conjugué['modes'][__mode][__temps][i-1] = conjuguer_tr(terminaison = inf, radical = rad, personne = i, temps = (__mode + '_' + __temps), groupe = group)
                 elif isinstance(__terminaisons, str) :
                     conjugué['modes'][__mode][__temps] = conjuguer_tr(terminaison = inf, radical = rad, personne = 1, temps = (__mode + '_' + __temps), groupe = group)
-                else                                 :   
-                    conjugué['modes'][__mode][__temps] = None
+            if conjugué['!affichage'][__mode] == {}:
+                del conjugué['!affichage'][__mode]
     conjugué['!verbe']                                             = verbe
     conjugué['!groupe']                                            = group
     conjugué['!term']                                              = inf
@@ -246,7 +246,6 @@ def conjuguer(verbe:str, affichage:bool=False):
                             'temps_complet': ["","","","","",""],       // plupart du et des temps
                             'temps_unique' : "",                        // modes : infinitif, participe
                             'temps_partiel': [None,"",None,"","",None], // modes : impératif
-                            'temps_invalid': None                       // certains verbes, impersonnels particulièrement
                             }
                 },
         '!verbe' : [:str],
@@ -383,4 +382,14 @@ def conjuguer_tr_g_final(radical:str, term:str) -> str:
     if radical[-1] == 'g' and (term[0] in 'aou'): return radical + 'e'
     return radical
 
-conjuguer("faire", True)
+                # Analyses
+
+def conjuger_an_est_compsé(mode:str, temps:str) -> bool:
+    """
+    [Conjugaison / Analyses / Temps composé] Avec un mode [:str] et un temps [:str], retourne si ce temps est composé [:bool].
+    """
+    for mode in tabs.tab_temps:
+        if temps in mode[1] and mode[2] == 'composé': return True
+    return False
+        
+    
