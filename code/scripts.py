@@ -384,12 +384,10 @@ def conjuguer_tr_g_final(radical:str, term:str) -> str:
 
                 # Analyses
 
-def conjuger_an_est_compsé(mode:str, temps:str) -> bool:
+def conjuger_an_temps_est_composé(mode:str, temps:str) -> bool:
     """
     [Conjugaison / Analyses / Temps composé] Avec un mode [:str] et un temps [:str], retourne si ce temps est composé [:bool].
     """
-    for mode in tabs.tab_temps:
-        if temps in mode[1] and mode[2] == 'composé': return True
+    for astemps in tabs.tab_temps:
+        if temps == astemps[0] and mode in astemps[1] and astemps[2] == 'composé': return True
     return False
-        
-    
