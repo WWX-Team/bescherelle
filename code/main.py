@@ -48,6 +48,10 @@ theme = {
  - Fonction affichage
 """
  
+def transformer_donnée(chaine : str) -> str:
+    if chaine == '!build': return 'Construction'
+    return chaine[1].upper() + chaine[2:len(chaine)]
+ 
 def conjuguer_return(x : int = 0, y : int = 0):
     """
     affiche la fonction [conjuguer] de [scripts.py] après que l'utilisateur ait cliqué sur [button_search]
@@ -62,7 +66,7 @@ def conjuguer_return(x : int = 0, y : int = 0):
     window_return.geometry('960x720')
     window_return.minsize(960, 720)
     window_return.maxsize(960, 1920)
-    window_return.iconbitmap("../img/LPP_only_logo.ico")
+    window_return.iconbitmap("img/LPP_only_logo.ico")
     window_return.config(background=theme['bg']) 
     
     columnSimple  = tk.Frame(window_return, bg = '#565656')
@@ -70,8 +74,39 @@ def conjuguer_return(x : int = 0, y : int = 0):
     
     columnSimple.place (relx= 0.1,  rely= 0, relwidth = 0.3, relheight = 1)
     columnComposé.place(relx= 0.6,  rely= 0,  relwidth = 0.3, relheight = 1)
+    
+    columnInfo    = tk.Frame(window_return, bg = "#565656")
+    columnInfo.place(relx= 0.43,  rely= 0,  relwidth = 0.14, relheight = 1)
+    
+    iteration = 0
+    for el in cj.keys():
+        if el[0] == '!' and el != '!affichage':
+            maframe = tk.Frame(
+                                columnInfo,
+                                bg = theme['back'][iteration % len(theme['back'])],
+                             )
+            labelzero = tk.Label(
+                                            maframe,
+                                            text    = transformer_donnée(el),
+                                            justify = 'center',
+                                            font    = (theme['typo'], 12), 
+                                            bg      = theme['back'][iteration % len(theme['back'])], 
+                                            fg      = 'white'
+                             )
+            labelzero.pack()
+            labelhein = tk.Label(
+                                            maframe,
+                                            text    = str(cj[el]),
+                                            justify = 'center',
+                                            font    = (theme['typo'], 12), 
+                                            bg      = theme['back_1'][iteration % len(theme['back_1'])], 
+                                            fg      = 'white'
+                             )
+            labelhein.pack()
+            maframe.pack(padx = 10, pady = 1)
+        iteration += 1
+    
     __composé = True
-    print()
     for quelle_frame in (columnSimple, columnComposé):
         if __composé :
             __composé   = False
@@ -165,7 +200,7 @@ window = tk.Tk()
 window.title('Le Petit Pascal')   
 window.minsize(480, 360)
 window.minsize(960, 720)
-window.iconbitmap("../img/LPP_only_logo.ico")
+window.iconbitmap("img/LPP_only_logo.ico")
 window.config(background=theme['bg'])
 
 frame = tk.Frame(
@@ -178,7 +213,7 @@ frame_title = tk.Frame(
                             bg = theme['bg']
                        )
 
-image_logo = tk.PhotoImage(file = "../img/lpp.png")
+image_logo = tk.PhotoImage(file = "img/lpp.png")
 
 canvas_logo = tk.Canvas(
                                 frame_title,
