@@ -1,6 +1,5 @@
-Les pre-requis de notre projet:
-- Windows 10 minimum
-- Python 3 v3.7 minimum
-- Les librairies tkinter et fission
-
-
+Pre-requis du projet :
+- Windows 10 minimum / MacOS Mojave ou plus récent ;
+- Python3 v3.7.6 minimum ;
+- Les librairies tkinter ;
+- Un écran de résolution supérieure à du "1920x1080" ;
