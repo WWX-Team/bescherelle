@@ -1631,6 +1631,78 @@ tab_irréguliers =   [
                                                 'infinitif':    {   'présent':          ["ouvrir"]}
                                             }
                         },
+                        {
+                                'verbe':    "courir",
+                                'groupe':   3,
+                                'type':     "verbe",
+                                'feuille':  {
+                                                'indicatif':    {
+                                                                    'présent':          ["cours", "cours", "court", "courons", "courez", "courent"],
+                                                                    'futur_simple':     ["courrai", "courras", "courra", "courrons", "courrez", "courront"],
+                                                                    'imparfait':        ["courais", "courais", "courait", "courions", "couriez", "couraient"],
+                                                                    'passé_simple':     ["courus", "courus", "courut", "courûmes", "courûtes", "coururent"]
+                                                                },
+                                                'subjonctif':   {
+                                                                    'présent':          ["coure", "coures", "coure", "courions", "couriez", "courent"],
+                                                                    'imparfait':        ["courusse", "courusses", "courût", "courussions", "courussiez", "courussent"]
+                                                                },
+                                                'impératif':    {   'présent':          [None, "cours", None, "courons", "courez", None] },
+                                                'conditionnel': {   'présent':          ["courrais","courrais","courrait","courrions","courriez","courraient"] },
+                                                'participe':    {
+                                                                    'présent':          ["courant"],
+                                                                    'passé':            ["couru"]
+                                                                },
+                                                'infinitif':    {   'présent':          ["courir"]}
+                                            }
+                        },
+                        {
+                                'verbe':    "mourir",
+                                'groupe':   3,
+                                'type':     "verbe",
+                                'feuille':  {
+                                                'indicatif':    {
+                                                                    'présent':          ["meurs", "meurs", "meurt", "mourons", "mourez", "meurent"],
+                                                                    'futur_simple':     ["mourrai", "mourras", "mourra", "mourrons", "mourrez", "mourront"],
+                                                                    'imparfait':        ["mourais", "mourais", "mouraut", "mourions", "mouriez", "mouraient"],
+                                                                    'passé_simple':     ["mourus", "mourus", "mourut", "mourûmes", "mourûtes", "moururent"]
+                                                                },
+                                                'subjonctif':   {
+                                                                    'présent':          ["meure", "meures", "meure", "mourions", "mouriez", "meurent"],
+                                                                    'imparfait':        ["mourusse", "mourusses", "mourût", "mourussions", "mourussiez", "mourussent"]
+                                                                },
+                                                'impératif':    {   'présent':          [None, "meurs", None, "mourons", "mourez", None] },
+                                                'conditionnel': {   'présent':          ["mourrais","mourrais","mourrait","mourrions","mourriez","mourraient"] },
+                                                'participe':    {
+                                                                    'présent':          ["mourant"],
+                                                                    'passé':            ["mort"]
+                                                                },
+                                                'infinitif':    {   'présent':          ["mourir"]}
+                                            }
+                        },
+                        {
+                                'verbe':    "nsi",
+                                'groupe':   4,
+                                'type':     "verbe",
+                                'feuille':  {
+                                                'indicatif':    {
+                                                                    'présent':          ["chap", "chap's", "chap", "chappons", "chappez", "chappent"],
+                                                                    'futur_simple':     ["pascalrai", "pascalras", "pascalra", "pascalrons", "pascalrez", "pascalront"],
+                                                                    'imparfait':        ["plus", "jamais", "tkinter", "par", "pitié", "!"],
+                                                                    'passé_simple':     ["chappai", "chappas", "chappat", "chappûmes", "chappûtes", "chappuis"]
+                                                                },
+                                                'subjonctif':   {
+                                                                    'présent':          ["jonque", "jonques", "jonque", "jonquions", "jonquiez", "jonquent"],
+                                                                    'imparfait':        ["bismarckais", "bismarckais", "bismarckait", "bismarckions", "bismarckiez", "bismarckaient"]
+                                                                },
+                                                'impératif':    {   'présent':          [None, "tou", None, "lou", "sain", None] },
+                                                'conditionnel': {   'présent':          ["tout","le","monde","aime","pascal","iillux"] },
+                                                'participe':    {
+                                                                    'présent':          ["chappant"],
+                                                                    'passé':            ["hectopascal"]
+                                                                },
+                                                'infinitif':    {   'présent':          ["easter egg"]}
+                                            }
+                        },
                         
                         ## VERBES IMPERSONNELS
                         
