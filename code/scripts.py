@@ -201,7 +201,7 @@ def conjuguer(verbe:str, affichage:bool=False):
     """
     [Conjugaison]:\n
     """
-    group, inf, rad = verbe_analyse(verbe) 
+    group, inf, rad = verbe_analyse(conjuguer_an_trouver_verbe(verbe)) 
     # group : groupe du verbe [:int]
     # inf   : terminaison infinitive non brute [:str]
     # rad   : radical infinitif [:str]
@@ -330,6 +330,7 @@ def conjuguer_tr(terminaison:str, radical:str, personne:int, temps:str, groupe:i
             # Si verbe à radical particulier
             verbe_double_radicaux = init_exceptions()
             cg_radical = radical
+            
             if verbe_infinitif in verbe_double_radicaux.keys():
                 if groupe == 1:
                     if personne in [1, 2, 3, 6] and temps in ['indicatif_présent', 'impératif_présent', 'subjonctif_présent']:
@@ -341,17 +342,18 @@ def conjuguer_tr(terminaison:str, radical:str, personne:int, temps:str, groupe:i
                         cg_radical = verbe_double_radicaux[verbe_infinitif][0]
                     else:
                         cg_radical = verbe_double_radicaux[verbe_infinitif][1]
-            cg_radical = conjuguer_tr_vérifier_radical(cg_radical, cg_terminaison, temps, personne, groupe)
+            cg_radical = conjuguer_tr_vérifier_radical(cg_radical, verbe_analyse_term_brute(terminaison), cg_terminaison, temps, personne, groupe, cg_tags)
                 
         return cg_radical + cg_terminaison
 
-def conjuguer_tr_vérifier_radical(radical:str, term:str, temps:str, personne:str, groupe:int, tags:list=[""]):
+def conjuguer_tr_vérifier_radical(radical:str, inf:str, term:str, temps:str, personne:str, groupe:int, tags:list=[""]):
     """
     [Conjugaison / Transformations / Radical]: Voir [Conjugaison / Transformations]. Retourne l'état correct du radical.
     """
     cg_radical = radical
     if temps in ['indicatif_futur_simple'] and not 'build/sans_rad_futur_simple' in tags:
-        cg_radical += 'r'
+        cg_radical += inf
+        if inf == 'rir': cg_radical += 'r'
     if temps in ['participe_présent']     :
         if   groupe == 1: cg_radical = cg_radical
         elif groupe == 2: cg_radical = cg_radical + 'iss'
@@ -391,3 +393,10 @@ def conjuger_an_temps_est_composé(mode:str, temps:str) -> bool:
     for astemps in tabs.tab_temps:
         if temps == astemps[0] and mode in astemps[1] and astemps[2] == 'composé': return True
     return False
+
+def conjuguer_an_trouver_verbe(chaine:str="chanter"):
+    lettres = 'azertyuiopqsdfghjklmwxcvbnAZERTYUIOPQSDFGHJKLMWXCVBNâêîôÂÊÎÔÛäëïöüÄËÏÖÜùçàèéÉœŒ'
+    verbe = ""
+    for i in chaine:
+        if i in lettres: verbe += i
+    return verbe
