@@ -29,7 +29,6 @@ except ImportError:
     import Tkinter as tk
 # Import des FONCTIONS LOCALES
 from scripts import conjuguer, conjuger_an_temps_est_composé
-from tabs import tab_pronoms_personnels
 # Définitions des THÈMES
 theme = {
         'title'      : '#80002a',
@@ -49,31 +48,29 @@ theme = {
  - Fonction affichage
 """
  
-def conjuguer_return():
+def conjuguer_return(x : int = 0, y : int = 0):
     """
     affiche la fonction [conjuguer] de [scripts.py] après que l'utilisateur ait cliqué sur [button_search]
     """
     verbe = entry_search.get()
+    if len(verbe) <= 1: verbe = 'chanter'
     cj = conjuguer(verbe)
     
     window_return = tk.Tk()
     window_return.title('Le Petit Pascal')   
-    window_return.geometry('1000x1400')
+    window_return.geometry('960x960')
     window_return.minsize(960, 960)
-    window_return.maxsize(960, 1500)
+    window_return.maxsize(960, 1920)
     window_return.iconbitmap("../img/LPP_only_logo.ico")
     window_return.config(background=theme['bg'])
-    
-    frame_return = tk.Frame(
-                                window_return, 
-                                bg = theme['bg']
-                            )
+
+    frame_canvas = tk.Canvas(window_return, width = 960, height = window_return.winfo_screenheight(), scrollregion=(0, 0, 960, 1920), bg = theme['bg'])
         
-    columnSimple  = tk.Frame(window_return, bg = '#565656')
-    columnComposé = tk.Frame(window_return, bg = '#565656')
+    columnSimple  = tk.Frame(frame_canvas, bg = '#565656')
+    columnComposé = tk.Frame(frame_canvas, bg = '#565656')
     
     columnSimple.place (relx= 0.1,  rely= 0, relwidth = 0.3, relheight = 1)
-    columnComposé.place(relx= 0.6, rely= 0,  relwidth = 0.3, relheight = 1)
+    columnComposé.place(relx= 0.6,  rely= 0,  relwidth = 0.3, relheight = 1)
     __composé = True
     print()
     for quelle_frame in (columnSimple, columnComposé):
@@ -156,7 +153,15 @@ def conjuguer_return():
         aligner_modes.place(relx= 0.1, rely= 0,  relwidth = 0.8, relheight = 1)
         aligner_modes.pack()
     # BREAK
-    frame_return.pack(side='top')
+        
+    scroll = tk.Scrollbar(window_return, orient="vertical")
+    scroll.config( command = frame_canvas.yview)
+    
+    frame_canvas.config(yscrollcommand = scroll.set)
+    scroll.pack(side="right", fill = "y")
+    
+    frame_canvas.pack(side = 'left', expand = True)
+    
     window_return.mainloop()
 
 ###############################################################################
@@ -172,7 +177,7 @@ window.geometry('1080x720')
 window.minsize(480, 360)
 window.iconbitmap("../img/LPP_only_logo.ico")
 window.config(background=theme['bg'])
-              
+
 frame = tk.Frame(
                     window, 
                     bg = theme['bg']
@@ -183,21 +188,21 @@ frame_title = tk.Frame(
                             bg = theme['bg']
                        )
 
-image_logo = tk.PhotoImage(file = "../img/lpp.svg", format= 'svg')
+#image_logo = tk.PhotoImage(file = "../img/lpp.png")
 
-canvas_logo = tk.Canvas(
-                                frame_title,
-                                width              = 560,
-                                height             = 359,
-                                bg                 = theme['bg'],
-                                bd                 = 0,
-                                highlightthickness = 0
-                        )
-canvas_logo.create_image(560/2,359/2, image=image_logo)
-canvas_logo.pack()
+#canvas_logo = tk.Canvas(
+#                                frame_title,
+#                                width              = 560,
+#                                height             = 359,
+#                                bg                 = theme['bg'],
+#                                bd                 = 0,
+#                                highlightthickness = 0
+#                        )
+#canvas_logo.create_image(560/2, 359/2, image=image_logo)
+#canvas_logo.pack()
 
-frame_title.grid(row=0, column=0, sticky='n', pady=20)
-
+#frame_title.grid(row=0, column=0, sticky='n', pady=20) 
+        
 # Input
 frame_input = tk.Frame(
                                 frame, 
@@ -225,7 +230,7 @@ button_search = tk.Button(
 button_search.pack(pady=10, fill='x')
 
 frame_input.grid(row=1, column=0, sticky='s', pady=20) 
-frame.pack(side='top')                           
+frame.pack(side='top')
 
 ###############################################################################
 """
