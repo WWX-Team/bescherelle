@@ -8,6 +8,6 @@
 
 Bescherelle semi-automatique générant des conjugaisons pour des verbes, même non existants.
 
-Afin d'utiliser le Petit Pascal, il faut executer le fichier main.py a partir d'un IDLE Python
+Afin d'utiliser le Petit Pascal, il faut executer le fichier main.py à partir d'un IDLE Python
 
 ----
