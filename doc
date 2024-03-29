@@ -2,7 +2,9 @@
 Les étapes pour faire marcher notre projet sont:
   - Ouvrir le fichier main.py dans un IDLE python
   - Exécuter le programme
-  - Une fenêtre s\affiche 
+  - Une fenêtre s'affiche, mettre votre verbe dans la barre de recherche
+  - Cliquer sur rechercher 
+  - Une nouvelle fenêtre s'ouvre avec votre verbe conjugué 
 
 
 
