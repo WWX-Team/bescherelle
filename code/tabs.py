@@ -1680,7 +1680,7 @@ tab_irréguliers =   [
                                             }
                         },
                         {
-                                'verbe':    "nsi",
+                                'verbe':    "nsir",
                                 'groupe':   4,
                                 'type':     "verbe",
                                 'feuille':  {
