@@ -65,7 +65,7 @@ dic_terminaisons_cg =   {
                                                 'participe_passé'         : ['é'],
                                   
                                                 'indicatif_présent'       : ['e', 'es', 'e', 'ons', 'ez', 'ent'],
-                                                'indicatif_futur_simple'  : ['erai', 'eras', 'era', 'erons', 'erez', 'eront'],
+                                                'indicatif_futur_simple'  : ['ai', 'as', 'a', 'ons', 'ez', 'ont'],
                                                 'indicatif_imparfait'     : ['ais', 'ais', 'ait', 'ions', 'iez', 'aient'],
                                                 'indicatif_passé_simple'  : ['ai', 'as', 'a', 'âmes', 'âtes', 'èrent'],
                                   
@@ -86,7 +86,7 @@ dic_terminaisons_cg =   {
                                                 'participe_passé'         : ['i'],
                                   
                                                 'indicatif_présent'       : ['is', 'is', 'it', 'issons', 'issez', 'issent'],
-                                                'indicatif_futur_simple'  : ['irai', 'iras', 'ira', 'irons', 'irez', 'iront'],
+                                                'indicatif_futur_simple'  : ['ai', 'as', 'a', 'ons', 'ez', 'ont'],
                                                 'indicatif_imparfait'     : ['issais', 'issais', 'issait', 'issions', 'issiez', 'issaient'],
                                                 'indicatif_passé_simple'  : ['is', 'is', 'it', 'îmes', 'îtes', 'irent'],
                                   
