@@ -1,6 +1,6 @@
 Les pre-requis de notre projet:
 - Windows 10 minimum
 - Python 3 v3.7 minimum
-- La librairies tkinter et fission
+- Les librairies tkinter et fission
 
 
