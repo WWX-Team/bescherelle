@@ -55,6 +55,7 @@ def conjuguer_return(x : int = 0, y : int = 0):
     verbe = entry_search.get()
     if len(verbe) <= 1: verbe = 'chanter'
     cj = conjuguer(verbe)
+    if cj == None: return
     
     window_return = tk.Tk()
     window_return.title('Le Petit Pascal')   
