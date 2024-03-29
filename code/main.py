@@ -58,16 +58,14 @@ def conjuguer_return(x : int = 0, y : int = 0):
     
     window_return = tk.Tk()
     window_return.title('Le Petit Pascal')   
-    window_return.geometry('960x960')
-    window_return.minsize(960, 960)
+    window_return.geometry('960x720')
+    window_return.minsize(960, 720)
     window_return.maxsize(960, 1920)
     window_return.iconbitmap("../img/LPP_only_logo.ico")
-    window_return.config(background=theme['bg'])
-
-    frame_canvas = tk.Canvas(window_return, width = 960, height = window_return.winfo_screenheight(), scrollregion=(0, 0, 960, 1920), bg = theme['bg'])
-        
-    columnSimple  = tk.Frame(frame_canvas, bg = '#565656')
-    columnComposé = tk.Frame(frame_canvas, bg = '#565656')
+    window_return.config(background=theme['bg']) 
+    
+    columnSimple  = tk.Frame(window_return, bg = '#565656')
+    columnComposé = tk.Frame(window_return, bg = '#565656')
     
     columnSimple.place (relx= 0.1,  rely= 0, relwidth = 0.3, relheight = 1)
     columnComposé.place(relx= 0.6,  rely= 0,  relwidth = 0.3, relheight = 1)
@@ -89,7 +87,7 @@ def conjuguer_return(x : int = 0, y : int = 0):
                                     aligner_modes,
                                     text    = __composé_t,
                                     justify = 'center',
-                                    font    = (theme['typo'], 25), 
+                                    font    = (theme['typo'], 15), 
                                     bg = '#242424',
                                     fg = 'white'
                                 )
@@ -107,7 +105,7 @@ def conjuguer_return(x : int = 0, y : int = 0):
                                     frame_mode,
                                     text    = cj['!affichage']['?' + mode],
                                     justify = 'center',
-                                    font    = (theme['typo'], 20), 
+                                    font    = (theme['typo'], 12), 
                                     bg      = theme['back'][iteration % len(theme['back'])], 
                                     fg      = 'white'
                                 )
@@ -124,7 +122,7 @@ def conjuguer_return(x : int = 0, y : int = 0):
                                             frame_temps,
                                             text    = cj['!affichage'][mode]['?' + temps],
                                             justify = 'center',
-                                            font    = (theme['typo'], 15), 
+                                            font    = (theme['typo'], 10), 
                                             bg      = theme['back_1'][iteration % len(theme['back'])], 
                                             fg      = 'white'
                                         )
@@ -139,29 +137,20 @@ def conjuguer_return(x : int = 0, y : int = 0):
                                                 frame_term,
                                                 text    = term,
                                                 justify = 'center',
-                                                font    = (theme['typo'], 10), 
+                                                font    = (theme['typo'], 9), 
                                                 bg      = theme['back_2'][iteration % len(theme['back'])], 
                                                 fg      = 'white'
                                             )
                         # BREAK
                         label_return3.pack()
                     frame_term.pack()
-                    frame_temps.pack(padx=10, pady=2.5, )
+                    frame_temps.pack(padx=10, pady=1)
                     # BREAK
             frame_mode.pack()
             iteration += 1
         aligner_modes.place(relx= 0.1, rely= 0,  relwidth = 0.8, relheight = 1)
         aligner_modes.pack()
-    # BREAK
-        
-    scroll = tk.Scrollbar(window_return, orient="vertical")
-    scroll.config( command = frame_canvas.yview)
-    
-    frame_canvas.config(yscrollcommand = scroll.set)
-    scroll.pack(side="right", fill = "y")
-    
-    frame_canvas.pack(side = 'left', expand = True)
-    
+    # BREAK    
     window_return.mainloop()
 
 ###############################################################################
@@ -173,8 +162,8 @@ window = tk.Tk()
 
 # Personnalisation
 window.title('Le Petit Pascal')   
-window.geometry('1080x720')
 window.minsize(480, 360)
+window.minsize(960, 720)
 window.iconbitmap("../img/LPP_only_logo.ico")
 window.config(background=theme['bg'])
 
@@ -188,20 +177,20 @@ frame_title = tk.Frame(
                             bg = theme['bg']
                        )
 
-#image_logo = tk.PhotoImage(file = "../img/lpp.png")
+image_logo = tk.PhotoImage(file = "../img/lpp.png")
 
-#canvas_logo = tk.Canvas(
-#                                frame_title,
-#                                width              = 560,
-#                                height             = 359,
-#                                bg                 = theme['bg'],
-#                                bd                 = 0,
-#                                highlightthickness = 0
-#                        )
-#canvas_logo.create_image(560/2, 359/2, image=image_logo)
-#canvas_logo.pack()
+canvas_logo = tk.Canvas(
+                                frame_title,
+                                width              = 560,
+                                height             = 359,
+                                bg                 = theme['bg'],
+                                bd                 = 0,
+                                highlightthickness = 0
+                        )
+canvas_logo.create_image(560/2, 359/2, image=image_logo)
+canvas_logo.pack()
 
-#frame_title.grid(row=0, column=0, sticky='n', pady=20) 
+frame_title.grid(row=0, column=0, sticky='n', pady=20) 
         
 # Input
 frame_input = tk.Frame(
