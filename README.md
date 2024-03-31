@@ -9,7 +9,7 @@
 Bescherelle semi-automatique générant des conjugaisons pour des verbes, même non existants.
 
 ```
- | Pour lancer le logicel, il faut lancer le fichier |main.py| (raccourci possible).
+ | Pour utiliser le logicel, lancez le fichier |main.py| (raccourci possible).
 ```
 
 ----
