@@ -14,14 +14,14 @@ Fichier contenant les scripts du logiciel.
 
 **Définitions de scripts**.
 
-Fichier contenant les scripts du bescherelle. Fonctionne comme un module python.
+Fichier contenant les scripts du conjugeur. Fonctionne comme un module python.
 
 ----
 ## Fichier `tabs.py`
 
 **Données du bescherelle**.
 
-Fichier contenant les donénes nécessaire au fonctionnement du bescherelle.
+Fichier contenant les données nécessaire au fonctionnement du conjugeur.
 
 ----
 
