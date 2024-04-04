@@ -208,19 +208,21 @@ def conjuguer(verbe:str, affichage:bool=False):
     if group == None or inf == None or rad == None: return None
     conjugué = {}
     conjugué['!affichage'] = {}
-    conjugué['modes']      = tabs.dic_verbe
+    conjugué['modes']      = {}
     for __mode, __groupe_temps in tabs.dic_verbe.items():
         if __mode[0] != '!':
             conjugué['!affichage'][__mode] = {}
+            conjugué['modes'][__mode]      = {}
             conjugué['!affichage']['?' + __mode] = __mode[0].upper() + __mode[1:len(__mode)]
             for __temps, __terminaisons in __groupe_temps.items():
                 conjugué['!affichage'][__mode][__temps]       = mot_tr_former_temps(__mode, __temps)
                 conjugué['!affichage'][__mode]['?' + __temps] = __temps[0].upper() + mot_tr_remplacer(__temps[1:len(__temps)])
-                if   isinstance(__terminaisons, list):
-                    for i in range(1, len(conjugué['modes'][__mode][__temps]) +1):
-                        conjugué['modes'][__mode][__temps][i-1] = conjuguer_tr(terminaison = inf, radical = rad, personne = i, temps = (__mode + '_' + __temps), groupe = group)
-                elif isinstance(__terminaisons, str) :
-                    conjugué['modes'][__mode][__temps] = conjuguer_tr(terminaison = inf, radical = rad, personne = 1, temps = (__mode + '_' + __temps), groupe = group)
+                if   isinstance(__terminaisons, list) and len(__terminaisons) == 6:
+                    conjugué['modes'][__mode][__temps] = ['', '', '', '', '', '']
+                    for i in range(1, len(conjugué['modes'][__mode][__temps]) +1): conjugué['modes'][__mode][__temps][i-1] = conjuguer_tr(terminaison = inf, radical = rad, personne = i, temps = (__mode + '_' + __temps), groupe = group)
+                elif isinstance(__terminaisons, list) and len(__terminaisons) == 1:
+                    conjugué['!' + __mode + '_' + __temps] = conjuguer_tr(terminaison = inf, radical = rad, personne = 1, temps = (__mode + '_' + __temps), groupe = group)
+            if len(conjugué['modes'][__mode]) == 0: del conjugué['modes'][__mode]
             if conjugué['!affichage'][__mode] == {}:
                 del conjugué['!affichage'][__mode]
     conjugué['!verbe']                                             = verbe
@@ -229,8 +231,8 @@ def conjuguer(verbe:str, affichage:bool=False):
     conjugué['!usage']                                             = verbe_analyse_est_état(verbe)
     if verbe_analyse_est_irrégulier(verbe)[0] : conjugué['!build'] = 'irrégulier'
     else                                      : conjugué['!build'] = 'régulier'
-    if verbe in ['être', 'avoir']             : conjugué['type']   = 'auxiliaire'
-    else                                      : conjugué['type']   = 'commun'
+    if verbe in ['être', 'avoir']             : conjugué['!type']   = 'auxiliaire'
+    else                                      : conjugué['!type']   = 'commun'
     """
     [Conjugaison / Documentation des données]
     Les données sont présententes sous le format
