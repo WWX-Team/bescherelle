@@ -77,6 +77,27 @@ dic_terminaisons_cg =   {
                                                 'conditionnel_présent'    : ['erais', 'erais', 'erait', 'erions', 'eriez', 'eraient']                                                
                                             }
                             },
+                            '-yer': {
+                                'groupe' : 1,
+                                'temps'  :  {  
+                                                'infinitif_présent'       : ['yer'],
+                                  
+                                                'participe_présent'       : ['yant'],
+                                                'participe_passé'         : ['yé'],
+                                  
+                                                'indicatif_présent'       : ['ie', 'ies', 'ie', 'yons', 'yez', 'ient'],
+                                                'indicatif_futur_simple'  : ['ai', 'as', 'a', 'ons', 'ez', 'ont'],
+                                                'indicatif_imparfait'     : ['yais', 'yais', 'yait', 'yions', 'yiez', 'yaient'],
+                                                'indicatif_passé_simple'  : ['yai', 'yas', 'ya', 'yâmes', 'yâtes', 'yèrent'],
+                                  
+                                                'impératif_présent'       : [None, 'ie', None, 'yons', 'yez', None],
+                                  
+                                                'subjonctif_présent'      : ['ie', 'ies', 'ie', 'yions', 'yiez', 'ient'],
+                                                'subjonctif_imparfait'    : ['yasse', 'yasses', 'yât', 'yassions', 'yassiez', 'yassent'],
+                                  
+                                                'conditionnel_présent'    : ['ierais', 'ierais', 'ierait', 'ierions', 'ieriez', 'ieraient']                                                
+                                            }
+                            },
                             '2-ir': {
                                 'groupe' : 2,
                                 'temps'  :  {
@@ -116,7 +137,7 @@ dic_terminaisons_cg =   {
                                                 'subjonctif_présent'      : ['de', 'des', 'de', 'dions', 'diez', 'dent'],
                                                 'subjonctif_imparfait'    : ['disse', 'disses', 'dît', 'dissions', 'dissiez', 'dissent'],
                                   
-                                                'conditionnel_présent'    : ['drais', 'drais', 'drait', 'drions', 'driez', 'draient']
+                                                'conditionnel_présent'    : ['drais', 'drais', 'drait', 'drions', 'driez', 'draient']                                                
                                             }
                             },
                             '-ire': {
@@ -487,7 +508,7 @@ tab_irréguliers =   [
                                                                     'présent':          ["sois", "sois", "soit", "soyons", "soyez", "soient"],
                                                                     'imparfait':        ["fusse", "fusses", "fût", "fussions", "fussiez", "fussent"]
                                                                 },
-                                                'impératif':    {   'présent':          [None, "sois", None, "soyons", "soyer", None] },
+                                                'impératif':    {   'présent':          [None, "sois", None, "soyons", "soyez", None] },
                                                 'conditionnel': {   'présent':          ["serais", "serais", "serait", "serions", "seriez", "seraient"] },
                                                 'participe':    {
                                                                     'présent':          ["étant"],
@@ -1680,7 +1701,7 @@ tab_irréguliers =   [
                                             }
                         },
                         {
-                                'verbe':    "nsir",
+                                'verbe':    "nsi",
                                 'groupe':   4,
                                 'type':     "verbe",
                                 'feuille':  {
