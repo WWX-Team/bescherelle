@@ -1,25 +1,12 @@
-# -*- coding: utf-8 -*-
-"""
-
-"""
+# -*- coding: utf-8 -*-                                                       #
 ###############################################################################
 #                                                                             #
-#  ~ TROPHÉE NSI                                                           ~  #
+#  ~ LE PETIT PASCAL ~                                                        #
 #                                                                             #
-#  - Projet proposé par Wilhelm, Anselme et Lorick                            #
-#                                                                             #
-#  #########################################################################  #
-#  #                                                                       #  #
-#  #                                                                       #  #
-#  #                                                                       #  #
-#  #                                                                       #  #
-#  #                                                                       #  #
-#  #########################################################################  #
+#  -> par wilhelm43, wedego et IIlluX                                         #
 #                                                                             #
 ###############################################################################
-"""
- - Initialisation du programme
-"""
+""" INITIALISATION DU LOGICIEL """
 ###############################################################################
 # Import des MODULES
 # Sur certains OS, nommé tkinter, d'autres, Tkinter, ce court code résoud cette division.
@@ -55,9 +42,9 @@ theme = {
                        }
         }
 ###############################################################################
-"""
- - Fonction affichage
-"""
+###############################################################################
+""" FONCTION AFFICHAGE """
+###############################################################################
 
 def conjuguer_fenêtre_verbe():
     """[Logiciel / Conjugeur / Résultat]: Affiche la fenêtre de résultat du verbe."""
@@ -71,7 +58,7 @@ def conjuguer_fenêtre_verbe():
     conjugeur_window.title('Le Petit Pascal [Résultat]')   
     conjugeur_window.minsize(1440, 960)
     conjugeur_window.size
-    conjugeur_window.iconbitmap("img/LPP_only_logo.ico")
+    conjugeur_window.iconbitmap(__img_path + "img/LPP_only_logo.ico")
     conjugeur_window.config(background=theme['bg'])
     #### Création des frames « conteneuses » #############
     ligneSimple  = tk.Frame (
@@ -106,7 +93,6 @@ def conjuguer_fenêtre_verbe():
     __composé = True
     for quelleFrame in [ligneSimple, ligneComposé]:
         __composé = not __composé
-        
         frameLigne = tk.Frame   (
                                     quelleFrame,
                                     bg = theme['conjugueur']['bg']
@@ -178,35 +164,33 @@ def conjuguer_fenêtre_verbe():
     ligneSimple .place(rely = 0.05, relx = 0, relwidth = 1, relheight = 0.30)
     ligneComposé.place(rely = 0.40, relx = 0, relwidth = 1, relheight = 0.30)
     celluleInfos.place(rely = 0.75, relx = 0.5, relwidth = 0.45, relheight = 0.2)
-
 ###############################################################################
-"""
- - Gestion TKINTER
-"""
+###############################################################################
+""" GESTION TKINTER ET LOGICIEL """
 
+# Création de la fenêtre
 window = tk.Tk() 
-
-# Personnalisation
+# Définitions des chemins
+try                     :
+    __img_path = "../"
+    __img_z    = open(file = __img_path + "img/lpp.png")
+except FileNotFoundError:
+    try                     :
+        __img_path = "/"
+        __img_z    = open(file = __img_path + "img/lpp.png")
+    except FileNotFoundError:  
+        __img_path = ""
+# Personnalisation de la fenêtre
 window.title('Le Petit Pascal [Recherche]')   
 window.minsize(600, 560)
 window.maxsize(960, 720)
-window.iconbitmap("img/LPP_only_logo.ico")
+window.iconbitmap(__img_path + "img/LPP_only_logo.ico")
 window.config(background=theme['bg'])
-
-frame = tk.Frame(
-                    window, 
-                    bg = theme['bg']
-                )
-
+# Contenu
+frame = tk.Frame(window, bg = theme['bg'])
 # IMG
-frame_title = tk.Frame(
-                            frame,
-                            bg = theme['bg'],
-                            borderwidth = 1
-                       )
-
-image_logo = tk.PhotoImage(file = "img/lpp.png")
-
+frame_title = tk.Frame(frame, bg = theme['bg'], borderwidth = 1)
+image_logo = tk.PhotoImage(file = __img_path + "img/lpp.png")
 canvas_logo = tk.Canvas(
                                 frame_title,
                                 width              = 560,
@@ -217,26 +201,12 @@ canvas_logo = tk.Canvas(
                         )
 canvas_logo.create_image(560/2, 360/2, image=image_logo)
 canvas_logo.pack()
-
 frame_title.grid(row=0, column=0, sticky='n', pady=20) 
-        
 # Entrée et Bouton
-frame_input = tk.Frame (
-                                window, 
-                                bg = theme['block'],
-                                padx = 15, pady = 10
-                        )
-
-entry_search = tk.Entry(
-                                frame_input, 
-                                font = (theme['typo'], 20), 
-                                bg   = theme['bg_entry'], 
-                                fg   = theme['text_entry']
-                        )
-
+frame_input = tk.Frame (window, bg = theme['block'], padx = 15, pady = 10)
+entry_search = tk.Entry(frame_input, font = (theme['typo'], 20), bg   = theme['bg_entry'], fg   = theme['text_entry'])
 entry_search.config(highlightthickness = 2, highlightbackground = theme["modes"], highlightcolor= theme["modes"])
 entry_search.pack(pady=5, fill='x')
-
 button_search = tk.Button(
                                 frame_input,  
                                 text             = 'Conjuguer', 
@@ -245,18 +215,15 @@ button_search = tk.Button(
                                 fg               = theme['text_button'],
                                 command          = conjuguer_fenêtre_verbe
                           )
-
 button_search.config(highlightthickness = 2, highlightbackground = theme["modes"], highlightcolor= theme["modes"])
-button_search.pack(pady=5, fill='x')
-
-frame_input.place (relx = 0, relwidth = 1, y = 420)
-
+button_search.pack  (pady=5, fill='x')
+frame_input.place   (relx = 0, relwidth = 1, y = 420)
 # MAIN
-
 frame.pack(side='top')
-
 ###############################################################################
-"""
- - Boucle principale
-"""
+###############################################################################
+""" LOGICIEL """
+###############################################################################
 window.mainloop()
+###############################################################################
+###############################################################################
