@@ -116,7 +116,9 @@ dic_terminaisons_cg =   {
                                                 'subjonctif_présent'      : ['isse', 'isses', 'isse', 'issions', 'issiez', 'issent'],
                                                 'subjonctif_imparfait'    : ['isse', 'isses', 'ît', 'issions', 'issiez', 'issent'],
                                   
-                                                'conditionnel_présent'    : ['irais', 'irais', 'irait', 'irions', 'iriez', 'iraient']
+                                                'conditionnel_présent'    : ['irais', 'irais', 'irait', 'irions', 'iriez', 'iraient'],
+                                                
+                                                'tags'                    : ['build/participe/présent/iss']
                                             }
                             },
                             '-dre': {
@@ -128,9 +130,9 @@ dic_terminaisons_cg =   {
                                                 'participe_passé'         : ['is'],
                                   
                                                 'indicatif_présent'       : ['ds', 'ds', 'd', 'nons', 'nez', 'nent'],
-                                                'indicatif_futur_simple'  : ['ai', 'as', 'a', 'ons', 'ez', 'ont'],
+                                                'indicatif_futur_simple'  : ['ai', 'das', 'da', 'ons', 'ez', 'ont'],
                                                 'indicatif_imparfait'     : ['ais', 'ais', 'ait', 'ions', 'iez', 'aient'],
-                                                'indicatif_passé_simple'  : ['', '', '', '', '', ''],
+                                                'indicatif_passé_simple'  : ['dis', 'dis', 'dis', 'dîmes', 'dîtes', 'irent'],
                                   
                                                 'impératif_présent'       : [None, 'ds', None, 'dons', 'dez', None],
                                   
@@ -138,6 +140,29 @@ dic_terminaisons_cg =   {
                                                 'subjonctif_imparfait'    : ['disse', 'disses', 'dît', 'dissions', 'dissiez', 'dissent'],
                                   
                                                 'conditionnel_présent'    : ['drais', 'drais', 'drait', 'drions', 'driez', 'draient']                                                
+                                            }
+                            },
+                            '-rir': {
+                                'groupe' : 3,
+                                'temps'  :  {
+                                                'infinitif_présent'       : ['dre'],
+                                  
+                                                'participe_présent'       : ['rrant'],
+                                                'participe_passé'         : ['rru'],
+                                  
+                                                'indicatif_présent'       : ['rs', 'rs', 'rt', 'rons', 'rez', 'rent'],
+                                                'indicatif_futur_simple'  : ['ai', 'as', 'a', 'ons', 'ez', 'ont'],
+                                                'indicatif_imparfait'     : ['rais', 'rais', 'rait', 'rions', 'riez', 'raient'],
+                                                'indicatif_passé_simple'  : ['us', 'us', 'ut', 'ûmes', 'ûtes', 'urent'],
+                                  
+                                                'impératif_présent'       : [None, 'rs', None, 'rons', 'rez', None],
+                                  
+                                                'subjonctif_présent'      : ['re', 'res', 're', 'rions', 'riez', 'rent'],
+                                                'subjonctif_imparfait'    : ['russe', 'russes', 'rût', 'russions', 'russiez', 'russent'],
+                                  
+                                                'conditionnel_présent'    : ['ais', 'ais', 'ait', 'ions', 'iez', 'aient'],
+                                                
+                                                'tags'                    : ['build/gen/sans_infinitive', 'build/gen/double_r']                                              
                                             }
                             },
                             '-ire': {
@@ -151,7 +176,7 @@ dic_terminaisons_cg =   {
                                                 'indicatif_présent'       : ['is', 'is', 'it', 'isons', 'isez', 'isent'],
                                                 'indicatif_futur_simple'  : ['irai', 'iras', 'ira', 'irons', 'irez', 'iront'],
                                                 'indicatif_imparfait'     : ['isais', 'isais', 'isait', 'isions', 'isiez', 'isaient'],
-                                                'indicatif_passé_simple'  : ['us', 'us', 'ut', 'ûmes', 'ûtes', 'lurent'],
+                                                'indicatif_passé_simple'  : ['us', 'us', 'ut', 'ûmes', 'ûtes', 'urent'],
                                   
                                                 'impératif_présent'       : [None, 'is', None, 'isons', 'isez', None],
                                   
@@ -160,7 +185,7 @@ dic_terminaisons_cg =   {
                                   
                                                 'conditionnel_présent'    : ['irais', 'irais', 'irait', 'irions', 'iriez', 'iraient'],
                                                 
-                                                'tags'                    : ["build/sans_rad_futur_simple"]
+                                                'tags'                    : ["build/gen/sans_infinitive"]
                                             }
                             },
                             '-oir': {
@@ -183,7 +208,7 @@ dic_terminaisons_cg =   {
                                   
                                                 'conditionnel_présent'    : ['errais', 'errais', 'errait', 'errions', 'erriez', 'erraient'],
                                                 
-                                                'tags'                    : ["build/sans_rad_futur_simple"]
+                                                'tags'                    : ["build/gen/sans_infinitive"]
                                             }
                             },
                             '-enir': {
@@ -206,7 +231,7 @@ dic_terminaisons_cg =   {
                                   
                                                 'conditionnel_présent'    : ['iendrais', 'iendrais', 'iendrait', 'iendrions', 'iendriez', 'iendraient'],
 
-                                                'tags'                    : ["build/sans_rad_futur_simple"]
+                                                'tags'                    : ["build/gen/sans_infinitive"]
                                             }
                             },
                             '-aire': {
@@ -229,7 +254,7 @@ dic_terminaisons_cg =   {
                                   
                                                 'conditionnel_présent'    : ['airais', 'airais', 'airait', 'airions', 'airiez', 'airaient'],
                                                 
-                                                'tags'                    : ["build/sans_rad_futur_simple"]
+                                                'tags'                    : ["build/gen/sans_infinitive"]
                                             }
                             },
                             '-oindre': {
@@ -252,7 +277,7 @@ dic_terminaisons_cg =   {
                                   
                                                 'conditionnel_présent'    : ['oindrais','oindrais','oindrait','oindrions','oindriez','oindraient'],
 
-                                                'tags'                    : ["build/sans_rad_futur_simple"]
+                                                'tags'                    : ["build/gen/sans_infinitive"]
                                             }
                                 
                             },
@@ -276,7 +301,7 @@ dic_terminaisons_cg =   {
                                   
                                                 'conditionnel_présent'    : ['eindrais','eindrais','eindrait','eindrions','eindriez','eindraient'],
 
-                                                'tags'                    : ["build/sans_rad_futur_simple"]
+                                                'tags'                    : ["build/gen/sans_infinitive"]
                                             }
                             },
                             '-aindre': {
@@ -299,7 +324,7 @@ dic_terminaisons_cg =   {
                                   
                                                 'conditionnel_présent'    : ['aindrais','aindrais','aindrait','aindrions','aindriez','aindraient'],
 
-                                                'tags'                    : ["build/sans_rad_futur_simple"]
+                                                'tags'                    : ["build/gen/sans_infinitive"]
                                             }
                             },
                             '-ettre': {
@@ -322,7 +347,7 @@ dic_terminaisons_cg =   {
                                   
                                                 'conditionnel_présent'    : ['ettrais','ettrais', 'ettrait', 'ettrions', 'ettriez', 'ettraient'],
 
-                                                'tags'                    : ["build/sans_rad_futur_simple"]
+                                                'tags'                    : ["build/gen/sans_infinitive"]
                                             }
                             },
                             '-uire': {
@@ -345,7 +370,7 @@ dic_terminaisons_cg =   {
                                   
                                                 'conditionnel_présent'    : ['uirais','uirais','uirait','uirions','uiriez','uiraient'],
 
-                                                'tags'                    : ["build/sans_rad_futur_simple"]
+                                                'tags'                    : ["build/gen/sans_infinitive"]
                                             }
                             },
                             '-oire': {
@@ -368,7 +393,7 @@ dic_terminaisons_cg =   {
                                   
                                                 'conditionnel_présent'    : ['oirais','oirais','oirait','oirions','oiriez','oiraient'],
 
-                                                'tags'                    : ["build/sans_rad_futur_simple"]
+                                                'tags'                    : ["build/gen/sans_infinitive"]
                                             }
                             },
                             '-eillir': {
@@ -391,7 +416,7 @@ dic_terminaisons_cg =   {
                                   
                                                 'conditionnel_présent'    : ['eillerais','eillerais','eillerait','eillerions','eilleriez','eilleraient'],
 
-                                                'tags'                    : ["build/sans_rad_futur_simple"]
+                                                'tags'                    : ["build/gen/sans_infinitive"]
                                             }
                             }
                         }
