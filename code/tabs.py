@@ -53,7 +53,7 @@ Terminaisons
 
 # Tableau des terminaisons à l'infinitif
 # Triées de la plus petite à la plus longue (note : seulement les caractères après le tiret sont comptabilisés)
-tab_terminaisons              =    ["-er", "2-ir", "3-ir", "-ir", "-re", "-dre", "-ire", "-oir", "-enir", "-aire", "-oire", "-uire", "-ettre", "-aindre", "-eindre", "-oindre", "-eillir"]
+tab_terminaisons              =    ["-er", "2-ir", "3-ir", "-ir", "-re", "-dre", "-ire", "-rir", "-oir", "-enir", "-aire", "-oire", "-uire", "-ettre", "-aindre", "-eindre", "-oindre", "-eillir"]
 
 dic_terminaisons_cg =   {
                             '-er': {
@@ -103,7 +103,7 @@ dic_terminaisons_cg =   {
                                 'temps'  :  {
                                                 'infinitif_présent'       : ['ir'],
                                   
-                                                'participe_présent'       : ['issant'],
+                                                'participe_présent'       : ['ant'],
                                                 'participe_passé'         : ['i'],
                                   
                                                 'indicatif_présent'       : ['is', 'is', 'it', 'issons', 'issez', 'issent'],
@@ -147,8 +147,8 @@ dic_terminaisons_cg =   {
                                 'temps'  :  {
                                                 'infinitif_présent'       : ['dre'],
                                   
-                                                'participe_présent'       : ['rrant'],
-                                                'participe_passé'         : ['rru'],
+                                                'participe_présent'       : ['rant'],
+                                                'participe_passé'         : ['ru'],
                                   
                                                 'indicatif_présent'       : ['rs', 'rs', 'rt', 'rons', 'rez', 'rent'],
                                                 'indicatif_futur_simple'  : ['ai', 'as', 'a', 'ons', 'ez', 'ont'],
