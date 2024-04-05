@@ -298,8 +298,8 @@ def conjuguer_tr(terminaison:str, radical:str, personne:int, temps:str, groupe:i
         else                   :
             # Si le verbe est régulier, le chemin est dans le dictionnaire des terminaisons
             cg_path                  = tabs.dic_terminaisons_cg[terminaison]['temps'][temps]
-            if 'tags' in tabs.dic_terminaisons_cg[terminaison].keys():
-                cg_tags              = tabs.dic_terminaisons_cg[terminaison]['tags']
+            if 'tags' in tabs.dic_terminaisons_cg[terminaison]['temps'].keys():
+                cg_tags              = tabs.dic_terminaisons_cg[terminaison]['temps']['tags']
         # Code commun
         if cg_path == None: return None
         cg_len         = len(cg_path)
@@ -335,9 +335,9 @@ def conjuguer_tr_vérifier_radical(radical:str, inf:str, term:str, temps:str, pe
     """
     cg_radical = radical
     # Vérifications par TAGS
-    if temps in ['indicatif_futur_simple'] and not  'build/gen/sans_infinitive'     in tags: cg_radical += inf
-    if temps in ['indicatif_futur_simple'] and      'build/gen/double_r'            in tags: cg_radical += 'rr'
-    if temps in ['participe_présent']      and      'build/participe/présent/iss'   in tags: cg_radical += 'iss'
+    if temps in ['indicatif_futur_simple', 'conditionnel_présent'] and not 'build/gen/sans_infinitive'   in tags: cg_radical += inf
+    if temps in ['indicatif_futur_simple', 'conditionnel_présent'] and     'build/gen/double_r'          in tags: cg_radical += 'rr'
+    if temps in ['participe_présent']                              and     'build/participe/présent/iss' in tags: cg_radical += 'iss'
     # Vérifications nécessaires
     cg_radical = conjuguer_tr_e_final(cg_radical)
     cg_radical = conjuguer_tr_cédille(cg_radical, term)
@@ -376,7 +376,7 @@ def conjuger_an_temps_est_composé(mode:str, temps:str) -> bool:
     return False
 
 def conjuguer_an_trouver_verbe(chaine:str="chanter"):
-    lettres = 'azertyuiopqsdfghjklmwxcvbnAZERTYUIOPQSDFGHJKLMWXCVBNâêîôÂÊÎÔÛäëïöüÄËÏÖÜùçàèéÉœŒ'
+    lettres = 'azertyuiopqsdfghjklmwxcvbnAZERTYUIOPQSDFGHJKLMWXCVBNâêîôÂÊÎÔÛäëïöüÄËÏÖÜáéíóúÁÉÍÓÚàèìòùÀÈÌÒÙçÇøØæÆœŒåÅãÃñÑõÕß'
     verbe = ""
     for i in chaine:
         if i in lettres: verbe += i
