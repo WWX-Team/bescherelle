@@ -153,25 +153,6 @@ def verbe_analyse_temps_composé(temps:str) -> tuple:
 
 ## MOTS #####
 
-        # ANALYSES
-        
-def mot_analyse_décomposer(chaîne:str) -> list:
-    """
-    [Mot / Analyse /  Décomposition liste]: Sépare le verbe et la préposition dans un verbe pronominal puis l'ajoute à un tableau [:list].
-    """
-    mots = []
-    mot = ""
-    index = 0
-    for lettre, in chaîne:
-        if lettre == " " or index == (len(chaîne) -1):
-            if not lettre == " ": mot += lettre
-            mots.append(mot)
-            mot = ""
-        else:
-            mot += lettre
-        index += 1
-    return mots
-
         # TRANSFORMATIONS
 
 def mot_tr_remplacer(mot:str, symbole:str='_', avec:str=' ', data:str=''):
@@ -353,13 +334,11 @@ def conjuguer_tr_vérifier_radical(radical:str, inf:str, term:str, temps:str, pe
     [Conjugaison / Transformations / Radical]: Voir [Conjugaison / Transformations]. Retourne l'état correct du radical.
     """
     cg_radical = radical
-    if temps in ['indicatif_futur_simple'] and not 'build/sans_rad_futur_simple' in tags:
-        cg_radical += inf
-        if inf == 'rir': cg_radical += 'r'
-    if temps in ['participe_présent']     :
-        if   groupe == 1: cg_radical = cg_radical
-        elif groupe == 2: cg_radical = cg_radical + 'iss'
-        elif groupe == 3: cg_radical = cg_radical
+    # Vérifications par TAGS
+    if temps in ['indicatif_futur_simple'] and not  'build/gen/sans_infinitive'     in tags: cg_radical += inf
+    if temps in ['indicatif_futur_simple'] and      'build/gen/double_r'            in tags: cg_radical += 'rr'
+    if temps in ['participe_présent']      and      'build/participe/présent/iss'   in tags: cg_radical += 'iss'
+    # Vérifications nécessaires
     cg_radical = conjuguer_tr_e_final(cg_radical)
     cg_radical = conjuguer_tr_cédille(cg_radical, term)
     cg_radical = conjuguer_tr_g_final(cg_radical, term)
