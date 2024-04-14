@@ -8,6 +8,7 @@
 ###############################################################################
 """ INITIALISATION DU LOGICIEL """
 ###############################################################################
+print(" | Le Petit Pascal")
 # Import des MODULES
 # Sur certains OS, nommé tkinter, d'autres, Tkinter, ce court code résoud cette division.
 try:
@@ -41,6 +42,38 @@ theme = {
                          'frameTemps' : '#eebbca'
                        }
         }
+# Création de la fenêtre
+window = tk.Tk() 
+# Définitions des chemins
+try                     :
+    __img_path = "../"
+    __img_z    = open(file = __img_path + "img/lpp.png")
+except FileNotFoundError:
+    try                     :
+        __img_path = "/"
+        __img_z    = open(file = __img_path + "img/lpp.png")
+    except FileNotFoundError:  
+        __img_path = ""
+# Définitions des PARAMÈTRES
+settings =  {
+            'conjugueur' : {
+                            'text_size' :   {
+                                            'title': 2.3,
+                                            'mode' : 1.8,
+                                            'temps': 1.5,
+                                            'terms': 1.2 
+                                            },
+                            'name'      :   'Le Petit Pascal [Résultat]'
+                           },
+            'recherche'  : {
+                            'name'      :   'Le Petit Pascal'
+                        }
+            }
+# Mise à jour des PARAMÈTRES
+as_width  = window.winfo_screenwidth()
+as_height = window.winfo_screenheight()
+print(f" | Écran {as_width}x{as_height}")
+for textsize in settings['conjugueur']['text_size'].keys(): settings['conjugueur']['text_size'][textsize] = int((as_width / 2560) * 10 * settings['conjugueur']['text_size'][textsize])
 ###############################################################################
 ###############################################################################
 """ FONCTION AFFICHAGE """
@@ -55,9 +88,8 @@ def conjuguer_fenêtre_verbe():
     if cj == None: return # retour si erreur
     #### Création de la fenêtre Tkinter ##################
     conjugeur_window = tk.Tk()
-    conjugeur_window.title('Le Petit Pascal [Résultat]')   
+    conjugeur_window.title(settings['conjugueur']['name'])
     conjugeur_window.minsize(1440, 960)
-    conjugeur_window.size
     conjugeur_window.iconbitmap(__img_path + "img/LPP_only_logo.ico")
     conjugeur_window.config(background=theme['bg'])
     #### Création des frames « conteneuses » #############
@@ -75,20 +107,21 @@ def conjuguer_fenêtre_verbe():
                             )
     #### Labels ##########################################
     labelSimple  = tk.Label (
-                                ligneSimple,
-                                text    = "Temps Simples",
-                                fg = theme['conjugueur']['labelMain'], font = (theme['typo'], 24), bg = theme['conjugueur']['bg']
-                            ).place(x = 5, y = 5)
+                                ligneSimple, width = 1440,
+                                text    = "Temps Simples", anchor = 'w', justify = 'left',
+                                fg = theme['conjugueur']['labelMain'], font = (theme['typo'], settings['conjugueur']['text_size']['title']), bg = theme['conjugueur']['bg']
+                                
+                            ).pack(side = 'top', padx = 5, pady = 2)
     labelComposé = tk.Label (
-                                ligneComposé,
-                                text    = "Temps Composés",
-                                fg = theme['conjugueur']['labelMain'], font = (theme['typo'], 24), bg = theme['conjugueur']['bg']
-                            ).place(x = 5, y = 5)
+                                ligneComposé, width = 1440,
+                                text    = "Temps Composés", anchor = 'w', justify = 'left',
+                                fg = theme['conjugueur']['labelMain'], font = (theme['typo'], settings['conjugueur']['text_size']['title']), bg = theme['conjugueur']['bg']
+                            ).pack(side = 'top', padx = 5, pady = 2)
     labelInfos   = tk.Label (
-                                celluleInfos,
-                                text    = "Infos",
-                                fg = theme['conjugueur']['labelMain'], font = (theme['typo'], 24), bg = theme['conjugueur']['bg']
-                            ).place(x = 5, y = 5)
+                                celluleInfos, width = 1440,
+                                text    = "Infos", anchor = 'w', justify = 'left',
+                                fg = theme['conjugueur']['labelMain'], font = (theme['typo'], settings['conjugueur']['text_size']['title']), bg = theme['conjugueur']['bg']
+                            ).pack(side = 'top', padx = 5, pady = 2)
     #### Boucles Simples, Composées ######################
     __composé = True
     for quelleFrame in [ligneSimple, ligneComposé]:
@@ -107,7 +140,7 @@ def conjuguer_fenêtre_verbe():
             labelMode   = tk.Label  (
                                         frameMode,
                                         text = cj['!affichage']['?' + mode],
-                                        fg   = theme['conjugueur']['labelAlt'], font = (theme['typo'], 19), bg = theme['conjugueur']['frameMode']
+                                        fg   = theme['conjugueur']['labelAlt'], font = (theme['typo'], settings['conjugueur']['text_size']['mode']), bg = theme['conjugueur']['frameMode']
                                     ).pack(padx = 5, pady = 5)
             ### Affichage des Temps
             for temps in cj['modes'][mode].keys():
@@ -119,7 +152,7 @@ def conjuguer_fenêtre_verbe():
                     labelTemps = tk.Label   (
                                                 frameTemps,
                                                 text = cj['!affichage'][mode]['?' + temps],
-                                                bg = theme['conjugueur']['frameTemps'], font = (theme['typo'], 16), fg = theme['conjugueur']['labelTemps']
+                                                bg = theme['conjugueur']['frameTemps'], font = (theme['typo'], settings['conjugueur']['text_size']['temps']), fg = theme['conjugueur']['labelTemps']
                                             ).pack(padx = 5, pady = 5)
                     
                     ### Affichage des terminaisons
@@ -129,14 +162,14 @@ def conjuguer_fenêtre_verbe():
                         labelTerm = tk.Label( 
                                                     frameTemps,
                                                     text    = labelTermText,
-                                                    bg      = theme['conjugueur']['frameTemps'], font = (theme['typo'], 13), fg = theme['conjugueur']['labelTerm']
+                                                    bg      = theme['conjugueur']['frameTemps'], font = (theme['typo'], settings['conjugueur']['text_size']['terms']), fg = theme['conjugueur']['labelTerm']
                                                 )
-                        labelTerm.pack()
+                        labelTerm.pack(padx = 0, pady = 0)
                     ### Pack du temps
                     frameTemps.pack(padx = 5, pady = 5, side='left')
             ### Pack du mode
             frameMode.pack(padx = 5, pady = 5, side='left') 
-        frameLigne.pack(padx = 10, pady = 15, side='left')
+        frameLigne.pack(padx = 8, pady = 8, side='left')
     #### Informations ####################################
     frameInfos = tk.Frame (celluleInfos, bg = theme['conjugueur']['frameMode'])
     #####
@@ -149,10 +182,10 @@ def conjuguer_fenêtre_verbe():
         for key, obj in ligne.items():
             
             frameCelluleInfos = tk.Frame (frameInfos,   bg = theme['conjugueur']['frameTemps'])
-            labelCelluleInfos = tk.Label (frameCelluleInfos, bg = theme['conjugueur']['frameTemps'], font = (theme['typo'], 18), fg = theme['conjugueur']['labelTemps'],
+            labelCelluleInfos = tk.Label (frameCelluleInfos, bg = theme['conjugueur']['frameTemps'], font = (theme['typo'], settings['conjugueur']['text_size']['mode']), fg = theme['conjugueur']['labelTemps'],
                                           text = obj
                                          ).pack(side = 'top')
-            labelCelluleData  = tk.Label (frameCelluleInfos, bg = theme['conjugueur']['frameTemps'], font = (theme['typo'], 15), fg = theme['conjugueur']['labelTerm'],
+            labelCelluleData  = tk.Label (frameCelluleInfos, bg = theme['conjugueur']['frameTemps'], font = (theme['typo'], settings['conjugueur']['text_size']['temps']), fg = theme['conjugueur']['labelTerm'],
                                           text = cj[key]
                                          ).pack(side = 'top')
             frameCelluleInfos.place(relx = __x, rely = __y, relwidth = 0.23, relheight = 0.42)
@@ -167,21 +200,8 @@ def conjuguer_fenêtre_verbe():
 ###############################################################################
 ###############################################################################
 """ GESTION TKINTER ET LOGICIEL """
-
-# Création de la fenêtre
-window = tk.Tk() 
-# Définitions des chemins
-try                     :
-    __img_path = "../"
-    __img_z    = open(file = __img_path + "img/lpp.png")
-except FileNotFoundError:
-    try                     :
-        __img_path = "/"
-        __img_z    = open(file = __img_path + "img/lpp.png")
-    except FileNotFoundError:  
-        __img_path = ""
 # Personnalisation de la fenêtre
-window.title('Le Petit Pascal [Recherche]')   
+window.title(settings['recherche']['name'])   
 window.minsize(600, 560)
 window.maxsize(960, 720)
 window.iconbitmap(__img_path + "img/LPP_only_logo.ico")
@@ -189,32 +209,26 @@ window.config(background=theme['bg'])
 # Contenu
 frame = tk.Frame(window, bg = theme['bg'])
 # IMG
-frame_title = tk.Frame(frame, bg = theme['bg'], borderwidth = 1)
-image_logo = tk.PhotoImage(file = __img_path + "img/lpp.png")
-canvas_logo = tk.Canvas(
-                                frame_title,
-                                width              = 560,
-                                height             = 360,
-                                bg                 = theme['bg'],
-                                bd                 = 0,
-                                highlightthickness = 0
-                        )
-canvas_logo.create_image(560/2, 360/2, image=image_logo)
-canvas_logo.pack()
-frame_title.grid(row=0, column=0, sticky='n', pady=20) 
+frame_title      = tk.Frame(frame, bg = theme['bg'])
+frame_title_logo = tk.Label(
+                            frame_title,
+                            image              = tk.PhotoImage(master = frame_title, file = (__img_path + "img/lpp.png")),
+                            bg                 = theme['bg']
+                       ).pack(side='top')
+frame_title.pack(side='top')
 # Entrée et Bouton
 frame_input = tk.Frame (window, bg = theme['block'], padx = 15, pady = 10)
 entry_search = tk.Entry(frame_input, font = (theme['typo'], 20), bg   = theme['bg_entry'], fg   = theme['text_entry'])
 entry_search.config(highlightthickness = 2, highlightbackground = theme["modes"], highlightcolor= theme["modes"])
 entry_search.pack(pady=5, fill='x')
 button_search = tk.Button(
-                                frame_input,  
-                                text             = 'Conjuguer', 
-                                font             = (theme['typo'], 20), 
-                                bg               = theme['bg_button'], 
-                                fg               = theme['text_button'],
-                                command          = conjuguer_fenêtre_verbe
-                          )
+                            frame_input,  
+                            text             = 'Conjuguer', 
+                            font             = (theme['typo'], 20), 
+                            bg               = theme['bg_button'], 
+                            fg               = theme['text_button'],
+                            command          = conjuguer_fenêtre_verbe
+                         )
 button_search.config(highlightthickness = 2, highlightbackground = theme["modes"], highlightcolor= theme["modes"])
 button_search.pack  (pady=5, fill='x')
 frame_input.place   (relx = 0, relwidth = 1, y = 420)
