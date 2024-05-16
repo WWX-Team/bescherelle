@@ -8,6 +8,7 @@
 ###############################################################################
 """ INITIALISATION DU LOGICIEL """
 ###############################################################################
+print()
 print(" | Le Petit Pascal")
 # Import des MODULES
 # Sur certains OS, nommé tkinter, d'autres, Tkinter, ce court code résoud cette division.
@@ -74,6 +75,8 @@ as_width  = window.winfo_screenwidth()
 as_height = window.winfo_screenheight()
 print(f" | Écran {as_width}x{as_height}")
 for textsize in settings['conjugueur']['text_size'].keys(): settings['conjugueur']['text_size'][textsize] = int((as_width / 2560) * 10 * settings['conjugueur']['text_size'][textsize])
+###############################################################################
+print()
 ###############################################################################
 ###############################################################################
 """ FONCTION AFFICHAGE """
@@ -210,11 +213,10 @@ window.config(background=theme['bg'])
 frame = tk.Frame(window, bg = theme['bg'])
 # IMG
 frame_title      = tk.Frame(frame, bg = theme['bg'])
-frame_title_logo = tk.Label(
-                            frame_title,
-                            image              = tk.PhotoImage(master = frame_title, file = (__img_path + "img/lpp.png")),
-                            bg                 = theme['bg']
-                       ).pack(side='top')
+frame_title_img = tk.PhotoImage(file = __img_path + "img/lpp.png")
+frame_title_lb = tk.Label(frame_title, bg = theme['bg'], image = frame_title_img)
+frame_title_lb.image = frame_title_img
+frame_title_lb.pack(side = 'top')
 frame_title.pack(side='top')
 # Entrée et Bouton
 frame_input = tk.Frame (window, bg = theme['block'], padx = 15, pady = 10)
