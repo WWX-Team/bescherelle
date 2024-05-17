@@ -76,6 +76,8 @@ as_height = window.winfo_screenheight()
 print(f" | Écran {as_width}x{as_height}")
 for textsize in settings['conjugueur']['text_size'].keys(): settings['conjugueur']['text_size'][textsize] = int((as_width / 2560) * 10 * settings['conjugueur']['text_size'][textsize])
 ###############################################################################
+print(" | Le Petit pascal  Copyright (C) 2024 WWX-Team (wilhelm43, wedego, Hilux")
+print(" | This program comes with ABSOLUTELY NO WARRANTY; for details read license.")
 print()
 ###############################################################################
 ###############################################################################
