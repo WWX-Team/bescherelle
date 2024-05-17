@@ -6,7 +6,7 @@
 
 *Réalisé par wilhelm43, wedego & IIllux*
 
-Bescherelle semi-automatique générant des conjugaisons pour des verbes, même non existants.
+Bescherelle automatique générant des conjugaisons pour des verbes, même non existants.
 
 ----
 
