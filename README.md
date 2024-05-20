@@ -21,13 +21,13 @@ Lancer le raccourci ou `code/main.py` permet d'ouvrir l'application.
 
 ``` Utilisation ```
 
-<img src="/img/templates/lpp:home.svg" alt="LPP - Fenêtre principale" title="Fenêtre principale">
+<img src="/img/templates/lpp_home.svg" alt="LPP - Fenêtre principale" title="Fenêtre principale">
 
 *Aperçu de la fenêtre principale*
 
 Entrez un verbe dans le champ « *entry* », puis cliquez sur « *Conjuguer* ».
 
-<img src="/img/templates/lpp:conjugeur.svg" alt="LPP - Fenêtre des résultats" title="Fenêtre des résultats">
+<img src="/img/templates/lpp_conjugeur.svg" alt="LPP - Fenêtre des résultats" title="Fenêtre des résultats">
 
 *Aperçu des résultats*
 
