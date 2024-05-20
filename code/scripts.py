@@ -378,10 +378,11 @@ def conjuger_an_temps_est_composé(mode:str, temps:str) -> bool:
 def conjuguer_an_trouver_verbe(chaine:str="chanter"):
     lettres = 'azertyuiopqsdfghjklmwxcvbnAZERTYUIOPQSDFGHJKLMWXCVBNâêîôÂÊÎÔÛäëïöüÄËÏÖÜáéíóúÁÉÍÓÚàèìòùÀÈÌÒÙçÇøØæÆœŒåÅãÃñÑõÕß'
     # Asserts
-    if len(chaine) < 2: return "chanter"
+    if len(chaine) <= 2: return "chanter"
     if chaine[0] not in lettres: return "chanter"
     # Code
     verbe = ""
     for i in chaine:
         if i in lettres: verbe += i
+    if len(verbe) <= 2: return "chanter"
     return verbe
