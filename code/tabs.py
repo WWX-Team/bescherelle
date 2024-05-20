@@ -224,7 +224,7 @@ dic_terminaisons_cg =   {
                                                 'indicatif_imparfait'     : ['enais', 'enais', 'enait', 'enions', 'eniez', 'enaient'],
                                                 'indicatif_passé_simple'  : ['ins', 'ins', 'int', 'înmes', 'întes', 'inrent'],
                                   
-                                                'impératif_présent'       : [None, '', None, '', '', None],
+                                                'impératif_présent'       : [None, 'iens', None, 'enons', 'venez', None],
                                   
                                                 'subjonctif_présent'      : ['ienne', 'iennes', 'ienne', 'enions', 'eniez', 'iennent'],
                                                 'subjonctif_imparfait'    : ['insse', 'insses', 'înt', 'inssions', 'inssiez', 'inssent'],
@@ -396,6 +396,29 @@ dic_terminaisons_cg =   {
                                                 'tags'                    : ["build/gen/sans_infinitive"]
                                             }
                             },
+                            '3-ir': {
+                                'groupe' : 3,
+                                'temps'  :  {
+                                                'infinitif_présent'       : ['ir'],
+                                  
+                                                'participe_présent'       : ['ant'],
+                                                'participe_passé'         : ['i'],
+                                  
+                                                'indicatif_présent'       : ['s','s','t','ons','ez','ent'],
+                                                'indicatif_futur_simple'  : ['irai','iras','ira','irons','irez','iront'],
+                                                'indicatif_imparfait'     : ['ais','ais','ait','ions','iez','aient'],
+                                                'indicatif_passé_simple'  : ['is','is','it','îmes','îtes','irent'],
+                                  
+                                                'impératif_présent'       : [None, 'e', None, 'ons', 'ez', None],
+                                  
+                                                'subjonctif_présent'      : ['e','es','e','ions','iez','ent'],
+                                                'subjonctif_imparfait'    : ['isse','isses','ît','issions','issiez','issent'],
+                                  
+                                                'conditionnel_présent'    : ['irais','irais','irait','irions','iriez','iraient'],
+                                                
+                                                'tags'                    : ["build/gen/sans_infinitive"]
+                                            }
+                            },
                             '-eillir': {
                                 'groupe' : 3,
                                 'temps'  :  {
@@ -461,6 +484,7 @@ tab_ex_ir = [
 tab_ex_er = [
                 ('siéger',        ('sièg', 'siég')),
                 ('céder',        ('cèd', 'céd')),
+                ('peler',        ('pèl', 'pel'))
             ]
 
 """
