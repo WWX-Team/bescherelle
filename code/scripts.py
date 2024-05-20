@@ -182,7 +182,8 @@ def conjuguer(verbe:str, affichage:bool=False):
     """
     [Conjugaison]:\n
     """
-    group, inf, rad = verbe_analyse(conjuguer_an_trouver_verbe(verbe)) 
+    as_verbe        = conjuguer_an_trouver_verbe(verbe) 
+    group, inf, rad = verbe_analyse(as_verbe) 
     # group : groupe du verbe [:int]
     # inf   : terminaison infinitive non brute [:str]
     # rad   : radical infinitif [:str]
@@ -206,14 +207,14 @@ def conjuguer(verbe:str, affichage:bool=False):
             if len(conjugué['modes'][__mode]) == 0: del conjugué['modes'][__mode]
             if conjugué['!affichage'][__mode] == {}:
                 del conjugué['!affichage'][__mode]
-    conjugué['!verbe']                                             = verbe
-    conjugué['!groupe']                                            = group
-    conjugué['!term']                                              = inf
-    conjugué['!usage']                                             = verbe_analyse_est_état(verbe)
-    if verbe_analyse_est_irrégulier(verbe)[0] : conjugué['!build'] = 'irrégulier'
-    else                                      : conjugué['!build'] = 'régulier'
-    if verbe in ['être', 'avoir']             : conjugué['!type']   = 'auxiliaire'
-    else                                      : conjugué['!type']   = 'commun'
+    conjugué['!verbe']                                                = as_verbe
+    conjugué['!groupe']                                               = group
+    conjugué['!term']                                                 = inf
+    conjugué['!usage']                                                = verbe_analyse_est_état(verbe)
+    if verbe_analyse_est_irrégulier(as_verbe)[0] : conjugué['!build'] = 'irrégulier'
+    else                                         : conjugué['!build'] = 'régulier'
+    if as_verbe in ['être', 'avoir']             : conjugué['!type']  = 'auxiliaire'
+    else                                         : conjugué['!type']  = 'commun'
     """
     [Conjugaison / Documentation des données]
     Les données sont présententes sous le format
@@ -348,6 +349,7 @@ def conjuguer_tr_e_final(verbe:str) -> str:
     """
     [Conjugaison / Transformations / Élision -e final]: Avec un verbe à n'importe quel état [:str], retourne la forme sans -e final [:str].
     """
+    if len(verbe) == 0 : return verbe
     if verbe[-1] == 'e': return verbe[0:len(verbe) -1]
     return verbe
 
@@ -355,6 +357,7 @@ def conjuguer_tr_cédille(radical:str, term:str) -> str:
     """
     [Conjugaison / Transformations / Cédille]: Ajoute une cédille au -c final d'un radical donné [:str] si la terminaison donnée [:str] le nécessite, et retourne le résultat [:str].
     """
+    if len(radical) == 0 : return radical
     if radical[-1] == 'c' and term[0] in ['a', 'o', 'u']: return radical[0:len(radical) -1] + 'ç'
     return radical
 
@@ -362,6 +365,7 @@ def conjuguer_tr_g_final(radical:str, term:str) -> str:
     """
     [Conjugaison / Transformations / -g, -e prononciation] Ajoute un -e de prononciation à un radical donné [:str] en fonction de la term donnée [:str]. Retourne le résultat [:str].
     """
+    if len(radical) == 0 : return radical
     if radical[-1] == 'g' and (term[0] in 'aou'): return radical + 'e'
     return radical
 
