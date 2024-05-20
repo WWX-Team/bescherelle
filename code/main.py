@@ -19,30 +19,31 @@ except ImportError:
 # Import des FONCTIONS LOCALES
 from scripts import conjuguer, conjuger_an_temps_est_composé
 # Définitions des THÈMES
-theme = {
-        'title'      : '#ac2e55',
-        'modes'      : '#eeeeee',
-        'block'      : '#c8124b',
-        'bg'         : '#1a0008',
-        'bg_entry'   : '#660022',
-        'bg_button'  : '#80002a',  
-        'text_entry' : '#ffffff',
-        'text_button': '#000000',
-        'typo'       : 'Helvetica',
-        'back'       : ['#a31743', '#0f9473', '#5a8bb7', '#df941b', '#885ca5', '#d04f32'],
-        'back_1'     : ['#ac2e55', '#269e81', '#6a96be', '#e29e31', '#936cae', '#d46046'],
-        'back_2'     : ['#b54568', '#3ea98f', '#8badcc', '#e5a948', '#9f7cb7', '#d9725a'],
-        'back_3'     : ['#be5c7b', '#57b49d', '#8badcc', '#e8b45f', '#ab8cc0', '#de836f'],
-        'conjugueur' : {
-                         'bg'         : '#e01c57',
-                         'labelMain'  : '#e79eb4',
-                         'labelAlt'   : '#eeeeee',
-                         'labelTerm'  : '#ffffff',
-                         'labelTemps' : '#e01c57',
-                         'frameMode'  : '#e79eb4',
-                         'frameTemps' : '#eebbca'
-                       }
-        }
+__theme_dark = {
+             'title'      : '#ac2e55',
+             'modes'      : '#eeeeee',
+             'block'      : '#c8124b',
+             'bg'         : '#1a0008',
+             'bg_entry'   : '#660022',
+             'bg_button'  : '#80002a',  
+             'text_entry' : '#ffffff',
+             'text_button': '#000000',
+             'typo'       : 'Helvetica',
+             'back'       : ['#a31743', '#0f9473', '#5a8bb7', '#df941b', '#885ca5', '#d04f32'],
+             'back_1'     : ['#ac2e55', '#269e81', '#6a96be', '#e29e31', '#936cae', '#d46046'],
+             'back_2'     : ['#b54568', '#3ea98f', '#8badcc', '#e5a948', '#9f7cb7', '#d9725a'],
+             'back_3'     : ['#be5c7b', '#57b49d', '#8badcc', '#e8b45f', '#ab8cc0', '#de836f'],
+             'conjugueur' : {
+                              'bg'         : '#e01c57',
+                              'labelMain'  : '#e79eb4',
+                              'labelAlt'   : '#eeeeee',
+                              'labelTerm'  : '#41091a',
+                              'labelTemps' : '#e01c57',
+                              'frameMode'  : '#e79eb4',
+                              'frameTemps' : '#eebbca'
+                            }
+            }
+theme = __theme_dark
 # Création de la fenêtre
 window = tk.Tk() 
 # Définitions des chemins
@@ -76,7 +77,7 @@ as_height = window.winfo_screenheight()
 print(f" | Écran {as_width}x{as_height}")
 for textsize in settings['conjugueur']['text_size'].keys(): settings['conjugueur']['text_size'][textsize] = int((as_width / 2560) * 10 * settings['conjugueur']['text_size'][textsize])
 ###############################################################################
-print(" | Le Petit Pascal - Copyright (C) 2024 WWX-Team (wilhelm43, wedego, Hilux")
+print(" | Le Petit Pascal - Copyright (C) 2024 WWX-Team (wilhelm43, wedego, Hilux)")
 print(" | This program comes with ABSOLUTELY NO WARRANTY; for details read license.")
 print()
 ###############################################################################
