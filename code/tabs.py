@@ -1,4 +1,59 @@
 """
+Classes
+"""
+
+class Themes:
+    """"""
+    
+    def __init__(self, tab):
+        self.themes  = tab
+        self.theme   = tab[0]
+        self.current = 0
+        
+    def change_theme(self, add : int = 1):
+        self.current += add
+        if self.current >= len(self.themes): self.current = 0
+        if self.current <= 0               : self.current = 0
+        self.theme    = self.themes[self.current]
+
+class Path:
+    """"""
+    
+    def __init__(self, value:str='name/'):
+        self.path = value
+        
+    def get(self, var = 'theme'):
+        # Lecture STR-PATH
+        if not isinstance(self.path, str) : return 'error/no_path_str'
+        if len(self.path) == 0            : return 'error/no_path'
+        if self.path[-1] == '/': build_path = self.path
+        else                   : build_path = self.path + '/'
+        self.path = build_path
+        as_path   = []
+        as_data   = ''
+        for __i in range(len(build_path)):
+            if build_path[__i] == '/' or (__i -1) == len(build_path) :
+                as_path.append(as_data)
+                as_data = ''
+            else                                                     :
+                as_data += build_path[__i]
+        if len(as_path) == 0: return 
+        # Associer var
+        if var == 'theme'          : as_var = app_themes.theme
+        elif var == 'settings'     : as_var = app_settings
+        elif var == 'translations' : as_var = app_translations
+        else                       : return   'error/no_var'
+        # Get
+        for __i in range(len(as_path)):
+            if isinstance(as_var, dict)            : 
+                if as_path[__i] in as_var.keys()   : as_var = as_var[as_path[__i]]
+                else                               : return 'error/invalid_path'
+            elif  isinstance(as_var, list)         : 
+                if int(as_path[__i]) < len(as_var) : as_var = as_var[int(as_path[__i])]
+                else                               : return 'error/invalid_path'
+        return as_var
+
+"""
 Utilitaires
 """
 
@@ -409,7 +464,7 @@ dic_terminaisons_cg =   {
                                                 'indicatif_imparfait'     : ['ais','ais','ait','ions','iez','aient'],
                                                 'indicatif_passé_simple'  : ['is','is','it','îmes','îtes','irent'],
                                   
-                                                'impératif_présent'       : [None, 'e', None, 'ons', 'ez', None],
+                                                'impératif_présent'       : [None, 's', None, 'ons', 'ez', None],
                                   
                                                 'subjonctif_présent'      : ['e','es','e','ions','iez','ent'],
                                                 'subjonctif_imparfait'    : ['isse','isses','ît','issions','issiez','issent'],
@@ -1921,3 +1976,54 @@ tab_irréguliers =   [
                                             }
                         },
                     ]
+
+"""
+Application
+"""
+
+app_themes = [
+                {
+                'name'       : 'Default (dark)', 'author': 'LPP',
+                'principal'  : { 'txt'    : { 'font':'Helvetica', 'titre':'#ac2e55' },
+                                 'block'  : { 'entry'  : { 'bg':'#eee', 'txt':'#180208' }, 'search' : { 'bg':'#eee', 'txt':'#180208' }, 'color':'#c8124b' },
+                                 'bg'     : '#1a0008' },
+                'conjugueur' : { 'label'  : {'main' : '#e79eb4', 'mode' : '#eee', 'term' : '#41091a', 'temps' : '#e01c57'},
+                                 'frame'  : {'mode' : '#e79eb4', 'temps' : '#eebbca'},
+                                 'bg'     : '#e01c57' }
+                },
+                {
+                'name'       : 'Default (light)', 'author': 'LPP',
+                'principal'  : { 'txt'    : { 'font':'Helvetica', 'titre':'#ac2e55' },
+                                 'block'  : { 'entry'  : { 'bg':'#eee', 'txt':'#180208' }, 'search' : { 'bg':'#eee', 'txt':'#180208' }, 'color':'#c8124b' },
+                                 'bg'     : '#f8eaee' },
+                'conjugueur' : { 'label'  : {'main' : '#e79eb4', 'mode' : '#eee', 'term' : '#eee', 'temps' : '#e01c57'},
+                                 'frame'  : {'mode' : '#e79eb4', 'temps' : '#eebbca'},
+                                 'bg'     : '#e01c57' }
+                },
+                {
+                'name'       : 'Default (contrast)', 'author': 'LPP',
+                'principal'  : { 'txt'    : { 'font':'Helvetica', 'titre':'#24603c' },
+                                 'block'  : { 'entry'  : { 'bg':'#eee', 'txt':'#352455' }, 'search' : { 'bg':'#eee', 'txt':'#352455' }, 'color':'#855cd6' },
+                                 'bg'     : '#edf4ff' },
+                'conjugueur' : { 'label'  : {'main' : '#eee', 'mode' : '#eee', 'term' : '#eee', 'temps' : '#eee'},
+                                 'frame'  : {'mode' : '#24603c', 'temps' : '#328554'},
+                                 'bg'     : '#855cd6' }
+                }
+         ]
+app_themes = Themes(tab = app_themes)
+
+app_settings = { 'conjugueur' : { 'text_size' : { 'title': 2.3, 'mode' : 1.8, 'temps': 1.5, 'terms': 1.2 },
+                                  'name'      : 'Le Petit Pascal [Résultat]' },
+                 'recherche'  : { 'name'      : 'Le Petit Pascal',
+                                  'text_size' : 20 }
+               }
+
+app_translations =  {'fr' : {
+                                'recherche'  : {'bouton': 'Conjuguer'},
+                                'conjugueur' : {'infos': ''}
+                            },
+                     'en' : {
+                                'recherche'  : {'bouton': 'Conjugate'},
+                                'conjugueur' : {'infos': ''}
+                            }
+                    }
