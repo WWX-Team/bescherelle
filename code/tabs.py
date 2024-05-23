@@ -171,7 +171,7 @@ dic_terminaisons_cg =   {
                                                 'subjonctif_présent'      : ['isse', 'isses', 'isse', 'issions', 'issiez', 'issent'],
                                                 'subjonctif_imparfait'    : ['isse', 'isses', 'ît', 'issions', 'issiez', 'issent'],
                                   
-                                                'conditionnel_présent'    : ['irais', 'irais', 'irait', 'irions', 'iriez', 'iraient'],
+                                                'conditionnel_présent'    : ['ais', 'ais', 'ait', 'ions', 'iez', 'aient'],
                                                 
                                                 'tags'                    : ['build/participe/présent/iss']
                                             }
