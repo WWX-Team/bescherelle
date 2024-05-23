@@ -225,7 +225,7 @@ button_search.pack  (pady=5, fill='x')
 frame_input.place   (relx = 0.15, relwidth = 0.7, y = 420)
 # Changement de thème
 button_themes = tk.Button(window, text = 'T', font = (theme['principal']['txt']['font'], 20), bg = theme['principal']['block']['search']['bg'], fg = theme['principal']['block']['search']['txt'], command = window_theme)
-button_themes.place(relx = 0.15, y = 560, width = 40, height = 40)
+button_themes.place(x = 20, y = 590, width = 40, height = 40)
 ###############################################################################
 ###############################################################################
 """ LOGICIEL """
